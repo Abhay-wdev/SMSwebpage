@@ -13,6 +13,7 @@ import {
   Facebook
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 
 // Optimize animation variants by reducing complexity
 const fadeInUp = {
@@ -138,6 +139,21 @@ const ContactForm = () => {
   };
 
   return (
+    <>
+    <Helmet>
+         <title>Best Digital Marketing and Web Development Company | SEOcial Media Solutions</title>
+         <meta
+           name="description"
+           content="Get in touch with SEOcial Media for expert digital marketing, website development, and SEO solutions. Let's grow your business together."
+         />
+         <meta name="keywords" content="IT services, web development, SEO, digital marketing" />
+         <link rel="canonical" href="https://yourwebsite.com/" />
+         <meta property="og:title" content="Home | Your IT Company" />
+         <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
+         <meta property="og:image" content="https://yourwebsite.com/images/og-home.jpg" />
+         <meta property="og:url" content="https://yourwebsite.com/" />
+         <meta name="twitter:card" content="summary_large_image" />
+     </Helmet>
     <section className="bg-gradient-to-br from-indigo-50 via-white to-purple-50">
       <div className="px-4 py-16 md:px-16 lg:px-24">
         <div className="max-w-7xl mx-auto">
@@ -331,6 +347,7 @@ const ContactForm = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

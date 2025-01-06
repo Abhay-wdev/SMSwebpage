@@ -5,6 +5,7 @@ import { Sparkles } from 'lucide-react';
 import ProductServicesPage from './ProductServicesPage';
 import ServicesCarousel from './ServicesCarousel';
 import GoogleMap from './GoogleMap';
+import { Helmet } from 'react-helmet-async';
 
 
 // Enhanced Background Component
@@ -100,7 +101,7 @@ const HeroSection = () => (
             className="inline-flex items-center px-3 sm:px-4 py-1.5 sm:py-2 bg-white/5 
                       backdrop-blur-sm rounded-full space-x-2 border border-white/10"
           >
-            <Sparkles className="h-3 w-3 sm:h-4 sm:w-4 text-yellow-400 animate-pulse" />
+            <Sparkles className="h-3 w-3 sm:h-4 sm:https://yourwebsite.com/w-4 text-yellow-400 animate-pulse" />
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-yellow-400 text-sm sm:text-base font-semibold">
               AI-Powered Digital Marketing Solutions
             </span>
@@ -145,6 +146,22 @@ const HeroSection = () => (
 // Main HomePage Component
 const HomePage = () => {
   return (
+    <>
+
+<Helmet>
+        <title>Best Digital Marketing Company  | SEOcial Media Solutions</title>
+        <meta
+          name="description"
+          content="Welcome to Your IT Company. We provide top-notch IT services, including web development, SEO, and digital marketing."
+        />
+        <meta name="keywords" content="IT services, web development, SEO, digital marketing" />
+        <link rel="canonical" href="" />
+        <meta property="og:title" content="Home | Your IT Company" />
+        <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
+        <meta property="og:image" content="https://yourwebsite.com/images/og-home.jpg" />
+        <meta property="og:url" content="https://yourwebsite.com/" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
     <div className="relative">
       <HeroSection />
       <ProductServicesPage />
@@ -152,6 +169,7 @@ const HomePage = () => {
       <GoogleMap />
 
     </div>
+    </>
   );
 };
 

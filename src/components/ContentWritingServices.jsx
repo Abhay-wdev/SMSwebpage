@@ -12,6 +12,7 @@ import {
   BarChart
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const ContentWritingServices = () => {
   const features = [
@@ -137,6 +138,23 @@ const ContentWritingServices = () => {
   ];
 
   return (
+    <>
+    <Helmet>
+         <title>Best Content Writing Services | SEOcial Media Solutions</title>
+         <meta
+           name="description"
+           content="Create impactful and engaging content with SEOcial Media's professional content writing services. Enhance your online presence with quality content."
+         />
+         <meta name="keywords" content="IT services, web development, SEO, digital marketing" />
+         <link rel="canonical" href="https://yourwebsite.com/" />
+         <meta property="og:title" content="Home | Your IT Company" />
+         <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
+         <meta property="og:image" content="https://yourwebsite.com/images/og-home.jpg" />
+         <meta property="og:url" content="https://yourwebsite.com/" />
+         <meta name="twitter:card" content="summary_large_image" />
+     </Helmet>
+
+
     <section className="bg-gradient-to-br from-emerald-50 via-white to-teal-50">
       <div className="px-4 py-16 md:px-16 lg:px-24">
         <div className="max-w-7xl mx-auto">
@@ -276,6 +294,7 @@ const ContentWritingServices = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

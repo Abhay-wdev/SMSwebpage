@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { 
   Phone, 
   Mail, 
@@ -11,6 +12,11 @@ import {
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   const quickLinks = [
     { name: 'Home', href: '/' },
@@ -25,7 +31,7 @@ const Footer = () => {
     { name: 'Website Development', href: '/web-development' },
     { name: 'SEO Services', href: '/seo' },
     { name: 'Social Media Marketing', href: '/social-media-marketing' },
-    // { name: 'Google Business Profile', href: '/' },
+    { name: 'Google Business Profile', href: '/google-business-profile' },
     { name: 'Google Ads', href: '/google-ads' },
     { name: 'Content Writing', href: '/content' }
   ];
@@ -144,8 +150,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-      
 
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-gray-800 text-center">

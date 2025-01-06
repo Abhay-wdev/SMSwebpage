@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 import MainLayout from './layouts/MainLayout';
-import { ScrollToTop } from './utils/ScrollToTop';
+// import { ScrollToTop } from './utils/ScrollToTop';
 import LoadingSpinner from './components/LoadingSpinner';
+import GoogleBusinessServices from './components/GoogleBusinessServices';
 
 // Lazy load components for better performance
 const Home = lazy(() => import('./components/Home'));
@@ -19,7 +20,7 @@ const NewYearOffer = lazy(() => import('./components/NewYearOffer'));
 function App() {
   return (
     <Router>
-      <ScrollToTop />
+      
       <Suspense fallback={<LoadingSpinner />}>
         <Routes>
           <Route element={<MainLayout />}>
@@ -41,6 +42,7 @@ function App() {
             <Route path="/social-media-marketing" element={<SocialMediaServices />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/career" element={<CareerPage />} />
+            <Route path="/google-business-profile" element={<GoogleBusinessServices/>}/>
             
             {/* Handle 404 */}
             <Route path="*" element={<Navigate to="/" replace />} />

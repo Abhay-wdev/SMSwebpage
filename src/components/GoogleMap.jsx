@@ -54,7 +54,7 @@ const UnifiedLandingPage = () => {
               </span>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                 SEOcial Media Solutions
-                <span className="block text-blue-600">in the Heart of Jaipur</span>
+                <span className="block text-blue-600"> in the Heart of Jaipur</span>
               </h2>
               <div className="w-16 h-1 bg-blue-600 mx-auto rounded-full" />
             </div>
@@ -135,7 +135,7 @@ const UnifiedLandingPage = () => {
                 <div className="space-y-4">
                   <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight">
                     Get Your Customized Website
-                    <span className="block">in Just 7 Days!</span>
+                    <span className="block"> in Just 7 Days!</span>
                   </h1>
                   
                   <p className="text-base md:text-lg text-white/90 max-w-xl mx-auto">

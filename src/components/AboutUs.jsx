@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -92,6 +93,21 @@ const AboutUs = () => {
  
 
   return (
+     <>
+       <Helmet>
+            <title>About Us | SEOcial Media Solutions</title>
+            <meta
+              name="description"
+              content="Discover SEOcial Media, a trusted digital marketing agency dedicated to helping businesses thrive with innovative and effective online strategies."
+            />
+            <meta name="keywords" content="IT services, web development, SEO, digital marketing" />
+            <link rel="canonical" href="https://yourwebsite.com/" />
+            <meta property="og:title" content="Home | Your IT Company" />
+            <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
+            <meta property="og:image" content="https://yourwebsite.com/images/og-home.jpg" />
+            <meta property="og:url" content="https://yourwebsite.com/" />
+            <meta name="twitter:card" content="summary_large_image" />
+        </Helmet>
     <section className="bg-gradient-to-br from-indigo-50 via-white to-purple-50">
       {/* Hero Section */}
       <div className="px-4 py-16 md:px-16 lg:px-24">
@@ -268,6 +284,7 @@ const AboutUs = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

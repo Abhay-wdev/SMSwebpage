@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Code, Search, PenTool, MousePointer, Share2 } from 'lucide-react';
+import { Code, Search, PenTool, MousePointer, Share2, Building } from 'lucide-react';
 
 const ServicesCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -19,13 +19,13 @@ const ServicesCarousel = () => {
       image: 'images/seo.jpg',
       actionLink: '/seo',
     },
-    // {
-    //   icon: Building,
-    //   title: 'Google Business',
-    //   description: 'Dominate local search results and attract customers.',
-    //   image: 'images/business.png',
-    //   actionLink: '/',
-    // },
+    {
+      icon: Building,
+      title: 'Google Business',
+      description: 'Dominate local search results and attract customers.',
+      image: 'images/business.png',
+      actionLink: '/google-business-profile',
+    },
     {
       icon: MousePointer,
       title: 'Google Ads',
