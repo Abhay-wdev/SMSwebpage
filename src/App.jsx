@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 import MainLayout from './layouts/MainLayout';
-// import { ScrollToTop } from './utils/ScrollToTop';
 import LoadingSpinner from './components/LoadingSpinner';
 import GoogleBusinessServices from './components/GoogleBusinessServices';
 

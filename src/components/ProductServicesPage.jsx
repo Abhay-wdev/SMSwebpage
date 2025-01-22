@@ -102,9 +102,7 @@ const ProductServicesPage = () => {
             <div className="relative z-10 mb-16">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-3">UI & UX Design</h2>
               <p className="text-gray-700 text-base sm:text-lg font-semibold">
-  Designing 
-  <span className="block sm:hidden"></span>
-  delightful and  <span className="block sm:hidden"></span> intuitive user<span className="block sm:hidden"></span>  experiences.
+  Designing<span className="block sm:hidden"> </span> delightful and  <span className="block sm:hidden"></span> intuitive user<span className="block sm:hidden"></span>  experiences.
 </p>
             </div>
             <motion.div 

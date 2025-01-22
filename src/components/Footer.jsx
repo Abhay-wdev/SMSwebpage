@@ -28,12 +28,12 @@ const Footer = () => {
   ];
 
   const services = [
-    { name: 'Website Development', href: '/web-development' },
-    { name: 'SEO Services', href: '/seo' },
+    { name: 'SEO Optimization', href: '/seo' },
     { name: 'Social Media Marketing', href: '/social-media-marketing' },
-    { name: 'Google Business Profile', href: '/google-business-profile' },
     { name: 'Google Ads', href: '/google-ads' },
-    { name: 'Content Writing', href: '/content' }
+    { name: 'Google Business Profile', href: '/google-business-profile' },
+    { name: 'Website Development', href: '/web-development' },
+    { name: 'Content Writing', href: '/content' },
   ];
 
   const socialLinks = [

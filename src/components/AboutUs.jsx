@@ -68,26 +68,26 @@ const services = [
   }
 ];
 
-const team = [
-  {
-    name: "David Chen",
-    role: "Web Development Lead",
-    exp: "Full-stack development specialist",
-    gradient: "from-blue-500 to-cyan-500"
-  },
-  {
-    name: "Emma Thompson",
-    role: "Digital Marketing Director",
-    exp: "SEO & social media expert",
-    gradient: "from-purple-500 to-pink-500"
-  },
-  {
-    name: "Michael Ross",
-    role: "Content Strategist",
-    exp: "Content & advertising specialist",
-    gradient: "from-green-500 to-emerald-500"
-  }
-];
+// const team = [
+//   {
+//     name: "David Chen",
+//     role: "Web Development Lead",
+//     exp: "Full-stack development specialist",
+//     gradient: "from-blue-500 to-cyan-500"
+//   },
+//   {
+//     name: "Emma Thompson",
+//     role: "Digital Marketing Director",
+//     exp: "SEO & social media expert",
+//     gradient: "from-purple-500 to-pink-500"
+//   },
+//   {
+//     name: "Michael Ross",
+//     role: "Content Strategist",
+//     exp: "Content & advertising specialist",
+//     gradient: "from-green-500 to-emerald-500"
+//   }
+// ];
 
 const AboutUs = () => {
  
@@ -218,7 +218,7 @@ const AboutUs = () => {
           </motion.div>
 
           {/* Team Section */}
-          <motion.div
+          {/* <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
@@ -255,7 +255,7 @@ const AboutUs = () => {
                 </motion.div>
               ))}
             </div>
-          </motion.div>
+          </motion.div> */}
 
           {/* CTA Section */}
           <motion.div

@@ -19,12 +19,12 @@ const Header = () => {
     {
       title: "Services",
       submenu: [
-        { title: "Web Development", href: "/web-development" },
         { title: "SEO Optimization", href: "/seo" },
-        { title: "Google Ads", href: "/google-ads" },
-        { title: "Content Writing", href: "/content" },
         { title: "Social Media Marketing", href: "/social-media-marketing" },
-        { title: "Google Business Profile", href: "/google-business-profile" }
+        { title: "Google Ads", href: "/google-ads" },
+        { title: "Google Business Profile", href: "/google-business-profile" },
+        { title: "Web Development", href: "/web-development" },
+        { title: "Content Writing", href: "/content" },
       ],
     },
     { title: "Careers", href: "/career" },
