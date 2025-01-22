@@ -42,7 +42,7 @@ const NewYearOffer = ({ imageUrl }) => {
           >
             <motion.img 
               src={imageUrl} 
-              alt="New Year Special Offer" 
+              alt="Republic Day Special Offer" 
               className="w-[150px] h-[225px] md:w-[200px] md:h-[300px] object-contain rounded-lg shadow-lg"
               loading="lazy"
               whileHover={{ 
