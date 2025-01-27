@@ -30,8 +30,8 @@ const Footer = () => {
   const services = [
     { name: 'SEO Optimization', href: '/seo' },
     { name: 'Social Media Marketing', href: '/social-media-marketing' },
-    { name: 'Google Ads', href: '/google-ads' },
-    { name: 'Google Business Profile', href: '/google-business-profile' },
+    { name: 'Google Services', href: '/google' },
+    // { name: 'Google Business Profile', href: '/google-business-profile' },
     { name: 'Website Development', href: '/web-development' },
     { name: 'Content Writing', href: '/content' },
   ];

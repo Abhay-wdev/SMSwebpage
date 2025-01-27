@@ -162,11 +162,11 @@ const WebDevelopment = () => {
            content=" Create a stunning, responsive, and user-friendly website with SEOcial Media's expert website development services. Build your online brand today"
          />
          <meta name="keywords" content="IT services, web development, SEO, digital marketing" />
-         <link rel="canonical" href="https://yourwebsite.com/" />
+         <link rel="canonical" href="https://seocialmedia.in/" />
          <meta property="og:title" content="Best Web Development Company | SMS" />
          <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
          <meta property="og:image" content="https://yourwebsite.com/images/og-home.jpg" />
-         <meta property="og:url" content="https://yourwebsite.com/" />
+         <meta property="og:url" content="https://seocialmedia.in/" />
          <meta name="twitter:card" content="summary_large_image" />
      </Helmet>
     <section className="bg-gradient-to-br from-indigo-50 via-white to-purple-50">
@@ -180,7 +180,7 @@ const WebDevelopment = () => {
             className="text-center"
           >
             <span className="inline-block px-4 py-1 bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-sm rounded-full font-medium">
-              Expert Web Development Services
+              Expert Website Development Services
             </span>
             <h1 className="mt-6 text-4xl pb-3 font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent md:text-6xl">
               Transform Your Digital Presence

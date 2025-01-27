@@ -1,6 +1,7 @@
 import React from "react";
 import { MapPin, Phone, Mail, Layers, Rocket, Lightbulb, ArrowRight, Code, Paintbrush, Sparkles, Check } from "lucide-react";
 import { Link } from "react-router-dom";
+import Testimonial from "./Testimonial";
 
 const UnifiedLandingPage = () => {
   const features = [
@@ -28,6 +29,7 @@ const UnifiedLandingPage = () => {
   
 
   return (
+    <>
     <div className="relative min-h-screen overflow-hidden">
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-gray-100" />
@@ -39,11 +41,12 @@ const UnifiedLandingPage = () => {
         <div className="absolute -bottom-8 left-20 w-64 h-64 bg-pink-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-[blob_7s_infinite_4s]" />
       </div>
 
+
       {/* Main Content */}
       <div className="relative w-full px-4 md:px-8 pt-8">
         {/* Hero Section */}
-       
-
+        
+           
 
         {/* Location Section */}
         <div className="max-w-[1200px] mt-8 mx-auto mb-12">
@@ -64,7 +67,7 @@ const UnifiedLandingPage = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
-            <div className="bg-white rounded-3xl shadow-lg overflow-hidden">
+            <div className="bg-white rounded-3xl  shadow-lg overflow-hidden transition-all duration-300 hover:rounded-none">
               <div className="h-[300px] sm:h-[400px] relative">
                 <iframe
                   title="Google Map"
@@ -191,9 +194,13 @@ const UnifiedLandingPage = () => {
               </div>
             </div>
           </div>
+        <Testimonial/>
         </div>
       </div>
     </div>
+    
+    
+      </>
   );
 };
 

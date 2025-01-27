@@ -3,6 +3,7 @@ import { Suspense, lazy } from 'react';
 import MainLayout from './layouts/MainLayout';
 import LoadingSpinner from './components/LoadingSpinner';
 import GoogleBusinessServices from './components/GoogleBusinessServices';
+import GoogleServices from './components/GoogleServices';
 
 // Lazy load components for better performance
 const Home = lazy(() => import('./components/Home'));
@@ -42,6 +43,8 @@ function App() {
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/career" element={<CareerPage />} />
             <Route path="/google-business-profile" element={<GoogleBusinessServices/>}/>
+            <Route path="/google" element={<GoogleServices />} />
+            
             
             {/* Handle 404 */}
             <Route path="*" element={<Navigate to="/" replace />} />

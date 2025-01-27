@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import WorkShowcase from './WorkShowcase';
 
 const cardVariants = {
   hidden: { opacity: 0, scale: 0.95 },
@@ -81,7 +82,7 @@ const ProductServicesPage = () => {
             <motion.div 
               className="absolute left-0 right-0 bottom-0 h-1/2 bg-cover bg-center opacity-90"
               style={{ 
-                backgroundImage: 'url("images/grid1.png")',
+                backgroundImage: 'url("images/grid.png")',
                 backgroundPosition: 'center bottom',
                 backgroundSize: 'contain',
                 backgroundRepeat: 'no-repeat'
@@ -192,7 +193,9 @@ const ProductServicesPage = () => {
             />
           </motion.div>
         </div>
+      <WorkShowcase/>
       </div>
+      
     </div>
   );
 };
