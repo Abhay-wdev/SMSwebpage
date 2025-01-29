@@ -135,22 +135,22 @@ const Seo = () => {
     {
       number: "01",
       title: "Technical Audit",
-      description: "Comprehensive analysis of your website's technical SEO elements"
+      description: "Conduct a comprehensive analysis of your website’s technical SEO elements to ensure a solid foundation."
     },
     {
       number: "02",
       title: "Keyword Research",
-      description: "Identifying high-value search terms your target audience uses"
+      description: "Identify high-value search terms your target audience is actively searching for."
     },
     {
       number: "03",
       title: "Content Optimization",
-      description: "Enhancing your content to match search intent and drive engagement"
+      description: "Refine your content to align with search intent, boost relevance, and drive user engagement."
     },
     {
       number: "04",
       title: "Link Building",
-      description: "Building authority through quality backlinks and outreach"
+      description: "Establish authority with quality backlinks and targeted outreach strategies."
     }
   ];
 
@@ -163,11 +163,11 @@ const Seo = () => {
            content=" Improve your website's visibility with SEOcial Media's expert search engine optimization services. Achieve better rankings and drive organic traffic."
          />
          <meta name="keywords" content="IT services, web development, SEO, digital marketing" />
-         <link rel="canonical" href="https://yourwebsite.com/" />
-         <meta property="og:title" content="Home | Your IT Company" />
+         <link rel="canonical" href="https://seocialmedia.in/" />
+         <meta property="og:title" content="Best SEO company in Jaipur and Ajmer | seocial media solutions" />
          <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
          <meta property="og:image" content="https://yourwebsite.com/images/og-home.jpg" />
-         <meta property="og:url" content="https://yourwebsite.com/" />
+         <meta property="og:url" content="https://seocialmedia.in/" />
          <meta name="twitter:card" content="summary_large_image" />
      </Helmet>
     <section className="bg-gradient-to-br from-amber-50 via-white to-orange-50">
@@ -269,10 +269,10 @@ const Seo = () => {
                 Search Engine Optimization That Drives Results
               </h2>
               <p className="text-gray-600 text-lg mb-6">
-                In today's digital landscape, visibility in search engines is crucial for business success. Our data-driven SEO strategies help you climb the rankings and capture valuable organic traffic.
+              In today’s competitive digital landscape, visibility on search engines is essential for business success. Our data-driven SEO strategies are designed to boost your rankings and attract valuable organic traffic.
               </p>
               <p className="text-gray-600 text-lg">
-                We combine technical expertise with creative content strategies to deliver sustainable results that grow your business.
+              By blending technical expertise with creative content strategies, we deliver sustainable results that drive long-term business growth.
               </p>
             </div>
           </div>
@@ -291,7 +291,7 @@ const Seo = () => {
               <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
                 Our SEO Process
               </h2>
-              <p className="text-xl text-gray-600">A proven approach to search success</p>
+              <p className="text-xl text-gray-600">A proven approach to achieving search success</p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {process.map((step) => (

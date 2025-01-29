@@ -155,10 +155,10 @@ const WorkShowcase = () => {
               <img
                 src={item.image}
                 alt={item.industry}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent opacity-0 group-hover:opacity-90 transition-all duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent opacity-80">
+                <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white">
                   <span className="inline-block px-3 py-1 bg-blue-600 text-white text-xs font-semibold rounded-full mb-2">
                     {item.industry}
                   </span>

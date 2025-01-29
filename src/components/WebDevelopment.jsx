@@ -186,7 +186,7 @@ const WebDevelopment = () => {
               Transform Your Digital Presence
             </h1>
             <p className="mt-6 text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
-              We build powerful web solutions using cutting-edge technologies that drive growth and deliver results
+              We create powerful web solutions with cutting-edge technologies to drive growth and deliver measurable results.
             </p>
           </motion.div>
 

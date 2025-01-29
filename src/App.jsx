@@ -29,7 +29,7 @@ function App() {
               path="/" 
               element={
                 <>
-                  <NewYearOffer imageUrl="images/offer-image.png" />
+                  <NewYearOffer videoUrl="images/offer.mp4" />
                   <Home />
                 </>
               } 

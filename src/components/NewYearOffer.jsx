@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 
-const NewYearOffer = ({ imageUrl }) => {
+const NewYearOffer = ({ videoUrl }) => {
   const [isVisible, setIsVisible] = useState(true);
 
   const handleClose = (e) => {
@@ -13,47 +13,51 @@ const NewYearOffer = ({ imageUrl }) => {
   return (
     <AnimatePresence>
       {isVisible && (
-        <motion.div 
+        <motion.div
           className="fixed top-16 right-2 md:top-20 md:right-4 z-50 cursor-pointer"
           initial={{ opacity: 0, scale: 0.8, y: -20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.8, y: -20 }}
-          transition={{ 
+          transition={{
             duration: 0.5,
             type: "spring",
             stiffness: 200,
             damping: 20
           }}
-          whileHover={{ 
+          whileHover={{
             scale: 1.02,
             transition: { duration: 0.2 }
           }}
         >
           <motion.div
-            animate={{ 
-              y: [0, -10, 0] 
+            animate={{
+              y: [0, -10, 0]
             }}
-            transition={{ 
+            transition={{
               duration: 2,
               repeat: Infinity,
               ease: "easeInOut"
             }}
             className="relative"
           >
-            <motion.img 
-              src={imageUrl} 
-              alt="Republic Day Special Offer" 
-              className="w-[150px] h-[225px] md:w-[200px] md:h-[300px] object-contain rounded-lg shadow-lg"
-              loading="lazy"
-              whileHover={{ 
+            <motion.video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-[150px] h-[225px] md:w-[200px] md:h-[300px] object-cover rounded-lg shadow-lg"
+              whileHover={{
                 boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)"
               }}
-            />
-            
-            <motion.button 
+            >
+              <source src={videoUrl} type="video/mp4" />
+              Your browser does not support the video tag.
+            </motion.video>
+
+            <motion.button
               className="absolute top-1 right-1 md:top-2 md:right-2 bg-black/50 text-white rounded-full w-6 h-6 md:w-8 md:h-8 flex items-center justify-center hover:bg-black/70 backdrop-blur-sm"
               onClick={handleClose}
-              whileHover={{ 
+              whileHover={{
                 scale: 1.1,
                 backgroundColor: "rgba(0, 0, 0, 0.7)"
               }}

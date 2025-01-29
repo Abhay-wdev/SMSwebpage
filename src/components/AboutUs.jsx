@@ -1,7 +1,8 @@
 import React from 'react';
 import { 
   Code, Search, Share2, Store, 
-  MessageSquare, PenTool, Brain, 
+  // MessageSquare,
+   PenTool, Brain, 
   Rocket
 } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -48,15 +49,15 @@ const services = [
     description: "Building your brand presence across social platforms",
     gradient: "from-purple-500 to-pink-500"
   },
+  // {
+  //   icon: Store,
+  //   title: "Google Business Profile",
+  //   description: "Optimizing your local business presence",
+  //   gradient: "from-orange-500 to-red-500"
+  // },
   {
     icon: Store,
-    title: "Google Business Profile",
-    description: "Optimizing your local business presence",
-    gradient: "from-orange-500 to-red-500"
-  },
-  {
-    icon: MessageSquare,
-    title: "Google Ads",
+    title: "Google Services",
     description: "Driving targeted traffic through strategic campaigns",
     gradient: "from-yellow-500 to-orange-500"
   },
@@ -101,11 +102,11 @@ const AboutUs = () => {
               content="Discover SEOcial Media, a trusted digital marketing agency dedicated to helping businesses thrive with innovative and effective online strategies."
             />
             <meta name="keywords" content="IT services, web development, SEO, digital marketing" />
-            <link rel="canonical" href="https://yourwebsite.com/" />
-            <meta property="og:title" content="Home | Your IT Company" />
+            <link rel="canonical" href="https://seocialmedia.in/" />
+            <meta property="og:title" content="About Us | SEOcial Media Soltions" />
             <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
-            <meta property="og:image" content="https://yourwebsite.com/images/og-home.jpg" />
-            <meta property="og:url" content="https://yourwebsite.com/" />
+            <meta property="og:image" content="https://seocialmedia.in/images/og-home.jpg" />
+            <meta property="og:url" content="https://seocialmedia.in/" />
             <meta name="twitter:card" content="summary_large_image" />
         </Helmet>
     <section className="bg-gradient-to-br from-indigo-50 via-white to-purple-50">

@@ -2,6 +2,7 @@ import React from "react";
 import { MapPin, Phone, Mail, Layers, Rocket, Lightbulb, ArrowRight, Code, Paintbrush, Sparkles, Check } from "lucide-react";
 import { Link } from "react-router-dom";
 import Testimonial from "./Testimonial";
+import TechShowcase from "./TechShowcase";
 
 const UnifiedLandingPage = () => {
   const features = [
@@ -40,11 +41,12 @@ const UnifiedLandingPage = () => {
         <div className="absolute top-0 right-0 w-64 h-64 bg-yellow-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-[blob_7s_infinite_2s]" />
         <div className="absolute -bottom-8 left-20 w-64 h-64 bg-pink-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-[blob_7s_infinite_4s]" />
       </div>
-
+   
 
       {/* Main Content */}
       <div className="relative w-full px-4 md:px-8 pt-8">
         {/* Hero Section */}
+       <TechShowcase/>
         
            
 
