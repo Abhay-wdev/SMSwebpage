@@ -16,7 +16,8 @@ const SocialMediaServices = lazy(() => import('./components/SocialMediaServices'
 const ContactUs = lazy(() => import('./components/ContactUs'));
 const CareerPage = lazy(() => import('./components/CareerPage'));
 const NewYearOffer = lazy(() => import('./components/NewYearOffer'));
-
+const BlogPage = lazy(() => import('./components/BlogPage'));
+const BlogPost = lazy(() => import('./components/BlogPost'))
 function App() {
   return (
     <Router>
@@ -44,8 +45,9 @@ function App() {
             <Route path="/career" element={<CareerPage />} />
             <Route path="/google-business-profile" element={<GoogleBusinessServices/>}/>
             <Route path="/google" element={<GoogleServices />} />
-            
-            
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/blog/category/:category" element={<BlogPage />} />
             {/* Handle 404 */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>

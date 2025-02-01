@@ -29,6 +29,7 @@ const Header = () => {
     },
     { title: "Careers", href: "/career" },
     { title: "Contact", href: "/contact" },
+    { title: "Blogs", href: "/blog" },
   ];
 
   const toggleSubmenu = (title) => {
