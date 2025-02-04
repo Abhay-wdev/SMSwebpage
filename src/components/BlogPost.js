@@ -13,6 +13,7 @@ import ResponsiveBlogContent from './ResponsiveBlogContent';
 import { blogPosts } from '../data/blog-posts';
 import { Helmet } from 'react-helmet-async';
 
+
 const ShareButtons = ({ url, title }) => (
   <div className="fixed left-4 top-1/2 transform -translate-y-1/2 space-y-4 hidden lg:flex flex-col">
     <FacebookShareButton url={url} quote={title}>
