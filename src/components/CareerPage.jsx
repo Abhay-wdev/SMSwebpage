@@ -37,11 +37,11 @@ const CareerPage = () => {
 
   const positions = [
     {
-      title: "Website Developer",
+      title: "SEO Expert",
       type: "Full-time",
       location: "1, Sagar, Shiv Shakti Nagar, Nirman Nagar, Jaipur",
       experience: "1+ years",
-      description: "Build responsive and high-performing websites for diverse clients."
+      description: "Improve website rankings through effective SEO strategies and best practices."
     },
     {
       title: "Google Ads Expert",
@@ -51,18 +51,18 @@ const CareerPage = () => {
       description: "Optimize and manage Google Ads campaigns for maximum ROI."
     },
     {
+      title: "Website Developer",
+      type: "Full-time",
+      location: "1, Sagar, Shiv Shakti Nagar, Nirman Nagar, Jaipur",
+      experience: "1+ years",
+      description: "Build responsive and high-performing websites for diverse clients."
+    },
+    {
       title: "Social Media Manager",
       type: "Full-time",
       location: "1, Sagar, Shiv Shakti Nagar, Nirman Nagar, Jaipur",
       experience: "1+ years",
       description: "Create and execute social media strategies to grow engagement."
-    },
-    {
-      title: "Content Writer",
-      type: "Full-time",
-      location: "1, Sagar, Shiv Shakti Nagar, Nirman Nagar, Jaipur",
-      experience: "1+ years",
-      description: "Write engaging and SEO-friendly content for diverse industries."
     },
     {
       title: "Graphic Designer",
@@ -77,8 +77,17 @@ const CareerPage = () => {
       location: "1, Sagar, Shiv Shakti Nagar, Nirman Nagar, Jaipur",
       experience: "1+ years",
       description: "Edit and produce high-quality videos for marketing and branding."
-    }
-  ];
+    },
+    {
+      title: "Content Writer",
+      type: "Full-time",
+      location: "1, Sagar, Shiv Shakti Nagar, Nirman Nagar, Jaipur",
+      experience: "1+ years",
+      description: "Write engaging and SEO-friendly content for diverse industries."
+    },
+    
+];
+
 
   return (
    <>
