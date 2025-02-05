@@ -157,16 +157,16 @@ const Seo = () => {
   return (
     <>
     <Helmet>
-         <title>Best SEO company | SEOcial Media Solutions</title>
+         <title>Best SEO Company | SEOcial Media Solutions</title>
          <meta
            name="description"
            content=" Improve your website's visibility with SEOcial Media's expert search engine optimization services. Achieve better rankings and drive organic traffic."
          />
          <meta name="keywords" content="IT services, web development, SEO, digital marketing" />
          <link rel="canonical" href="https://seocialmedia.in/" />
-         <meta property="og:title" content="Best SEO company in Jaipur and Ajmer | seocial media solutions" />
+         <meta property="og:title" content="Best SEO Company in Jaipur and Ajmer | SEOcial Media Solutions" />
          <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
-         <meta property="og:image" content="https://yourwebsite.com/images/og-home.jpg" />
+         <meta property="og:image" content="https://seocialmedia.in/images/og-home.jpg" />
          <meta property="og:url" content="https://seocialmedia.in/" />
          <meta name="twitter:card" content="summary_large_image" />
      </Helmet>

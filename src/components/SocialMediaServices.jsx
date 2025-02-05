@@ -157,11 +157,11 @@ const SocialMediaServices = () => {
            content="Engage your audience and boost brand visibility with SEOcial Media's targeted social media marketing solutions tailored to your business goals."
          />
          <meta name="keywords" content="IT services, web development, SEO, digital marketing" />
-         <link rel="canonical" href="https://yourwebsite.com/" />
-         <meta property="og:title" content="Home | Your IT Company" />
+         <link rel="canonical" href="https://SEOcialmedia.in/" />
+         <meta property="og:title" content="Home | SEOcial Media Soltions" />
          <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
-         <meta property="og:image" content="https://yourwebsite.com/images/og-home.jpg" />
-         <meta property="og:url" content="https://yourwebsite.com/" />
+         <meta property="og:image" content="https://seocialmedia.in/images/og-home.jpg" />
+         <meta property="og:url" content="https://seocialmedia.in/" />
          <meta name="twitter:card" content="summary_large_image" />
      </Helmet>
     <section className="bg-gradient-to-br from-pink-50 via-white to-purple-50">

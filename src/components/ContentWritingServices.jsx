@@ -146,11 +146,11 @@ const ContentWritingServices = () => {
            content="Create impactful and engaging content with SEOcial Media's professional content writing services. Enhance your online presence with quality content."
          />
          <meta name="keywords" content="IT services, web development, SEO, digital marketing" />
-         <link rel="canonical" href="https://yourwebsite.com/" />
-         <meta property="og:title" content="Home | Your IT Company" />
+         <link rel="canonical" href="https://seocialmedia.in/" />
+         <meta property="og:title" content="Best Content Writing Services | SEOcial Media Soltions" />
          <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
-         <meta property="og:image" content="https://yourwebsite.com/images/og-home.jpg" />
-         <meta property="og:url" content="https://yourwebsite.com/" />
+         <meta property="og:image" content="https://seocialmedia.in/images/og-home.jpg" />
+         <meta property="og:url" content="https://seocialmedia.in/" />
          <meta name="twitter:card" content="summary_large_image" />
      </Helmet>
 

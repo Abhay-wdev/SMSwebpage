@@ -85,7 +85,7 @@ const GoogleServices = () => {
     {
       title: "Google Business Profile Optimization",
       description: "Maximize your local online presence and attract nearby customers.",
-      image: "/images/google-business.jpg"
+      image: "/images/gbp-setup.jpg"
     },
     {
       title: "Google Ads Management",
@@ -95,7 +95,7 @@ const GoogleServices = () => {
     {
       title: "Keyword Strategy",
       description: "Develop a data-driven approach to target the right audience.",
-      image: "/images/keyword-strategy.jpg"
+      image: "/images/content-writing.jpg"
     },
     {
       title: "Performance Tracking",
@@ -155,13 +155,13 @@ const GoogleServices = () => {
   return (
     <>
     <Helmet>
-         <title>Google Services | Digital Marketing Solutions</title>
+         <title>Best Google Services Company | SEOcial Media Solutions</title>
          <meta
            name="description"
            content="Maximize your online presence with expert Google Business Profile and Google Ads management. Drive targeted traffic and grow your business."
          />
          <meta name="keywords" content="Google Ads, Business Profile, digital marketing, local SEO" />
-         <link rel="canonical" href="https://yourwebsite.com/google-services" />
+         <link rel="canonical" href="https://seocialmedia.in/google-services" />
      </Helmet>
     <section className="bg-gradient-to-br from-green-50 via-white to-lime-50">
     <div className="px-4 py-16 md:px-16 lg:px-24">

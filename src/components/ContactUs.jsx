@@ -147,11 +147,11 @@ const ContactForm = () => {
            content="Get in touch with SEOcial Media for expert digital marketing, website development, and SEO solutions. Let's grow your business together."
          />
          <meta name="keywords" content="IT services, web development, SEO, digital marketing" />
-         <link rel="canonical" href="https://yourwebsite.com/" />
-         <meta property="og:title" content="Home | Your IT Company" />
+         <link rel="canonical" href="https://seocialmedia.in/" />
+         <meta property="og:title" content="Contact Us | SEOcial Media Solutions" />
          <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
-         <meta property="og:image" content="https://yourwebsite.com/images/og-home.jpg" />
-         <meta property="og:url" content="https://yourwebsite.com/" />
+         <meta property="og:image" content="https://seocialmedia./images/og-home.jpg" />
+         <meta property="og:url" content="https://seocialmedia.in/" />
          <meta name="twitter:card" content="summary_large_image" />
      </Helmet>
     <section className="bg-gradient-to-br from-indigo-50 via-white to-purple-50">
