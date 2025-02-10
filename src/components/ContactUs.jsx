@@ -10,7 +10,10 @@ import {
   AlertCircle,
   Loader2,
   Smartphone,
-  Facebook
+  Facebook,
+  Clock,
+  Shield,
+  HeartHandshake
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
@@ -197,6 +200,71 @@ const ContactForm = () => {
               </motion.div>
             ))}
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="mt-16 mb-16 bg-white rounded-3xl shadow-lg overflow-hidden"
+          >
+            <div className="p-8 md:p-12">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div className="space-y-6">
+                  <h2 className="text-3xl font-bold text-gray-900">
+                    Expert Digital Solutions at Your Fingertips
+                  </h2>
+                  <p className="text-lg text-gray-600 leading-relaxed">
+                    Connect with Jaipur's best digital marketing agency for tailored web solutions, 
+                    SEO strategies, and social media expertise. Our dedicated team ensures your business 
+                    achieves maximum online visibility and engagement through data-driven approaches 
+                    and innovative digital marketing solutions.
+                  </p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
+                    <div className="flex items-center gap-4">
+                      <div className="p-3 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl">
+                        <Clock className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-gray-900">24/7 Support</h3>
+                        <p className="text-sm text-gray-600">Quick response guaranteed</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <div className="p-3 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl">
+                        <Shield className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-gray-900">Trusted Agency</h3>
+                        <p className="text-sm text-gray-600">Proven track record</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <div className="p-3 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl">
+                        <HeartHandshake className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-gray-900">Client Success</h3>
+                        <p className="text-sm text-gray-600">Results-driven approach</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="relative rounded-xl overflow-hidden">
+                  <img
+                    src="images/technology.jpg"
+                    alt="Digital marketing expertise"
+                    className="w-full h-full object-cover aspect-4/3"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                    <div className="p-6 text-white">
+                      <p className="text-xl font-semibold">Leading Digital Marketing Agency in Jaipur</p>
+                      <p className="mt-2 text-sm opacity-90">Transforming businesses through digital excellence</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
 
           <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-16">
             <motion.div

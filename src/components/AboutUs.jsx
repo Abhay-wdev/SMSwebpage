@@ -1,9 +1,11 @@
 import React from 'react';
 import { 
   Code, Search, Share2, Store, 
-  // MessageSquare,
-   PenTool, Brain, 
-  Rocket
+  PenTool, Brain, 
+  Rocket,
+  Target,
+  TrendingUp,
+  Users
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -182,6 +184,56 @@ const AboutUs = () => {
               </motion.div>
             </motion.div>
           </div>
+
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="mt-24 bg-gradient-to-r from-purple-50 to-indigo-50 rounded-3xl overflow-hidden"
+          >
+            <div className="p-8 md:p-12 lg:p-16">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <motion.div variants={fadeInUp} className="space-y-6">
+                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+                    Driving Digital Success Through Strategic Excellence
+                  </h2>
+                  <p className="text-lg text-gray-600 leading-relaxed">
+                    At SEOcial Media Solutions, we combine innovative digital strategies with data-driven insights to deliver exceptional results. Our comprehensive approach encompasses advanced SEO techniques, engaging content creation, and strategic social media management to help businesses thrive in the digital landscape.
+                  </p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                    <div className="flex items-center gap-3">
+                      <div className="p-3 bg-white rounded-lg shadow-sm">
+                        <Target className="w-6 h-6 text-purple-600" />
+                      </div>
+                      <span className="font-medium text-gray-800">Targeted Strategies</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="p-3 bg-white rounded-lg shadow-sm">
+                        <TrendingUp className="w-6 h-6 text-indigo-600" />
+                      </div>
+                      <span className="font-medium text-gray-800">Measurable Growth</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="p-3 bg-white rounded-lg shadow-sm">
+                        <Users className="w-6 h-6 text-blue-600" />
+                      </div>
+                      <span className="font-medium text-gray-800">Client-Centric Focus</span>
+                    </div>
+                  </div>
+                </motion.div>
+                <motion.div variants={fadeInUp} className="relative">
+                  <div className="aspect-video rounded-xl overflow-hidden shadow-xl">
+                    <img
+                      src="images/technology.jpg"
+                      alt="Digital marketing strategy visualization"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          </motion.div>
 
           {/* Services Grid */}
           <motion.div
