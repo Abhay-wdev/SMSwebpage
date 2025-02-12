@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import WorkShowcase from './WorkShowcase';
+import MarketingGrid from './MarketingGrid';
 
 const cardVariants = {
   hidden: { opacity: 0, scale: 0.95 },
@@ -194,6 +195,7 @@ const ProductServicesPage = () => {
           </motion.div>
         </div>
       <WorkShowcase/>
+      <MarketingGrid/>
       </div>
       
     </div>

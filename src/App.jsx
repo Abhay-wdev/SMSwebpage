@@ -4,6 +4,7 @@ import MainLayout from './layouts/MainLayout';
 import LoadingSpinner from './components/LoadingSpinner';
 import GoogleBusinessServices from './components/GoogleBusinessServices';
 import GoogleServices from './components/GoogleServices';
+import NeonCursor from './components/NeonCursor';
 
 // Lazy load components for better performance
 const Home = lazy(() => import('./components/Home'));
@@ -21,7 +22,7 @@ const BlogPost = lazy(() => import('./components/BlogPost'))
 function App() {
   return (
     <Router>
-      
+      <NeonCursor/>
       <Suspense fallback={<LoadingSpinner />}>
         <Routes>
           <Route element={<MainLayout />}>

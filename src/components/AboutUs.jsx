@@ -51,12 +51,6 @@ const services = [
     description: "Building your brand presence across social platforms",
     gradient: "from-purple-500 to-pink-500"
   },
-  // {
-  //   icon: Store,
-  //   title: "Google Business Profile",
-  //   description: "Optimizing your local business presence",
-  //   gradient: "from-orange-500 to-red-500"
-  // },
   {
     icon: Store,
     title: "Google Services",
@@ -71,7 +65,7 @@ const services = [
   }
 ];
 
-// const team = [
+
 //   {
 //     name: "David Chen",
 //     role: "Web Development Lead",

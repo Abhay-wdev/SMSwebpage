@@ -1,0 +1,76 @@
+.neon-cursor-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    overflow: hidden;
+  }
+  
+  .cursor-main {
+    position: fixed;
+    width: 12px;  /* Increased from 8px */
+    height: 12px; /* Increased from 8px */
+    background-color: rgb(236, 101, 23);
+    border-radius: 50%;
+    pointer-events: none;
+    transform-origin: center;
+    mix-blend-mode: difference;
+    transition: scale 0.2s ease-out;
+    margin-left: -6px;  /* Adjusted for new size */
+    margin-top: -6px;   /* Adjusted for new size */
+  }
+  
+  .cursor-trail {
+    position: fixed;
+    width: 32px;  /* Increased from 24px */
+    height: 32px; /* Increased from 24px */
+    border: 2px solid rgb(236, 101, 23);
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.5;
+    margin-left: -16px; /* Adjusted for new size */
+    margin-top: -16px;  /* Adjusted for new size */
+    box-shadow: 0 0 15px rgba(236, 101, 23, 0.3);
+  }
+  
+  .cursor-glow {
+    position: fixed;
+    width: 50px;  /* Increased from 40px */
+    height: 50px; /* Increased from 40px */
+    background: radial-gradient(circle, rgba(236, 101, 23, 0.3) 0%, rgba(236, 101, 23, 0.1) 50%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.4;
+    margin-left: -25px; /* Adjusted for new size */
+    margin-top: -25px;  /* Adjusted for new size */
+    box-shadow: 0 0 20px rgba(236, 101, 23, 0.2);
+  }
+  
+  .neon-cursor-container *,
+  body,
+  a,
+  button,
+  input,
+  [data-hover="true"] {
+    cursor: default;
+  }
+  
+  a:hover,
+  button:hover,
+  input:hover,
+  [data-hover="true"]:hover {
+    cursor: pointer;
+  }
+  
+  /* Add hardware acceleration */
+  .cursor-main,
+  .cursor-trail,
+  .cursor-glow {
+    backface-visibility: hidden;
+    perspective: 1000px;
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+  }

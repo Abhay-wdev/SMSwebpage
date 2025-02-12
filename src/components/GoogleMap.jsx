@@ -3,6 +3,7 @@ import { MapPin, Phone, Mail, Layers, Rocket, Lightbulb, ArrowRight, Code, Paint
 import { Link } from "react-router-dom";
 import Testimonial from "./Testimonial";
 import TechShowcase from "./TechShowcase";
+import FAQAccordion from "./FAQAccordion";
 
 const UnifiedLandingPage = () => {
   const features = [
@@ -197,6 +198,7 @@ const UnifiedLandingPage = () => {
             </div>
           </div>
         <Testimonial/>
+        <FAQAccordion/>
         </div>
       </div>
     </div>

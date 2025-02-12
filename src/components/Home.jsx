@@ -147,21 +147,87 @@ const HeroSection = () => (
 const HomePage = () => {
   return (
     <>
-
 <Helmet>
-        <title>Best Digital Marketing Company  | SEOcial Media Solutions</title>
-        <meta
-          name="description"
-          content="Welcome to Your IT Company. We provide top-notch IT services, including web development, SEO, and digital marketing."
-        />
-        <meta name="keywords" content="IT services, web development, SEO, digital marketing" />
-        <link rel="canonical" href="" />
-        <meta property="og:title" content="Home | Your IT Company" />
-        <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
-        <meta property="og:image" content="https://yourwebsite.com/images/og-home.jpg" />
-        <meta property="og:url" content="https://yourwebsite.com/" />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Helmet>
+    <title>Best Digital Marketing Agency in Jaipur | SEO, PPC & Social Media | SEOcial Media Solutions</title>
+    <meta
+        name="description"
+        content="Trusted Digital Marketing Agency in Jaipur delivering ROI-driven results. Expert services in SEO, Social Media, PPC & Content Marketing. 100+ satisfied clients. Get free consultation today!"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta 
+        name="keywords" 
+        content="digital marketing agency Jaipur, best digital marketing company, SEO services, social media marketing, PPC management, content marketing, SEOcial Media Solutions, digital marketing services Jaipur" 
+    />
+
+    {/* Open Graph Tags */}
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Best Digital Marketing Agency in Jaipur | Full-Service Digital Solutions" />
+    <meta 
+        property="og:description" 
+        content="Leading digital marketing agency in Jaipur offering comprehensive digital solutions: SEO, Social Media, PPC & Content Marketing. Proven results with 100+ successful campaigns." 
+    />
+    <meta property="og:image" content="https://seocialmedia.in/images/digital-marketing-agency-jaipur.jpg" />
+    <meta property="og:url" content="https://seocialmedia.in/" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:site_name" content="SEOcial Media Solutions" />
+
+    {/* Twitter Card Tags */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Best Digital Marketing Agency in Jaipur | Full-Service Digital Solutions" />
+    <meta name="twitter:description" content="Leading digital marketing agency in Jaipur. Expert SEO, Social Media & PPC services." />
+    <meta name="twitter:image" content="https://seocialmedia.in/images/digital-marketing-agency-jaipur.jpg" />
+
+    {/* Canonical URL - Replace with your actual URL */}
+    <link rel="canonical" href="https://seocialmedia.in/" />
+
+    {/* Local Business Schema - Add this for better local SEO */}
+    <script type="application/ld+json">
+        {`
+            {
+                "@context": "https://schema.org",
+                "@type": "DigitalMarketingAgency",
+                "name": "SEOcial Media Solutions",
+                "description": "Leading digital marketing agency in Jaipur offering comprehensive digital solutions including SEO, Social Media Marketing, and PPC services.",
+                "image": "https://seocialmedia.in/images/logo.jpg",
+                "url": "https://seocialmedia.in",
+                "telephone": "+91-9461677122",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "1, Sagar, Shiv Shakti Nagar, Nirman Nagar",
+                    "addressLocality": "Jaipur",
+                    "addressRegion": "Rajasthan",
+                    "postalCode": "302019",
+                    "addressCountry": "IN"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "26.9124",
+                    "longitude": "75.7873"
+                },
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday"
+                    ],
+                    "opens": "09:00",
+                    "closes": "18:00"
+                },
+                "sameAs": [
+                    "https://facebook.com/profile.php?id=61564390163701",
+                    "https://linkedin.com/company/seocial-media-solution/",
+                    "https://instagram.com/seocialmediasolutions360"
+                ]
+            }
+        `}
+    </script>
+</Helmet>
     <div className="relative">
       <HeroSection />
       <ProductServicesPage />
