@@ -93,7 +93,7 @@ const Header = () => {
   return (
     <>
       <Helmet>
-        <title>Best Digital Marketing Company | SEOcial Media Solutions</title>
+        <title>Best Digital Marketing Company in Jaipur | SEOcial Media Solutions</title>
         <meta
           name="description"
           content="Welcome to Your IT Company. We provide top-notch IT services, including web development, SEO, and digital marketing."
@@ -114,7 +114,7 @@ const Header = () => {
             <div className="flex items-center">
               <Link to={"/"}>
               <img
-                src="images/company-logo.jpeg"
+                src="/images/company-logo.jpeg"
                 alt="Company Logo"
                 className="h-12"
               />
