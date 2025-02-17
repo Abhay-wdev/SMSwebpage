@@ -14,6 +14,9 @@ import {
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import WebServicesSection from './WebServicesSection';
+import WebIntroSection from './WebIntroSection';
+import WebIndustriesSection from './WebIndustriesSection';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -82,35 +85,9 @@ const WebDevelopment = () => {
     }
   ];
 
-  const stats = [
-    { value: "95%", label: "Client satisfaction rate" },
-    { value: "500+", label: "Projects completed" },
-    { value: "100+", label: "Expert developers" },
-    { value: "24/7", label: "Technical support" }
-  ];
+ 
 
-  const services = [
-    {
-      title: "Custom Web Development",
-      description: "Tailored solutions built from scratch to meet your unique business requirements and drive growth.",
-      image: "images/custom.jpg"
-    },
-    {
-      title: "E-commerce Solutions",
-      description: "Scalable and secure online stores that provide seamless shopping experiences and boost sales.",
-      image: "images/ecommerce.jpg"
-    },
-    {
-      title: "CMS Development",
-      description: "Flexible content management systems that make website updates easy and efficient.",
-      image: "images/cms.jpg"
-    },
-    {
-      title: "Management Systems",
-      description: "Robust business management solutions that streamline operations and improve productivity.",
-      image: "images/management-system.jpg"
-    }
-  ];
+ 
 
   const benefits = [
     {
@@ -165,7 +142,7 @@ const WebDevelopment = () => {
          <link rel="canonical" href="https://seocialmedia.in/" />
          <meta property="og:title" content="Best Web Development Company | SMS" />
          <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
-         <meta property="og:image" content="https://yourwebsite.com/images/og-home.jpg" />
+         <meta property="og:image" content="https://seocialmedia.in/images/og-home.jpg" />
          <meta property="og:url" content="https://seocialmedia.in/" />
          <meta name="twitter:card" content="summary_large_image" />
      </Helmet>
@@ -180,15 +157,22 @@ const WebDevelopment = () => {
             className="text-center"
           >
             <span className="inline-block px-4 py-1 bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-sm rounded-full font-medium">
-              Expert Website Development Services
+              Professional Web Solutions
             </span>
             <h1 className="mt-6 text-4xl pb-3 font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent md:text-6xl">
-              Transform Your Digital Presence
+           Best Web Development Services in Jaipur
             </h1>
             <p className="mt-6 text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
-              We create powerful web solutions with cutting-edge technologies to drive growth and deliver measurable results.
+              Web design & development services involve designing, building, regularly supporting and gradually evolving different types of websites.
             </p>
+            <Link
+              to="/contact"
+              className="inline-block mt-8 px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium rounded-lg hover:opacity-90 transition-opacity duration-300 shadow-lg"
+            >
+              Contact Us Now
+            </Link>
           </motion.div>
+
 
            {/* Technologies Grid */}
            <div className="mt-24 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -218,29 +202,11 @@ const WebDevelopment = () => {
             ))}
           </div>
 
-          {/* Stats Section */}
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8"
-          >
-            {stats.map((stat) => (
-              <motion.div
-                key={stat.value}
-                variants={fadeInUp}
-                className="text-center"
-              >
-                <div className="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                  {stat.value}
-                </div>
-                <p className="mt-2 text-gray-600">{stat.label}</p>
-              </motion.div>
-            ))}
-          </motion.div>
+          <WebIntroSection/>
 
-         
+          <WebServicesSection/>
+
+
 
           {/* Process Section */}
           <motion.div
@@ -248,7 +214,7 @@ const WebDevelopment = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="py-24"
+            className="pb-10"
           >
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
@@ -303,53 +269,17 @@ const WebDevelopment = () => {
               ))}
             </div>
           </motion.div>
-
-          {/* Services Section */}
-          <div className="pt-10">
-            <motion.div
-              variants={containerVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                Our Services
-              </h2>
-              <p className="text-xl text-gray-600">Comprehensive web development solutions</p>
-            </motion.div>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              {services.map((service) => (
-                <motion.div
-                  key={service.title}
-                  variants={fadeInUp}
-                  whileHover={{ y: -5 }}
-                  className="bg-white rounded-xl shadow-lg overflow-hidden"
-                >
-                  <div className="h-64 overflow-hidden">
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      className="w-full h-full object-fit"
-                    />
-                  </div>
-                  <div className="p-8">
-                    <h3 className="text-2xl font-semibold mb-4">{service.title}</h3>
-                    <p className="text-gray-600 text-lg">{service.description}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-
+            
+            <WebIndustriesSection/>
+          
+        
           {/* Results Section */}
           <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="py-24"
+            className="pb-10"
           >
             <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-12 text-white">
               <div className="text-center mb-16">
@@ -378,7 +308,7 @@ const WebDevelopment = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="mt-16 text-center"
+            className=" text-center"
           >
             <div className="relative max-w-3xl mx-auto p-12 rounded-2xl overflow-hidden bg-white shadow-xl">
               <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 opacity-5" />
