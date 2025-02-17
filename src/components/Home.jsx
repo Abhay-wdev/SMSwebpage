@@ -148,10 +148,10 @@ const HomePage = () => {
   return (
     <>
 <Helmet>
-    <title>Best Digital Marketing Agency in Jaipur | SEO, PPC & Social Media | SEOcial Media Solutions</title>
+    <title>Best Digital Marketing Agency in Jaipur | SEOcial Media Solutions</title>
     <meta
         name="description"
-        content="Trusted Digital Marketing Agency in Jaipur delivering ROI-driven results. Expert services in SEO, Social Media, PPC & Content Marketing. 100+ satisfied clients. Get free consultation today!"
+        content="Best Digital Marketing Agency in Jaipur delivering ROI-driven results. Expert services in SEO, Social Media, PPC & Content Marketing. 100+ satisfied clients. Get free consultation today!"
     />
     <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -229,6 +229,7 @@ const HomePage = () => {
     </script>
 </Helmet>
     <div className="relative">
+      <h1 className='hidden'>Best Digital Marketing Agency in Jaipur</h1>
       <HeroSection />
       <ProductServicesPage />
       <ServicesCarousel />

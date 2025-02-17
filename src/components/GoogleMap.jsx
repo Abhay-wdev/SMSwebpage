@@ -139,10 +139,10 @@ const UnifiedLandingPage = () => {
                 <Sparkles className="absolute -top-4 -right-4 w-6 h-6 text-yellow-300" />
                 
                 <div className="space-y-4">
-                  <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight">
+                  <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
                     Get Your Customized Website
                     <span className="block"> in Just 7 Days!</span>
-                  </h1>
+                  </h2>
                   
                   <p className="text-base md:text-lg text-white/90 max-w-xl mx-auto">
                     Transform your online presence with our expert web development services.
