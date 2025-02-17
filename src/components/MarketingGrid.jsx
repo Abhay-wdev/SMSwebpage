@@ -52,7 +52,7 @@ const MarketingGrid = () => {
                 animate={{ opacity: 1, y: 0 }}
                 className="text-center mb-12"
             >
-                <h1 className="text-4xl md:text-5xl font-extrabold mb-3 tracking-tight">
+                <h2 className="text-4xl md:text-5xl font-extrabold mb-3 tracking-tight">
                     <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
                         Your Ultimate Partner
                     </span>
@@ -60,7 +60,7 @@ const MarketingGrid = () => {
                     <span className="text-gray-800">
                         for 360° Digital Marketing Success
                     </span>
-                </h1>
+                </h2>
                 <p className="text-lg md:text-xl text-gray-600 font-medium mt-4 max-w-2xl mx-auto leading-relaxed">
                     Let's Elevate Your Brand & Drive Real Results!
                 </p>
