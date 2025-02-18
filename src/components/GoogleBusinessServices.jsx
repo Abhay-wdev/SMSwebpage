@@ -174,16 +174,17 @@ const GoogleBusinessServices = () => {
   return (
     <>
       <Helmet>
-        <title>Expert Google Business Profile Management Services | SEOcial Media Solutions</title>
+        <title>Expert Google Business Profile Management Services in Jaipur| SEOcial Media Solutions</title>
         <meta
           name="description"
           content="Boost your local presence with our expert Google Business Profile management services. Increase visibility, manage reviews, and drive more local customers to your business."
         />
+         <link rel="canonical" href="https://seocialmedia.in/google-business-profile" />
         <meta name="keywords" content="Google Business Profile, Local SEO, Business Listings, Review Management, Local Marketing" />
         <meta property="og:title" content="Google Business Profile Management Services" />
         <meta property="og:description" content="Professional Google Business Profile optimization and management services to boost your local presence." />
-        <meta property="og:image" content="https://yourwebsite.com/images/og-gbp.jpg" />
-        <meta property="og:url" content="https://yourwebsite.com/google-business-profile" />
+        <meta property="og:image" content="https://seocialmedia.in/images/og-gbp.jpg" />
+        <meta property="og:url" content="https://seocialmedia.in/google-business-profile" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
       

@@ -467,7 +467,7 @@ const blogPosts = [
     title: "Best Social Media Marketing Agency in Jaipur | SEOcial Media Solutions",
     slug: "best-social-media-marketing-agency-jaipur-seocial-media",
     author: {
-      name: "Rahul Sharma",
+      name: "Suryapratap Singh Rahore",
       role: "Head of Social Media Strategy",
       image: "/images/authors/rahul-sharma.jpg"
     },

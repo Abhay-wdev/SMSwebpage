@@ -151,14 +151,14 @@ const SocialMediaServices = () => {
   return (
     <>
     <Helmet>
-         <title>Best Social Media Marketing Company | SEOcial Media Solutions</title>
+         <title>Best Social Media Marketing Agency in Jaipur | SEOcial Media Solutions</title>
          <meta
            name="description"
            content="Engage your audience and boost brand visibility with SEOcial Media's targeted social media marketing solutions tailored to your business goals."
          />
          <meta name="keywords" content="IT services, web development, SEO, digital marketing" />
-         <link rel="canonical" href="https://SEOcialmedia.in/" />
-         <meta property="og:title" content="Home | SEOcial Media Soltions" />
+         <link rel="canonical" href="https://seocialmedia.in/social-media-marketing" />
+         <meta property="og:title" content="Best Social Media Marketing Agency in Jaipur | SEOcial Media Soltions" />
          <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
          <meta property="og:image" content="https://seocialmedia.in/images/og-home.jpg" />
          <meta property="og:url" content="https://seocialmedia.in/" />

@@ -99,7 +99,7 @@ const CareerPage = () => {
         />
         <meta name="keywords" content="IT services, web development, SEO, digital marketing" />
         <link rel="canonical" href="https://seocialmedia.in/" />
-        <meta property="og:title" content="Careers | SEOcial Media Solutions" />
+        <meta property="og:title" content="Best Digital Marketing Company in Jaipur | SEOcial Media Solutions" />
         <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
         <meta property="og:image" content="https://seocialmedia.in/images/og-home.jpg" />
         <meta property="og:url" content="https://seocialmedia.in/" />

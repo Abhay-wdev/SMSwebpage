@@ -92,14 +92,14 @@ const AboutUs = () => {
   return (
      <>
        <Helmet>
-            <title>About Us | SEOcial Media Solutions</title>
+            <title>Best Digital Marketing Agency in Jaipur | SEOcial Media Solutions</title>
             <meta
               name="description"
               content="Discover SEOcial Media, a trusted digital marketing agency dedicated to helping businesses thrive with innovative and effective online strategies."
             />
             <meta name="keywords" content="IT services, web development, SEO, digital marketing" />
-            <link rel="canonical" href="https://seocialmedia.in/" />
-            <meta property="og:title" content="About Us | SEOcial Media Soltions" />
+            <link rel="canonical" href="https://seocialmedia.in/about-us" />
+            <meta property="og:title" content="Best Digital Marketing Agency in Jaipur | SEOcial Media Soltions" />
             <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
             <meta property="og:image" content="https://seocialmedia.in/images/og-home.jpg" />
             <meta property="og:url" content="https://seocialmedia.in/" />

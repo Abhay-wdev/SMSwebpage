@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Testimonial from "./Testimonial";
 import TechShowcase from "./TechShowcase";
 import FAQAccordion from "./FAQAccordion";
+import PromoVideoShowcase from "./PromoVideoShowcase";
 
 const UnifiedLandingPage = () => {
   const features = [
@@ -199,6 +200,7 @@ const UnifiedLandingPage = () => {
           </div>
         <Testimonial/>
         <FAQAccordion/>
+        <PromoVideoShowcase/>
         </div>
       </div>
     </div>

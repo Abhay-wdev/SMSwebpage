@@ -133,14 +133,14 @@ const WebDevelopment = () => {
   return (
     <>
     <Helmet>
-         <title>Best Website Development Company | SEOcial Media Solutions</title>
+         <title>Best Website Development Agency in Jaipur | SEOcial Media Solutions</title>
          <meta
            name="description"
            content=" Create a stunning, responsive, and user-friendly website with SEOcial Media's expert website development services. Build your online brand today"
          />
          <meta name="keywords" content="IT services, web development, SEO, digital marketing" />
-         <link rel="canonical" href="https://seocialmedia.in/" />
-         <meta property="og:title" content="Best Web Development Company | SMS" />
+         <link rel="canonical" href="https://seocialmedia.in/web-development" />
+         <meta property="og:title" content="Best Website Development Agency in Jaipur | SEOcial Media Solutions" />
          <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
          <meta property="og:image" content="https://seocialmedia.in/images/og-home.jpg" />
          <meta property="og:url" content="https://seocialmedia.in/" />
