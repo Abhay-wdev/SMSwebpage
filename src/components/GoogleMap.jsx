@@ -1,10 +1,9 @@
 import React from "react";
-import { MapPin, Phone, Mail, Layers, Rocket, Lightbulb, ArrowRight, Code, Paintbrush, Sparkles, Check } from "lucide-react";
-import { Link } from "react-router-dom";
+import { MapPin, Phone, Mail, Layers, Rocket, Lightbulb} from "lucide-react";
+
 import Testimonial from "./Testimonial";
 import TechShowcase from "./TechShowcase";
 import FAQAccordion from "./FAQAccordion";
-import PromoVideoShowcase from "./PromoVideoShowcase";
 
 const UnifiedLandingPage = () => {
   const features = [
@@ -132,75 +131,10 @@ const UnifiedLandingPage = () => {
         </div>
 
         <div className="max-w-6xl mb-10 mx-auto">
-          <div className="w-full back rounded-3xl p-6 md:p-8 shadow-2xl">
-            <div className="max-w-2xl mx-auto text-center space-y-6">
-              {/* Sparkle decorations */}
-              <div className="relative">
-                <Sparkles className="absolute -top-4 -left-4 w-6 h-6 text-yellow-300" />
-                <Sparkles className="absolute -top-4 -right-4 w-6 h-6 text-yellow-300" />
-                
-                <div className="space-y-4">
-                  <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
-                    Get Your Customized Website
-                    <span className="block"> in Just 7 Days!</span>
-                  </h2>
-                  
-                  <p className="text-base md:text-lg text-white/90 max-w-xl mx-auto">
-                    Transform your online presence with our expert web development services.
-                  </p>
-
-                  {/* Feature list */}
-                  <div className="flex flex-col md:flex-row gap-4 justify-center text-white max-w-lg mx-auto">
-                    <div className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-green-400" />
-                      <span className="text-sm">Responsive Design</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-green-400" />
-                      <span className="text-sm">SEO Optimized</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-green-400" />
-                      <span className="text-sm">24/7 Support</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-white/90">
-                <div className="bg-white/20 p-4 rounded-xl backdrop-blur-sm hover:bg-white/30 transition-all duration-300 group">
-                  <Code className="w-6 h-6 mb-3 mx-auto group-hover:scale-110 transition-transform" />
-                  <h3 className="font-semibold mb-1 text-sm">Custom Development</h3>
-                  <p className="text-xs">Tailored solutions built with modern technologies</p>
-                </div>
-                
-                <div className="bg-white/20 p-4 rounded-xl backdrop-blur-sm hover:bg-white/30 transition-all duration-300 group">
-                  <Paintbrush className="w-6 h-6 mb-3 mx-auto group-hover:scale-110 transition-transform" />
-                  <h3 className="font-semibold mb-1 text-sm">Unique Design</h3>
-                  <p className="text-xs">Stand out with stunning, brand-aligned visuals</p>
-                </div>
-                
-                <div className="bg-white/20 p-4 rounded-xl backdrop-blur-sm hover:bg-white/30 transition-all duration-300 group">
-                  <Rocket className="w-6 h-6 mb-3 mx-auto group-hover:scale-110 transition-transform" />
-                  <h3 className="font-semibold mb-1 text-sm">Fast Delivery</h3>
-                  <p className="text-xs">From concept to launch in just 7 days</p>
-                </div>
-              </div>
-
-              <div className="pt-6">
-              <Link
-      to="/contact" // Specify the route to navigate to
-      className="bg-white text-purple-600 px-6 py-3 rounded-full font-semibold text-base hover:scale-105 hover:shadow-lg transition-all duration-300 flex items-center gap-2 mx-auto group"
-    >
-      Contact Us
-      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-    </Link>
-              </div>
-            </div>
-          </div>
+       
         <Testimonial/>
         <FAQAccordion/>
-        <PromoVideoShowcase/>
+        
         </div>
       </div>
     </div>

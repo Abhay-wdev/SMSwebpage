@@ -1,24 +1,49 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Play, Volume2, VolumeX, ChevronDown } from 'lucide-react';
 
 const PromoVideoShowcase = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
   const [videoLoaded, setVideoLoaded] = useState(false);
+  const playerRef = useRef(null);
+  const containerRef = useRef(null);
 
-  // Your specific YouTube video ID extracted from your embed code
+  // Your specific YouTube video ID
   const youtubeVideoId = "obyYIaHxkSo";
 
   useEffect(() => {
-    // Initialize YouTube Player API
-    const tag = document.createElement('script');
-    tag.src = 'https://www.youtube.com/iframe_api';
-    const firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    // Create a unique ID for the player container
+    const playerId = `youtube-player-${Math.random().toString(36).substr(2, 9)}`;
+    containerRef.current.id = playerId;
 
-    let player;
-    window.onYouTubeIframeAPIReady = () => {
-      player = new window.YT.Player('youtube-player', {
+    // Function to load the YouTube API
+    const loadYouTubeAPI = () => {
+      return new Promise((resolve) => {
+        if (window.YT) {
+          resolve();
+          return;
+        }
+
+        const tag = document.createElement('script');
+        tag.src = 'https://www.youtube.com/iframe_api';
+        const firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        window.onYouTubeIframeAPIReady = () => {
+          resolve();
+        };
+      });
+    };
+
+    // Function to initialize the player
+    const initializePlayer = async () => {
+      await loadYouTubeAPI();
+
+      if (playerRef.current) {
+        playerRef.current.destroy();
+      }
+
+      playerRef.current = new window.YT.Player(playerId, {
         videoId: youtubeVideoId,
         playerVars: {
           autoplay: 1,
@@ -36,41 +61,53 @@ const PromoVideoShowcase = () => {
             event.target.playVideo();
             setVideoLoaded(true);
             setIsPlaying(true);
+          },
+          onStateChange: (event) => {
+            if (event.data === window.YT.PlayerState.PLAYING) {
+              setVideoLoaded(true);
+              setIsPlaying(true);
+            }
+          },
+          onError: (event) => {
+            console.error('YouTube Player Error:', event.data);
+            setVideoLoaded(true);
           }
         }
       });
     };
 
-    // Clean up
+    // Initialize the player
+    initializePlayer();
+
+    // Cleanup function
     return () => {
-      if (player) {
-        player.destroy();
+      if (playerRef.current) {
+        playerRef.current.destroy();
+        playerRef.current = null;
       }
     };
   }, [youtubeVideoId]);
 
   const handlePlayPause = () => {
-    const iframe = document.getElementById('youtube-player');
-    if (iframe && iframe.contentWindow) {
-      if (isPlaying) {
-        iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-      } else {
-        iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-      }
-      setIsPlaying(!isPlaying);
+    if (!playerRef.current) return;
+
+    if (isPlaying) {
+      playerRef.current.pauseVideo();
+    } else {
+      playerRef.current.playVideo();
     }
+    setIsPlaying(!isPlaying);
   };
 
   const handleMute = () => {
-    const iframe = document.getElementById('youtube-player');
-    if (iframe && iframe.contentWindow) {
-      if (isMuted) {
-        iframe.contentWindow.postMessage('{"event":"command","func":"unMute","args":""}', '*');
-      } else {
-        iframe.contentWindow.postMessage('{"event":"command","func":"mute","args":""}', '*');
-      }
-      setIsMuted(!isMuted);
+    if (!playerRef.current) return;
+
+    if (isMuted) {
+      playerRef.current.unMute();
+    } else {
+      playerRef.current.mute();
     }
+    setIsMuted(!isMuted);
   };
 
   return (
@@ -88,7 +125,7 @@ const PromoVideoShowcase = () => {
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               SEOcial Media Solutions
-              <span className="block text-blue-600 mt-1"> Transforming Businesses in Jaipur</span>
+              <span className="block text-blue-600 mt-1">Transforming Businesses in Jaipur</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto rounded-full"></div>
           </div>
@@ -111,8 +148,8 @@ const PromoVideoShowcase = () => {
             )}
             
             {/* Video */}
-            <div id="youtube-player-container" className="relative w-full h-full">
-              <div id="youtube-player" className="w-full h-full"></div>
+            <div className="relative w-full h-full">
+              <div ref={containerRef} className="w-full h-full"></div>
               
               {/* Overlay gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 pointer-events-none z-10"></div>

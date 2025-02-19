@@ -8,8 +8,9 @@ import {
   Users
 } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+
 import { Helmet } from 'react-helmet-async';
+import PromoVideoShowcase from './PromoVideoShowcase';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -265,47 +266,18 @@ const AboutUs = () => {
           </motion.div>
 
           {/* Team Section */}
-          {/* <motion.div
+          <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             className="mt-24"
           >
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-4">Meet Our Team</h2>
-              <p className="text-xl text-gray-600">Expert professionals dedicated to your digital success</p>
-            </div>
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {team.map((member, index) => (
-                <motion.div
-                  key={index}
-                  variants={fadeInUp}
-                  whileHover={{ y: -5 }}
-                  className="bg-white rounded-xl shadow-lg overflow-hidden"
-                >
-                  <div className={`h-2 bg-gradient-to-r ${member.gradient}`} />
-                  <div className="p-8">
-                    <div className="w-24 h-24 mx-auto mb-6">
-                      <img
-                        src="/api/placeholder/96/96"
-                        alt={member.name}
-                        className="w-full h-full rounded-full object-cover"
-                      />
-                    </div>
-                    <h3 className="text-xl font-bold text-center text-gray-900">{member.name}</h3>
-                    <p className="mt-2 text-gray-600 text-center">{member.role}</p>
-                    <div className="pt-4 mt-4 border-t border-gray-100">
-                      <p className="text-gray-500 text-center">{member.exp}</p>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div> */}
+           <PromoVideoShowcase/>
+          </motion.div>
 
           {/* CTA Section */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -327,7 +299,7 @@ const AboutUs = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>

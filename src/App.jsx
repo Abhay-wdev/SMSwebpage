@@ -16,7 +16,7 @@ const ContentWritingServices = lazy(() => import('./components/ContentWritingSer
 const SocialMediaServices = lazy(() => import('./components/SocialMediaServices'));
 const ContactUs = lazy(() => import('./components/ContactUs'));
 const CareerPage = lazy(() => import('./components/CareerPage'));
-const NewYearOffer = lazy(() => import('./components/NewYearOffer'));
+// const NewYearOffer = lazy(() => import('./components/NewYearOffer'));
 const BlogPage = lazy(() => import('./components/BlogPage'));
 const BlogPost = lazy(() => import('./components/BlogPost'))
 function App() {
@@ -31,7 +31,7 @@ function App() {
               path="/" 
               element={
                 <>
-                  <NewYearOffer videoUrl="images/offer.mp4" />
+                  {/* <NewYearOffer videoUrl="images/offer.mp4" /> */}
                   <Home />
                 </>
               } 
