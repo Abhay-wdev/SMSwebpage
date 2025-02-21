@@ -4,6 +4,7 @@ import { MapPin, Phone, Mail, Layers, Rocket, Lightbulb} from "lucide-react";
 import Testimonial from "./Testimonial";
 import TechShowcase from "./TechShowcase";
 import FAQAccordion from "./FAQAccordion";
+import YouTubeShort from "./YouTubeShort";
 
 const UnifiedLandingPage = () => {
   const features = [
@@ -131,7 +132,7 @@ const UnifiedLandingPage = () => {
         </div>
 
         <div className="max-w-6xl mb-10 mx-auto">
-       
+         <YouTubeShort/>
         <Testimonial/>
         <FAQAccordion/>
         
