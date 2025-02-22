@@ -155,11 +155,11 @@ const DualVideoShowcase = () => {
         <div className="grid md:grid-cols-2 gap-6 lg:gap-8 mb-12">
           <VideoPlayer 
             videoId="obyYIaHxkSo"
-            title="Our Success Story"
+            title="SEOcial Media Solutions"
           />
           <VideoPlayer 
             videoId="M_EwFmLtG7g"
-            title="Client Testimonials"
+            title="SEOcial Media Solutions"
           />
         </div>
 
