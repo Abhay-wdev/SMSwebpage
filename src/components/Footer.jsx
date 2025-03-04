@@ -24,7 +24,7 @@ const Footer = () => {
     // { name: 'Blog', href: '/blog' },
     { name: 'Careers', href: '/career' },
     { name: 'Contact Us', href: '/contact' },
-    // { name: 'Terms of Service', href: '/terms' }
+    { name: 'Privacy & policy', href: '/privacy-policy' }
   ];
 
   const services = [

@@ -18,23 +18,25 @@ const ContactUs = lazy(() => import('./components/ContactUs'));
 const CareerPage = lazy(() => import('./components/CareerPage'));
 // const NewYearOffer = lazy(() => import('./components/NewYearOffer'));
 const BlogPage = lazy(() => import('./components/BlogPage'));
-const BlogPost = lazy(() => import('./components/BlogPost'))
+const BlogPost = lazy(() => import('./components/BlogPost'));
+const PrivacyPolicy = lazy(() => import('./components/PrivacyPolicy')); // Add this line
+
 function App() {
   return (
     <Router>
-      <NeonCursor/>
+      <NeonCursor />
       <Suspense fallback={<LoadingSpinner />}>
         <Routes>
           <Route element={<MainLayout />}>
             {/* Public routes */}
-            <Route 
-              path="/" 
+            <Route
+              path="/"
               element={
                 <>
                   {/* <NewYearOffer videoUrl="images/offer.mp4" /> */}
                   <Home />
                 </>
-              } 
+              }
             />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/web-development" element={<WebDevelopment />} />
@@ -44,11 +46,12 @@ function App() {
             <Route path="/social-media-marketing" element={<SocialMediaServices />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/career" element={<CareerPage />} />
-            <Route path="/google-business-profile" element={<GoogleBusinessServices/>}/>
+            <Route path="/google-business-profile" element={<GoogleBusinessServices />} />
             <Route path="/google" element={<GoogleServices />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/blog/category/:category" element={<BlogPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} /> {/* Add this line */}
             {/* Handle 404 */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
