@@ -20,7 +20,7 @@ const CareerPage = lazy(() => import('./components/CareerPage'));
 const BlogPage = lazy(() => import('./components/BlogPage'));
 const BlogPost = lazy(() => import('./components/BlogPost'));
 const PrivacyPolicy = lazy(() => import('./components/PrivacyPolicy')); // Add this line
-
+const VideoEditing = lazy (() => import('./components/VideoEditing'))
 function App() {
   return (
     <Router>
@@ -52,6 +52,8 @@ function App() {
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/blog/category/:category" element={<BlogPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} /> {/* Add this line */}
+            <Route path="/video-editing" element={<VideoEditing />} /> {/* Add this line */}
+
             {/* Handle 404 */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>

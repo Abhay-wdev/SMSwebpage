@@ -39,7 +39,7 @@ const WebIndustriesSection = () => {
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8 sm:mb-12 md:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent px-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 pb-2 sm:mb-6 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent px-4">
             We Design Websites for a Wide Variety of Industries
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">

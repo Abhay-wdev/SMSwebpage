@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Code, Search, PenTool, MousePointer, Share2,  
-// Building 
+Building 
 } from 'lucide-react';
 
 const ServicesCarousel = () => {
@@ -21,13 +21,13 @@ const ServicesCarousel = () => {
       image: 'images/seo.jpg',
       actionLink: '/seo',
     },
-    // {
-    //   icon: Building,
-    //   title: 'Google Business',
-    //   description: 'Dominate local search results and attract customers.',
-    //   image: 'images/business.png',
-    //   actionLink: '/google-business-profile',
-    // },
+    {
+      icon: Building,
+      title: 'Video Editing',
+      description: 'High-quality videos that capture attention and elevate your brand.',
+      image: 'images/video-editing.jpg',
+      actionLink: '/video-editing',
+    },
     {
       icon: MousePointer,
       title: 'Google Services',

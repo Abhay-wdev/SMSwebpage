@@ -25,6 +25,8 @@ const Header = () => {
         // { title: "Google Business Profile", href: "/google-business-profile" },
         { title: "Website Development", href: "/web-development" },
         { title: "Content Writing", href: "/content" },
+        { title: "Video Editing", href: "/video-editing" },
+
       ],
     },
     { title: "Careers", href: "/career" },

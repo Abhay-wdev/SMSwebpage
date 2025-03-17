@@ -21,7 +21,7 @@ const Footer = () => {
   const quickLinks = [
     { name: 'Home', href: '/' },
     { name: 'About Us', href: '/about-us' },
-    // { name: 'Blog', href: '/blog' },
+    { name: 'Blog', href: '/blog' },
     { name: 'Careers', href: '/career' },
     { name: 'Contact Us', href: '/contact' },
     { name: 'Privacy & policy', href: '/privacy-policy' }
@@ -34,6 +34,7 @@ const Footer = () => {
     // { name: 'Google Business Profile', href: '/google-business-profile' },
     { name: 'Website Development', href: '/web-development' },
     { name: 'Content Writing', href: '/content' },
+    { name: 'Video Editing', href: '/video-editing' },
   ];
 
   const socialLinks = [
