@@ -9,7 +9,6 @@ import {
   Layers, 
   PenTool, 
   Search,
-  Play,
   ArrowRight,
 //   Star
 } from 'lucide-react';
@@ -195,13 +194,13 @@ const VideoEditing = () => {
                 Get Started Now
                 <ArrowRight className="w-5 h-5" />
               </Link>
-              <Link
+              {/* <Link
                 to="/portfolio"
                 className="flex items-center justify-center gap-2 px-8 py-4 bg-white text-indigo-600 font-medium rounded-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg w-full sm:w-auto"
               >
                 See Our Work
                 <Play className="w-5 h-5" />
-              </Link>
+              </Link> */}
             </div>
           </motion.div>
         </div>
