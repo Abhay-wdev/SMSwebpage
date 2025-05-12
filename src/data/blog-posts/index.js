@@ -743,7 +743,7 @@ const blogPosts = [
   tags: ["Website Development", "Web Design", "Jaipur Web Developers", "E-commerce Development", "Responsive Design"],
   excerpt: "Discover why SEOcial Media Solutions is recognized as Jaipur's top website development company, offering cutting-edge web solutions that drive business growth and online success.",
   featuredImage: {
-    url: "/images/blog/web-development-jaipur.jpg",
+    url: "/images/websitedevelopment.jpg",
     alt: "SEOcial Media Solutions web development team creating websites in Jaipur",
     width: 1200,
     height: 630
