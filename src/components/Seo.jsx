@@ -195,7 +195,7 @@ const Seo = () => {
   return (
     <section className="bg-gradient-to-br from-amber-50 via-white to-orange-50">
     <Helmet>
-    <title>Best SEO Services in Jaipur | Digital Marketing & SEO Services | SEOcial Media Solutions</title>
+    <title>Best SEO Services in Jaipur | SEOcial Media Solutions</title>
     <meta
         name="description"
         content="Award-winning SEO agency in Jaipur with 98% client satisfaction. Expert digital marketing, local SEO, and organic traffic optimization services. Get free SEO audit today!"
