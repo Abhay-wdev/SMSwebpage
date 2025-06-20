@@ -20,7 +20,7 @@ const Header = () => {
       title: "Services",
       submenu: [
         { title: "SEO Optimization", href: "/seo-company-jaipur" },
-        { title: "Social Media Marketing", href: "/social-media-marketing-company-jaipur" },
+        { title: "Social Media Marketing", href: "/social-media-marketing-jaipur" },
         { title: "Google services", href: "/google-services-company-jaipur" },
         // { title: "Google Business Profile", href: "/google-business-profile-services-jaipur" },
         { title: "Website Development", href: "/web-development-company-jaipur" },

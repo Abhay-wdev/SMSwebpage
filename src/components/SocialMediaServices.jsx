@@ -157,7 +157,7 @@ const SocialMediaServices = () => {
            content="Engage your audience and boost brand visibility with SEOcial Media's targeted social media marketing solutions tailored to your business goals."
          />
          <meta name="keywords" content="IT services,Social Media Marketing, web development, SEO, digital marketing" />
-         <link rel="canonical" href="https://seocialmedia.in/social-media-marketing-company-jaipur" />
+         <link rel="canonical" href="https://seocialmedia.in/social-media-marketing-jaipur" />
          <meta property="og:title" content="Best Social Media Marketing Agency in Jaipur | SEOcial Media Soltions" />
          <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
          <meta property="og:image" content="https://seocialmedia.in/images/og-home.jpg" />

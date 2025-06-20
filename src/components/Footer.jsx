@@ -29,7 +29,7 @@ const Footer = () => {
 
   const services = [
     { name: 'SEO Optimization', href: '/seo-company-jaipur' },
-    { name: 'Social Media Marketing', href: '/social-media-marketing-company-jaipur' },
+    { name: 'Social Media Marketing', href: '/social-media-marketing-jaipur' },
     { name: 'Google Services', href: '/google-services-company-jaipur' },
     // { name: 'Google Business Profile', href: '/google-business-profile-services-jaipur' },
     { name: 'Website Development', href: '/web-development-company-jaipur' },

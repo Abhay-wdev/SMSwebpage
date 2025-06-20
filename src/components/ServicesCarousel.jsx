@@ -47,7 +47,7 @@ const ServicesCarousel = () => {
       title: 'Social Media Marketing',
       description: 'Strategic campaigns that build brand awareness.',
       image: 'images/social-media.jpg',
-      actionLink: '/social-media-marketing-company-jaipur',
+      actionLink: '/social-media-marketing-jaipur',
     }
   ];
 

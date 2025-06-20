@@ -45,7 +45,7 @@ function App() {
             <Route path="/seo-company-jaipur" element={<Seo />} />
             <Route path="/google-ads-company-jaipur" element={<GoogleAdsServices />} />
             <Route path="/content-writing-company-jaipur" element={<ContentWritingServices />} />
-            <Route path="/social-media-marketing-company-jaipur" element={<SocialMediaServices />} />
+            <Route path="/social-media-marketing-jaipur" element={<SocialMediaServices />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/career" element={<CareerPage />} />
             <Route path="/google-business-profile-services-jaipur" element={<GoogleBusinessServices />} />
