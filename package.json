@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "cra-template": "1.2.0",
     "framer-motion": "^11.15.0",
     "lucide-react": "^0.468.0",
@@ -18,7 +19,8 @@
     "react-share": "^5.1.2",
     "react-type-animation": "^3.2.0",
     "react-whatsapp": "^0.3.0",
-    "swiper": "^11.1.15"
+    "swiper": "^11.1.15",
+    "vite": "^6.3.5"
   },
   "scripts": {
     "start": "react-scripts start",

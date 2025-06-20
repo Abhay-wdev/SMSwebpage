@@ -12,42 +12,42 @@ const ServicesCarousel = () => {
       title: 'Web Development',
       description: 'Building modern, responsive websites that drive results.',
       image: 'images/website-dev.jpg',
-      actionLink: '/web-development',
+      actionLink: '/web-development-jaipur',
     },
     {
       icon: Search,
       title: 'SEO',
       description: 'Boost your visibility and attract organic traffic.',
       image: 'images/seo.jpg',
-      actionLink: '/seo',
+      actionLink: '/seo-company-jaipur',
     },
     {
       icon: Building,
       title: 'Video Editing',
       description: 'High-quality videos that capture attention and elevate your brand.',
       image: 'images/video-editing.jpg',
-      actionLink: '/video-editing',
+      actionLink: '/video-editing-company-jaipur',
     },
     {
       icon: MousePointer,
       title: 'Google Services',
       description: 'Strategic PPC campaigns that maximize ROI.',
       image: 'images/googlead.jpg',
-      actionLink: '/google',
+      actionLink: '/google-seo-business-services-jaipur',
     },
     {
       icon: PenTool,
       title: 'Content Writing',
       description: 'Compelling content that engages your audience.',
       image: 'images/content-writing.jpg',
-      actionLink: '/content',
+      actionLink: '/content-writing-company-jaipur',
     },
     {
       icon: Share2,
       title: 'Social Media Marketing',
       description: 'Strategic campaigns that build brand awareness.',
       image: 'images/social-media.jpg',
-      actionLink: '/social-media-marketing',
+      actionLink: '/social-media-marketing-company-jaipur',
     }
   ];
 

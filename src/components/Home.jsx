@@ -242,8 +242,8 @@ const HeroSection = () => {
           </div>
         </motion.nav>
 
-        <div className="flex flex-col lg:flex-row items-center py-8 gap-12">
-          <div className="w-full lg:w-1/2 space-y-6 sm:space-y-8">
+        <div className=" flex flex-col lg:flex-row items-center py-8 gap-12">
+          <div className="w-fit lg:w-1/2 w-fit overflow-hidden space-y-6 sm:space-y-8">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -274,14 +274,14 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
             >
-              <Link to="/contact">
-                <button className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 flex items-center space-x-2">
-                  <span>Get Started</span>
-                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </button>
-              </Link>
+             <Link to="/contact" className="inline-block">
+    <button className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 flex items-center space-x-2">
+      <span>Get Started</span>
+      <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <path d="M5 12h14M12 5l7 7-7 7" />
+      </svg>
+    </button>
+  </Link>
             </motion.div>
           </div>
 

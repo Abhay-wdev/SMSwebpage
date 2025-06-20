@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
+ 
 
 // Optimize animation variants by reducing complexity
 const fadeInUp = {
@@ -415,6 +416,12 @@ const ContactForm = () => {
         </div>
       </div>
     </section>
+
+
+
+
+
+
     </>
   );
 };

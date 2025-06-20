@@ -19,13 +19,13 @@ const Header = () => {
     {
       title: "Services",
       submenu: [
-        { title: "SEO Optimization", href: "/seo" },
-        { title: "Social Media Marketing", href: "/social-media-marketing" },
-        { title: "Google services", href: "/google" },
-        // { title: "Google Business Profile", href: "/google-business-profile" },
-        { title: "Website Development", href: "/web-development" },
-        { title: "Content Writing", href: "/content" },
-        { title: "Video Editing", href: "/video-editing" },
+        { title: "SEO Optimization", href: "/seo-company-jaipur" },
+        { title: "Social Media Marketing", href: "/social-media-marketing-company-jaipur" },
+        { title: "Google services", href: "/google-seo-business-services-jaipur" },
+        { title: "Google Business Profile", href: "/google-business-profile-services-jaipur" },
+        { title: "Website Development", href: "/web-development-jaipur" },
+        { title: "Content Writing", href: "/content-writing-company-jaipur" },
+        { title: "Video Editing", href: "/video-editing-company-jaipur" },
 
       ],
     },
@@ -125,11 +125,12 @@ const Header = () => {
 
             {/* Desktop Menu */}
             <div className="hidden lg:flex space-x-6 items-center">
+
               {menuItems.map((item) => (
                 <div key={item.title} className="relative group">
                   <Link
                     to={item.href}
-                    className={`relative text-gray-700 font-medium transition-colors duration-300 hover:text-indigo-600 ${
+                    className={`flex flex-nowrap items-center justify-center text-gray-700 font-medium transition-colors duration-300 hover:text-indigo-600 ${
                       activePath === item.href ? "text-indigo-600" : ""
                     }`}
                   >

@@ -1,135 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+  <!-- HOMEPAGE - Highest Priority -->
   <url>
     <loc>https://seocialmedia.in/</loc>
-    <lastmod>2025-03-04T11:47:29.839Z</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2025-06-20</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- HIGH-VALUE SERVICE PAGES - Second Highest Priority -->
   <url>
-    <loc>https://seocialmedia.in/about-us</loc>
-    <lastmod>2025-03-04T11:47:29.840Z</lastmod>
+    <loc>https://seocialmedia.in/seo-company-jaipur</loc>
+    <lastmod>2025-06-20</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.95</priority>
   </url>
+
   <url>
-    <loc>https://seocialmedia.in/web-development</loc>
-    <lastmod>2025-03-04T11:47:29.840Z</lastmod>
+    <loc>https://seocialmedia.in/social-media-marketing-company-jaipur</loc>
+    <lastmod>2025-06-20</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.95</priority>
   </url>
+
   <url>
-    <loc>https://seocialmedia.in/seo</loc>
-    <lastmod>2025-03-04T11:47:29.840Z</lastmod>
+    <loc>https://seocialmedia.in/google-seo-business-services-jaipur</loc>
+    <lastmod>2025-06-20</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.95</priority>
   </url>
+
   <url>
-    <loc>https://seocialmedia.in/google-ads</loc>
-    <lastmod>2025-03-04T11:47:29.840Z</lastmod>
+    <loc>https://seocialmedia.in/google-business-profile-services-jaipur</loc>
+    <lastmod>2025-06-20</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.95</priority>
   </url>
+
   <url>
-    <loc>https://seocialmedia.in/content</loc>
-    <lastmod>2025-03-04T11:47:29.840Z</lastmod>
+    <loc>https://seocialmedia.in/web-development-jaipur</loc>
+    <lastmod>2025-06-20</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.95</priority>
   </url>
-  <url>
-    <loc>https://seocialmedia.in/social-media-marketing</loc>
-    <lastmod>2025-03-04T11:47:29.840Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://seocialmedia.in/contact</loc>
-    <lastmod>2025-03-04T11:47:29.840Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://seocialmedia.in/career</loc>
-    <lastmod>2025-03-04T11:47:29.840Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://seocialmedia.in/google-business-profile</loc>
-    <lastmod>2025-03-04T11:47:29.840Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://seocialmedia.in/google</loc>
-    <lastmod>2025-03-04T11:47:29.840Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
+
+  <!-- BLOG MAIN PAGE - High Priority for Fresh Content -->
   <url>
     <loc>https://seocialmedia.in/blog</loc>
-    <lastmod>2025-03-04T11:47:29.840Z</lastmod>
+    <lastmod>2025-06-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- RECENT BLOG POSTS - High Priority for SEO Rankings -->
+  <url>
+    <loc>https://seocialmedia.in/blog/best-google-ads-company-jaipur-seocial-media</loc>
+    <lastmod>2025-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
-    <loc>https://seocialmedia.in/blog/category/digital-marketing</loc>
-    <lastmod>2025-03-04T11:47:29.840Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://seocialmedia.in/blog/how-to-choose-best-digital-marketing-company-jaipur</loc>
+    <lastmod>2025-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
-  <url>
-    <loc>https://seocialmedia.in/blog/category/seo-services</loc>
-    <lastmod>2025-03-04T11:47:29.840Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://seocialmedia.in/blog/category/social-media-marketing</loc>
-    <lastmod>2025-03-04T11:47:29.840Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://seocialmedia.in/blog/best-digital-marketing-company-jaipur-seocial-media</loc>
-    <lastmod>2025-03-04T11:47:29.840Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seocialmedia.in/blog/seocial-media-solutions-best-seo-agency-jaipur</loc>
-    <lastmod>2025-03-04T11:47:29.840Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seocialmedia.in/blog/best-digital-marketing-agency-jaipur-seocial-media-solutions</loc>
-    <lastmod>2025-03-04T11:47:29.840Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seocialmedia.in/blog/best-social-media-marketing-agency-jaipur-seocial-media</loc>
-    <lastmod>2025-03-04T11:47:29.840Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+
   <url>
     <loc>https://seocialmedia.in/blog/top-10-digital-marketing-agencies-jaipur-seocial-media-solutions</loc>
-    <lastmod>2025-03-04T11:47:29.840Z</lastmod>
+    <lastmod>2025-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://seocialmedia.in/blog/best-digital-marketing-agency-jaipur-seocial-media-solutions</loc>
+    <lastmod>2025-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://seocialmedia.in/blog/best-digital-marketing-company-jaipur-seocial-media</loc>
+    <lastmod>2025-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://seocialmedia.in/blog/seo-for-small-businesses-jaipur</loc>
+    <lastmod>2025-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ADDITIONAL SERVICE PAGES -->
+  <url>
+    <loc>https://seocialmedia.in/content-writing-company-jaipur</loc>
+    <lastmod>2025-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://seocialmedia.in/video-editing-company-jaipur</loc>
+    <lastmod>2025-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- ABOUT US PAGE -->
+  <url>
+    <loc>https://seocialmedia.in/about-us</loc>
+    <lastmod>2025-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- CONTACT US PAGE -->
+  <url>
+    <loc>https://seocialmedia.in/contact-us</loc>
+    <lastmod>2025-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- CAREER PAGE -->
+  <url>
+    <loc>https://seocialmedia.in/career</loc>
+    <lastmod>2025-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-   <url>
-    <loc>https://seocialmedia.in/blog/how-to-choose-best-digital-marketing-company-jaipur</loc>
-    <lastmod>2025-05-27T11:47:29.840Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+
+  <!-- GOOGLE ADS SERVICES -->
+  <url>
+    <loc>https://seocialmedia.in/google-ads-services</loc>
+    <lastmod>2025-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
-   <url>
-    <loc>https://seocialmedia.in/blog/best-google-ads-company-jaipur-seocial-media</loc>
-    <lastmod>2025-05-27T11:47:29.840Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+
+  <!-- PRIVACY POLICY -->
+  <url>
+    <loc>https://seocialmedia.in/privacy-policy</loc>
+    <lastmod>2025-06-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
+
+  <!-- 
+  PLACEHOLDER FOR NEW BLOG POSTS - Add new blog posts here with:
+  - Priority: 0.9 for fresh content
+  - changefreq: weekly for active posts
+  - lastmod: current date when published
+  
+  Example format for new blog posts:
+  <url>
+    <loc>https://seocialmedia.in/blog/your-new-blog-post-url</loc>
+    <lastmod>YYYY-MM-DD</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  -->
+
 </urlset>

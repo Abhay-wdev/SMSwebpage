@@ -12,6 +12,8 @@ import {
   CheckCircle,
   BarChart
 } from "lucide-react";
+
+
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
@@ -129,6 +131,19 @@ const Seo = () => {
 
   const detailedServices = [
     {
+      title: "Expertise Across Multiple Business Domains",
+      description: `At SEOcial Media Solutions, we help different types of businesses grow online. Whether you’re in textiles, diamonds, real estate, healthcare, e-commerce, education, or local services, we create marketing plans that work. Our team knows what each industry needs and helps you reach more people, get more customers, and grow your business:`,
+      points: [
+        "Healthcare & Clinics",
+        "Real Estate",
+        "Education & Coaching",
+        "E-commerce & Retail",
+        "Textile & Diamond Industry",
+        "Restaurants & Local Services",
+        
+      ]
+    },
+    {
       title: "SEO Audit Services",
       description: `Our comprehensive SEO audit delves deep into your website's current status. We analyze how well your site meets SEO requirements, checking whether it can be crawled and indexed by search engines correctly. Our expert team assesses your site architecture to uncover opportunities for improvement, examining crucial elements including:`,
       points: [
@@ -141,6 +156,7 @@ const Seo = () => {
         "URL structure optimization"
       ]
     },
+    
     {
       title: "Keyword Research Excellence",
       description: `Keyword research is the foundation of successful SEO strategy. We identify the exact words and phrases your potential customers use in their searches. Our advanced keyword research process includes:`,
@@ -195,10 +211,10 @@ const Seo = () => {
   return (
     <section className="bg-gradient-to-br from-amber-50 via-white to-orange-50">
     <Helmet>
-    <title>Best SEO Services in Jaipur | SEOcial Media Solutions</title>
+    <title>Top SEO Company in Jaipur – Get Ranks and Leads Growth</title>
     <meta
         name="description"
-        content="Award-winning SEO agency in Jaipur with 98% client satisfaction. Expert digital marketing, local SEO, and organic traffic optimization services. Get free SEO audit today!"
+        content="SEOcial Media Solutions is one of the top SEO Company in Jaipur, which offers ROI-Driven online growth, organic ranking and leads to their client’s business. Enquire Now!"
     />
     <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -210,7 +226,7 @@ const Seo = () => {
     
     {/* Open Graph Tags for Social Media */}
     <meta property="og:title" content="Best SEO Services in Jaipur | Digital Marketing & SEO Services | SEOcial Media Solutions" />
-    <meta property="og:description" content="Award-winning SEO agency in Jaipur with 98% client satisfaction. Expert digital marketing, local SEO, and organic traffic optimization services. Get free SEO audit today!" />
+    <meta property="og:description" content="SEOcial Media is one of the top SEO Company in Jaipur, which offers ROI-Driven online growth, organic ranking and leads to their client’s business. Enquire Now!" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://seocialmedia.in/seo" />
     <meta property="og:image" content="https://seocialmedia.in/images/seo-agency-jaipur.jpg" />
@@ -238,11 +254,11 @@ const Seo = () => {
           {/* Hero Section */}
           <div className="text-center relative mb-16">
             <span className="inline-block px-6 py-2 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-sm rounded-full font-medium shadow-lg">
-              Expert SEO Services
+              <h1>Best SEO Company in Jaipur</h1>
             </span>
-            <h1 className="mt-6 pb-3 text-5xl font-bold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent md:text-7xl">
+            <h2 className="mt-6 pb-3 text-5xl font-bold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent md:text-7xl">
               Turbocharge Your Web Traffic
-            </h1>
+            </h2>
             <p className="mt-6 text-gray-600 text-xl md:text-2xl max-w-3xl mx-auto">
               Drive sustainable growth through our data-driven SEO strategies
             </p>

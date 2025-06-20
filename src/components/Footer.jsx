@@ -28,13 +28,13 @@ const Footer = () => {
   ];
 
   const services = [
-    { name: 'SEO Optimization', href: '/seo' },
-    { name: 'Social Media Marketing', href: '/social-media-marketing' },
-    { name: 'Google Services', href: '/google' },
-    // { name: 'Google Business Profile', href: '/google-business-profile' },
-    { name: 'Website Development', href: '/web-development' },
-    { name: 'Content Writing', href: '/content' },
-    { name: 'Video Editing', href: '/video-editing' },
+    { name: 'SEO Optimization', href: '/seo-company-jaipur' },
+    { name: 'Social Media Marketing', href: '/social-media-marketing-company-jaipur' },
+    { name: 'Google Services', href: '/google-seo-business-services-jaipur' },
+    { name: 'Google Business Profile', href: '/google-business-profile-services-jaipur' },
+    { name: 'Website Development', href: '/web-development-jaipur' },
+    { name: 'Content Writing', href: '/content-writing-company-jaipur' },
+    { name: 'Video Editing', href: '/video-editing-company-jaipur' },
   ];
 
   const socialLinks = [
@@ -53,7 +53,7 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center">
               <img
-                src="images/footer-logo.jpg"
+                src="/images/footer-logo.jpg"
                 alt="Company Logo"
                 className="h-12 w-auto"
               />
