@@ -119,9 +119,9 @@ const AboutUs = () => {
             <span className="inline-block px-4 py-1 bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-sm rounded-full font-medium">
               Your Digital Partner
             </span>
-            <h1 className="mt-6 pb-4 text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent md:text-6xl">
+            <h2 className="mt-6 pb-4 text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent md:text-6xl">
               Transforming Digital Presence
-            </h1>
+            </h2>
             <p className="mt-6 text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
               Your complete digital partner for website development, SEO, social media,
               and strategic online marketing solutions.

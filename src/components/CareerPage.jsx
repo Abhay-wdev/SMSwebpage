@@ -121,8 +121,8 @@ const CareerPage = () => {
 
       const finalMessage = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nSubject: ${subject}\nMessage: ${message}`;
 
-      emailjs.send('service_efxd05o', 'template_4zz2tqf', { message: finalMessage }, {
-        publicKey: 'HEA2zJTLkbPc2Vq98',
+      emailjs.send('service_axmf7gf', 'template_y4bn1hr', { message: finalMessage }, {
+        publicKey: 'Jz3fmNPip850w3-JO',
       })
         .then(() => {
           form.current.reset();
