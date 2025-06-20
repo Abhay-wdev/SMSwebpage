@@ -79,12 +79,12 @@ const BlogDetailPage = () => {
         <title>{pageTitle}</title>
         <meta name="description" content={blog.metaDescription} />
         <meta name="keywords" content={blog.tags.join(', ')} />
-        <link rel="canonical" href={`https://dsconcept.in/blog/${slug}`} />
+        <link rel="canonical" href={`https://seocialmedia.in/blog/${slug}`} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={blog.metaDescription} />
-        <meta property="og:url" content={`https://dsconcept.in/blog/${slug}`} />
+        <meta property="og:url" content={`https://seocialmedia.in/blog/${slug}`} />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content={`https://dsconcept.in${blog.image}`} />
+        <meta property="og:image" content={`https://seocialmedia.in${blog.image}`} />
         <meta property="article:published_time" content={blog.date} />
         <meta property="article:author" content={blog.author} />
         {blog.tags.map((tag, index) => (
@@ -160,7 +160,7 @@ const BlogDetailPage = () => {
               <h3 className="text-lg text-gray-700 font-medium mb-3">Share this article</h3>
               <div className="flex space-x-4">
                 <a 
-                  href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(`https://dsconcept.in/blog/${slug}`)}&text=${encodeURIComponent(blog.title)}`}
+                  href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(`https://seocialmedia.in/blog/${slug}`)}&text=${encodeURIComponent(blog.title)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-500 hover:text-blue-400 transition-colors"
@@ -171,7 +171,7 @@ const BlogDetailPage = () => {
                   </svg>
                 </a>
                 <a 
-                  href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://dsconcept.in/blog/${slug}`)}`}
+                  href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://seocialmedia.in/blog/${slug}`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-500 hover:text-blue-600 transition-colors"
@@ -182,7 +182,7 @@ const BlogDetailPage = () => {
                   </svg>
                 </a>
                 <a 
-                  href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`https://dsconcept.in/blog/${slug}`)}`}
+                  href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`https://seocialmedia.in/blog/${slug}`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-500 hover:text-blue-700 transition-colors"
