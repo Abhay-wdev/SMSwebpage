@@ -145,8 +145,8 @@ const ContentWritingServices = () => {
            name="description"
            content="Create impactful and engaging content with SEOcial Media's professional content writing services. Enhance your online presence with quality content."
          />
-         <meta name="keywords" content="IT services, web development, SEO, digital marketing" />
-         <link rel="canonical" href="https://seocialmedia.in/content" />
+         <meta name="keywords" content="IT services, content writing services, web development, SEO, digital marketing" />
+         <link rel="canonical" href="https://seocialmedia.in/content-writing-company-jaipur" />
          <meta property="og:title" content="Best Content Writing Services in Jaipur | SEOcial Media Soltions" />
          <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
          <meta property="og:image" content="https://seocialmedia.in/images/og-home.jpg" />
@@ -160,12 +160,12 @@ const ContentWritingServices = () => {
         <div className="max-w-7xl mx-auto">
           {/* Hero Section */}
           <div className="text-center">
-            <span className="inline-block px-4 py-1 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-sm rounded-full font-medium">
-              Professional Content Writing Services
-            </span>
-            <h1 className="mt-6 text-4xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent md:text-6xl">
-              Expert Content Writing Services That Drive Results
+            <h1 className="inline-block px-4 py-1 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-sm rounded-full font-medium">
+              Top Content Writing Services in Jaipur
             </h1>
+            <h2 className="mt-6 text-4xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent md:text-6xl">
+              Expert Content Writing Services That Drive Results
+            </h2>
             <p className="mt-6 text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
               Transform your digital presence with SEO-optimized, engaging content that connects with your audience and drives measurable business growth
             </p>

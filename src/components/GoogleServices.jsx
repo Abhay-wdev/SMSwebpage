@@ -161,7 +161,7 @@ const GoogleServices = () => {
            content="Maximize your online presence with expert Google Business Profile and Google Ads management. Drive targeted traffic and grow your business."
          />
          <meta name="keywords" content="Google Ads, Business Profile, digital marketing, local SEO" />
-         <link rel="canonical" href="https://seocialmedia.in/google-services" />
+         <link rel="canonical" href="https://seocialmedia.in/google-services-company-jaipur" />
      </Helmet>
     <section className="bg-gradient-to-br from-green-50 via-white to-lime-50">
     <div className="px-4 py-16 md:px-16 lg:px-24">
@@ -172,12 +172,12 @@ const GoogleServices = () => {
           transition={{ duration: 0.5 }}
           className="text-center relative"
         >
-          <span className="inline-block px-6 py-2 bg-gradient-to-r from-green-500 to-emerald-500 text-white text-sm rounded-full font-medium shadow-lg">
-            Google Marketing Solutions
-          </span>
-          <h1 className="mt-6 pb-3 text-5xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent md:text-7xl">
-            Elevate Your Digital Presence
+          <h1 className="inline-block px-6 py-2 bg-gradient-to-r from-green-500 to-emerald-500 text-white text-sm rounded-full font-medium shadow-lg">
+            Top Google Services Agency in Jaipur
           </h1>
+          <h2 className="mt-6 pb-3 text-5xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent md:text-7xl">
+            Elevate Your Digital Presence
+          </h2>
           <p className="mt-6 text-gray-600 text-xl md:text-2xl max-w-3xl mx-auto">
             Harness the power of Google Business Profile and Google Ads to drive business growth
           </p>

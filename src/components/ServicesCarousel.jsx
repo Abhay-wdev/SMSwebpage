@@ -12,7 +12,7 @@ const ServicesCarousel = () => {
       title: 'Web Development',
       description: 'Building modern, responsive websites that drive results.',
       image: 'images/website-dev.jpg',
-      actionLink: '/web-development-jaipur',
+      actionLink: '/web-development-company-jaipur',
     },
     {
       icon: Search,
@@ -33,7 +33,7 @@ const ServicesCarousel = () => {
       title: 'Google Services',
       description: 'Strategic PPC campaigns that maximize ROI.',
       image: 'images/googlead.jpg',
-      actionLink: '/google-seo-business-services-jaipur',
+      actionLink: '/google-services-company-jaipur',
     },
     {
       icon: PenTool,

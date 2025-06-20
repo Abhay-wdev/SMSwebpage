@@ -133,13 +133,13 @@ const WebDevelopment = () => {
   return (
     <>
     <Helmet>
-         <title>Best Website Development Agency in Jaipur | SEOcial Media Solutions</title>
+         <title>Top Website Development Agency in Jaipur | SEOcial Media Solutions</title>
          <meta
            name="description"
            content=" Create a stunning, responsive, and user-friendly website with SEOcial Media's expert website development services. Build your online brand today"
          />
          <meta name="keywords" content="IT services, web development, SEO, digital marketing" />
-         <link rel="canonical" href="https://seocialmedia.in/web-development" />
+         <link rel="canonical" href="https://seocialmedia.in/web-development-company-jaipur" />
          <meta property="og:title" content="Best Website Development Agency in Jaipur | SEOcial Media Solutions" />
          <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
          <meta property="og:image" content="https://seocialmedia.in/images/og-home.jpg" />
@@ -156,11 +156,11 @@ const WebDevelopment = () => {
             transition={{ duration: 0.5 }}
             className="text-center"
           >
-            <span className="inline-block px-4 py-1 bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-sm rounded-full font-medium">
-              Professional Web Solutions
-            </span>
+            <h1 className="inline-block px-4 py-1 bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-sm rounded-full font-medium">
+             Best Web Development Services in Jaipur 
+            </h1>
             <h1 className="mt-6 text-4xl pb-3 font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent md:text-6xl">
-           Best Web Development Services in Jaipur
+         Professional Web Solutions
             </h1>
             <p className="mt-6 text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
               Web design & development services involve designing, building, regularly supporting and gradually evolving different types of websites.

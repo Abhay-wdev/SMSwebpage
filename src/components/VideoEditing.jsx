@@ -156,11 +156,11 @@ const VideoEditing = () => {
           content="Transform your raw footage into compelling videos with the best video editing company in Jaipur. Create stunning visual content with SEOcial Media Solutions!"
         />
         <meta name="keywords" content="video editing, professional videos, video production, best video editing company in Jaipur" />
-        <link rel="canonical" href="https://seocialmedia.in/video-editing" />
+        <link rel="canonical" href="https://seocialmedia.in/video-editing-company-jaipur" />
         <meta property="og:title" content="Best Video Editing Company in Jaipur | SEOcial Media Solutions" />
         <meta property="og:description" content="Transform your raw footage into compelling and engaging videos with the best video editing company in Jaipur." />
         <meta property="og:image" content="https://seocialmedia.in/images/og-video.jpg" />
-        <meta property="og:url" content="https://seocialmedia.in/video-editing" />
+        <meta property="og:url" content="https://seocialmedia.in/video-editing-company-jaipur" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
@@ -177,12 +177,12 @@ const VideoEditing = () => {
             transition={{ duration: 0.5 }}
             className="text-center"
           >
-            <span className="inline-block px-4 py-1 bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-sm rounded-full font-medium mb-4">
+            <h1 className="inline-block px-4 py-1 bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-sm rounded-full font-medium mb-4">
               Best Video Editing Company in Jaipur
-            </span>
-            <h1 className="mt-6 text-4xl font-bold text-white md:text-6xl leading-tight">
-              Transform Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-purple-300">Vision Into Reality</span> with Jaipur's Top Video Editing Services
             </h1>
+            <h2 className="mt-6 text-4xl font-bold text-white md:text-6xl leading-tight">
+              Transform Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-purple-300">Vision Into Reality</span> with Jaipur's Top Video Editing Services
+            </h2>
             <p className="mt-6 text-gray-200 text-lg md:text-xl max-w-3xl mx-auto">
               At SEOcial Media Solutions, we specialize in creating high-quality, engaging videos that captivate your audience. Whether it's corporate videos, social media clips, or promotional content, we deliver the best video editing services in Jaipur.
             </p>

@@ -145,14 +145,14 @@ const ContactForm = () => {
   return (
     <>
     <Helmet>
-         <title>Contact Us | Best Digital Marketing and Web Development Company in Jaipur | SEOcial Media Solutions</title>
+         <title>Best Digital Marketing and Web Development Company in Jaipur | SEOcial Media Solutions</title>
          <meta
            name="description"
            content="Get in touch with SEOcial Media for expert digital marketing, website development, and SEO solutions. Let's grow your business together."
          />
-         <meta name="keywords" content="IT services, web development, SEO, digital marketing" />
+         <meta name="keywords" content="IT services,best web development company, SEO, digital marketing" />
          <link rel="canonical" href="https://seocialmedia.in/contact" />
-         <meta property="og:title" content="Contact Us| Best Digital Marketing and Web Development Company in Jaipur | SEOcial Media Solutions" />
+         <meta property="og:title" content="Best Digital Marketing and Web Development Company in Jaipur | SEOcial Media Solutions" />
          <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
          <meta property="og:image" content="https://seocialmedia./images/og-home.jpg" />
          <meta property="og:url" content="https://seocialmedia.in/" />

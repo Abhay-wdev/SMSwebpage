@@ -151,13 +151,13 @@ const SocialMediaServices = () => {
   return (
     <>
     <Helmet>
-         <title>Best Social Media Marketing Agency in Jaipur | SEOcial Media Solutions</title>
+         <title>Top Social Media Marketing Agency in Jaipur - SEOcial Media Solutions</title>
          <meta
            name="description"
            content="Engage your audience and boost brand visibility with SEOcial Media's targeted social media marketing solutions tailored to your business goals."
          />
-         <meta name="keywords" content="IT services, web development, SEO, digital marketing" />
-         <link rel="canonical" href="https://seocialmedia.in/social-media-marketing" />
+         <meta name="keywords" content="IT services,Social Media Marketing, web development, SEO, digital marketing" />
+         <link rel="canonical" href="https://seocialmedia.in/social-media-marketing-company-jaipur" />
          <meta property="og:title" content="Best Social Media Marketing Agency in Jaipur | SEOcial Media Soltions" />
          <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
          <meta property="og:image" content="https://seocialmedia.in/images/og-home.jpg" />
@@ -169,12 +169,12 @@ const SocialMediaServices = () => {
         <div className="max-w-7xl mx-auto">
           {/* Hero Section */}
           <div className="text-center">
-            <span className="inline-block px-4 py-1 bg-gradient-to-r from-pink-500 to-purple-500 text-white text-sm rounded-full font-medium">
-              Social Media Marketing Services
-            </span>
-            <h1 className="mt-6 text-4xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent md:text-6xl">
-              Transform Your Social Media Presence
+            <h1 className="inline-block px-4 py-1 bg-gradient-to-r from-pink-500 to-purple-500 text-white text-sm rounded-full font-medium">
+             Best Social Media Marketing Company in Jaipur
             </h1>
+            <h2 className="mt-6 text-4xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent md:text-6xl">
+              Transform Your Social Media Presence
+            </h2>
             <p className="mt-6 text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
               Drive engagement, build meaningful connections, and achieve measurable results with our comprehensive social media marketing solutions
             </p>

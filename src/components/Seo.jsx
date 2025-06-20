@@ -239,7 +239,7 @@ const Seo = () => {
     <meta name="twitter:image" content="https://seocialmedia.in/images/seo-agency-jaipur.jpg" />
     
     {/* Canonical URL */}
-    <link rel="canonical" href="https://seocialmedia.in/seo" />
+    <link rel="canonical" href="https://seocialmedia.in/seo-company-jaipur" />
     
     {/* Additional SEO Meta Tags */}
     <meta name="author" content="SEOcial Media Solutions" />

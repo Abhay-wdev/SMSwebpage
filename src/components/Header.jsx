@@ -21,9 +21,9 @@ const Header = () => {
       submenu: [
         { title: "SEO Optimization", href: "/seo-company-jaipur" },
         { title: "Social Media Marketing", href: "/social-media-marketing-company-jaipur" },
-        { title: "Google services", href: "/google-seo-business-services-jaipur" },
-        { title: "Google Business Profile", href: "/google-business-profile-services-jaipur" },
-        { title: "Website Development", href: "/web-development-jaipur" },
+        { title: "Google services", href: "/google-services-company-jaipur" },
+        // { title: "Google Business Profile", href: "/google-business-profile-services-jaipur" },
+        { title: "Website Development", href: "/web-development-company-jaipur" },
         { title: "Content Writing", href: "/content-writing-company-jaipur" },
         { title: "Video Editing", href: "/video-editing-company-jaipur" },
 

@@ -41,7 +41,7 @@ function App() {
               }
             />
             <Route path="/about-us" element={<AboutUs />} />
-            <Route path="/web-development-jaipur" element={<WebDevelopment />} />
+            <Route path="/web-development-company-jaipur" element={<WebDevelopment />} />
             <Route path="/seo-company-jaipur" element={<Seo />} />
             <Route path="/google-ads-company-jaipur" element={<GoogleAdsServices />} />
             <Route path="/content-writing-company-jaipur" element={<ContentWritingServices />} />
@@ -49,7 +49,7 @@ function App() {
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/career" element={<CareerPage />} />
             <Route path="/google-business-profile-services-jaipur" element={<GoogleBusinessServices />} />
-            <Route path="/google-seo-business-services-jaipur" element={<GoogleServices />} />
+            <Route path="/google-services-company-jaipur" element={<GoogleServices />} />
             <Route path="/blog" element={<BlogPageNew />} />
             <Route path="/blog/:slug" element={<BlogDetailPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} /> {/* Add this line */}
