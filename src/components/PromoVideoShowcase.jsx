@@ -142,9 +142,9 @@ const DualVideoShowcase = () => {
             <Star className="w-6 h-6 text-yellow-400 fill-current" />
           </div>
           
-          <h1 className="text-4xl sm:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 mb-4">
+          <h2 className="text-4xl sm:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 mb-4">
             SEOcial Media Solutions
-          </h1>
+          </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto rounded-full mb-6"></div>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Transforming Businesses in Jaipur with Innovative Digital Strategies

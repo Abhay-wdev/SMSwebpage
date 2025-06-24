@@ -15,13 +15,13 @@ const Header = () => {
 
   const menuItems = [
     { title: "Home", href: "/" },
-    { title: "About", href: "/about-us" },
+    { title: "About", href: "/digital-marketing-company-jaipur" },
     {
       title: "Services",
       submenu: [
         { title: "SEO Optimization", href: "/seo-company-jaipur" },
         { title: "Social Media Marketing", href: "/social-media-marketing-jaipur" },
-        { title: "Google services", href: "/google-services-company-jaipur" },
+        { title: "Google services", href: "/lead-generation-company-jaipur " },
         // { title: "Google Business Profile", href: "/google-business-profile-services-jaipur" },
         { title: "Website Development", href: "/web-development-company-jaipur" },
         { title: "Content Writing", href: "/content-writing-company-jaipur" },

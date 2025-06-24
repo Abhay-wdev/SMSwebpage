@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
   Search, 
   TrendingUp, 
@@ -8,16 +8,50 @@ import {
   Users,
   Clock,
   Target,
-  
   CheckCircle,
-  BarChart
+  BarChart,
+  ChevronDown,
+  ChevronUp,
+  HelpCircle
 } from "lucide-react";
-
 
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
 const Seo = () => {
+  const [openFaq, setOpenFaq] = useState(null);
+
+  const toggleFaq = (index) => {
+    setOpenFaq(openFaq === index ? null : index);
+  };
+
+  const faqs = [
+    {
+      question: "What makes SEOcial Media Solutions the best SEO company in Jaipur?",
+      answer: "We stand out as the best SEO company in Jaipur through our proven R.A.P.I.D approach, data-driven strategies, and 98% client satisfaction rate. Our team combines deep industry expertise with cutting-edge SEO techniques, delivering measurable results across multiple business domains. We provide transparent reporting, customized solutions, and maintain long-term partnerships focused on sustainable growth rather than quick fixes."
+    },
+    {
+      question: "How long does it take to see results from your SEO services?",
+      answer: "While SEO is a long-term strategy, many of our clients start seeing initial improvements within 3-6 months. Significant ranking improvements and traffic growth typically become evident within 6-12 months. However, the timeline depends on factors like your industry competition, current website status, and the keywords you're targeting. We focus on delivering sustainable, long-lasting results rather than temporary gains."
+    },
+    {
+      question: "How do you generate organic leads for businesses through SEO?",
+      answer: "We generate organic leads through a comprehensive approach: strategic keyword research to target high-intent searches, content optimization that addresses user queries, technical SEO improvements for better user experience, local SEO for geographic targeting, and conversion rate optimization. Our process ensures that the traffic we drive is not just higher in volume, but consists of qualified prospects ready to engage with your business."
+    },
+    {
+      question: "What industries or business niches do you specialize in for SEO?",
+      answer: "We have expertise across multiple business domains including Healthcare & Clinics, Real Estate, Education & Coaching, E-commerce & Retail, Textile & Diamond Industry, and Restaurants & Local Services. Our team understands the unique challenges and opportunities in each sector, allowing us to create industry-specific strategies that deliver targeted results for your particular business niche."
+    },
+    {
+      question: "How often do you provide SEO reports and performance updates?",
+      answer: "We believe in complete transparency and provide comprehensive monthly reports detailing your SEO performance. These reports include ranking improvements, traffic growth, conversion metrics, and detailed insights into our ongoing activities. Additionally, we provide quarterly strategy reviews and are always available for discussions about your campaign's progress and future opportunities."
+    },
+    {
+      question: "Do you also offer local SEO services for Jaipur-based businesses?",
+      answer: "Absolutely! Local SEO is one of our core specialties. We help Jaipur-based businesses dominate local search results through Google My Business optimization, local citation building, location-based keyword targeting, local content creation, and review management. Our local SEO strategies are designed to help you capture customers in your immediate geographic area and convert them into loyal clients."
+    }
+  ];
+
   const technologies = [
     {
       icon: Search,
@@ -72,12 +106,12 @@ const Seo = () => {
     {
       title: "Content Creation",
       description: "Strategic content development that informs, educates, and helps users while targeting relevant keywords.",
-     image: "/images/content-strategy.jpg"
+      image: "/images/content-strategy.jpg"
     },
     {
       title: "Technical SEO",
       description: "Expert optimization of your website's technical aspects including speed, structure, and accessibility.",
-     image: "/images/technical-seo.jpg"
+      image: "/images/technical-seo.jpg"
     },
     {
       title: "Local SEO",
@@ -132,15 +166,14 @@ const Seo = () => {
   const detailedServices = [
     {
       title: "Expertise Across Multiple Business Domains",
-      description: `At SEOcial Media Solutions, we help different types of businesses grow online. Whether you’re in textiles, diamonds, real estate, healthcare, e-commerce, education, or local services, we create marketing plans that work. Our team knows what each industry needs and helps you reach more people, get more customers, and grow your business:`,
+      description: `At SEOcial Media Solutions, we help different types of businesses grow online. Whether you're in textiles, diamonds, real estate, healthcare, e-commerce, education, or local services, we create marketing plans that work. Our team knows what each industry needs and helps you reach more people, get more customers, and grow your business:`,
       points: [
         "Healthcare & Clinics",
         "Real Estate",
         "Education & Coaching",
         "E-commerce & Retail",
         "Textile & Diamond Industry",
-        "Restaurants & Local Services",
-        
+        "Restaurants & Local Services"
       ]
     },
     {
@@ -156,7 +189,6 @@ const Seo = () => {
         "URL structure optimization"
       ]
     },
-    
     {
       title: "Keyword Research Excellence",
       description: `Keyword research is the foundation of successful SEO strategy. We identify the exact words and phrases your potential customers use in their searches. Our advanced keyword research process includes:`,
@@ -210,44 +242,44 @@ const Seo = () => {
 
   return (
     <section className="bg-gradient-to-br from-amber-50 via-white to-orange-50">
-    <Helmet>
-    <title>Top SEO Company in Jaipur – Get Ranks and Leads Growth</title>
-    <meta
-        name="description"
-        content="SEOcial Media Solutions is one of the top SEO Company in Jaipur, which offers ROI-Driven online growth, organic ranking and leads to their client’s business. Enquire Now!"
-    />
-    <meta name="robots" content="index, follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
-    <meta 
-        name="keywords" 
-        content="SEO services Jaipur, digital marketing agency, search engine optimization, SEO company Jaipur, best SEO services, local SEO, SEOcial Media Solutions" 
-    />
-    
-    {/* Open Graph Tags for Social Media */}
-    <meta property="og:title" content="Best SEO Services in Jaipur | Digital Marketing & SEO Services | SEOcial Media Solutions" />
-    <meta property="og:description" content="SEOcial Media is one of the top SEO Company in Jaipur, which offers ROI-Driven online growth, organic ranking and leads to their client’s business. Enquire Now!" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://seocialmedia.in/seo" />
-    <meta property="og:image" content="https://seocialmedia.in/images/seo-agency-jaipur.jpg" />
-    <meta property="og:locale" content="en_IN" />
-    
-    {/* Twitter Card Tags */}
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Top SEO Agency in Jaipur | Digital Marketing & SEO Services" />
-    <meta name="twitter:description" content="Award-winning SEO agency in Jaipur with 98% client satisfaction. Expert digital marketing & SEO services." />
-    <meta name="twitter:image" content="https://seocialmedia.in/images/seo-agency-jaipur.jpg" />
-    
-    {/* Canonical URL */}
-    <link rel="canonical" href="https://seocialmedia.in/seo-company-jaipur" />
-    
-    {/* Additional SEO Meta Tags */}
-    <meta name="author" content="SEOcial Media Solutions" />
-    <meta name="geo.region" content="IN-RJ" />
-    <meta name="geo.placename" content="Jaipur" />
-    <meta name="geo.position" content="26.9124;75.7873" />
-    <meta name="ICBM" content="26.9124, 75.7873" />
-</Helmet>
+      <Helmet>
+        <title>Top SEO Company in Jaipur – Get Ranks and Leads Growth</title>
+        <meta
+          name="description"
+          content="SEOcial Media Solutions is one of the top SEO Company in Jaipur, which offers ROI-Driven online growth, organic ranking and leads to their client's business. Enquire Now!"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
+        <meta 
+          name="keywords" 
+          content="SEO services Jaipur, digital marketing agency, search engine optimization, SEO company Jaipur, best SEO services, local SEO, SEOcial Media Solutions" 
+        />
+        
+        {/* Open Graph Tags for Social Media */}
+        <meta property="og:title" content="Best SEO Services in Jaipur | Digital Marketing & SEO Services | SEOcial Media Solutions" />
+        <meta property="og:description" content="SEOcial Media is one of the top SEO Company in Jaipur, which offers ROI-Driven online growth, organic ranking and leads to their client's business. Enquire Now!" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://seocialmedia.in/seo" />
+        <meta property="og:image" content="https://seocialmedia.in/images/seo-agency-jaipur.jpg" />
+        <meta property="og:locale" content="en_IN" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Top SEO Agency in Jaipur | Digital Marketing & SEO Services" />
+        <meta name="twitter:description" content="Award-winning SEO agency in Jaipur with 98% client satisfaction. Expert digital marketing & SEO services." />
+        <meta name="twitter:image" content="https://seocialmedia.in/images/seo-agency-jaipur.jpg" />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://seocialmedia.in/seo-company-jaipur" />
+        
+        {/* Additional SEO Meta Tags */}
+        <meta name="author" content="SEOcial Media Solutions" />
+        <meta name="geo.region" content="IN-RJ" />
+        <meta name="geo.placename" content="Jaipur" />
+        <meta name="geo.position" content="26.9124;75.7873" />
+        <meta name="ICBM" content="26.9124, 75.7873" />
+      </Helmet>
 
       <div className="px-4 py-16 md:px-16 lg:px-24">
         <div className="max-w-7xl mx-auto">
@@ -286,8 +318,8 @@ const Seo = () => {
             ))}
           </div>
 
-  {/* Introduction Section */}
-  <div className="mb-24 mt-10">
+          {/* Introduction Section */}
+          <div className="mb-24 mt-10">
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
                 From Invisible to Invincible: SEO Services That Fuel Growth
@@ -368,10 +400,6 @@ const Seo = () => {
             </div>
           </div>
 
-          
-
-          
-
           {/* Process Section */}
           <div className="py-24">
             <div className="text-center mb-16">
@@ -438,6 +466,59 @@ const Seo = () => {
             </div>
           </div>
 
+          {/* FAQ Section */}
+          <div className="py-24">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full mb-6">
+                <HelpCircle className="w-8 h-8 text-white" />
+              </div>
+              <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-xl text-gray-600">Everything you need to know about our SEO services</p>
+            </div>
+            
+            <div className="max-w-4xl mx-auto">
+              {faqs.map((faq, index) => (
+                <div key={index} className="mb-4">
+                  <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                    <button
+                      onClick={() => toggleFaq(index)}
+                      className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gradient-to-r hover:from-amber-50 hover:to-orange-50 transition-all duration-300"
+                    >
+                      <h3 className="text-lg font-semibold text-gray-800 pr-4">
+                        {faq.question}
+                      </h3>
+                      <div className="flex-shrink-0">
+                        {openFaq === index ? (
+                          <ChevronUp className="w-6 h-6 text-amber-600 transform transition-transform duration-300" />
+                        ) : (
+                          <ChevronDown className="w-6 h-6 text-amber-600 transform transition-transform duration-300" />
+                        )}
+                      </div>
+                    </button>
+                    
+                    <div className={`transition-all duration-300 ease-in-out ${
+                      openFaq === index 
+                        ? 'max-h-96 opacity-100' 
+                        : 'max-h-0 opacity-0'
+                    } overflow-hidden`}>
+                      <div className="px-8 pb-6 pt-2">
+                        <div className="border-t border-gray-100 pt-4">
+                          <p className="text-gray-600 leading-relaxed">
+                            {faq.answer}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            
+        
+          </div>
+
           {/* CTA Section */}
           <div className="text-center py-16">
             <div className="bg-gradient-to-r from-amber-600 to-orange-600 rounded-2xl p-12 text-white">
@@ -446,9 +527,9 @@ const Seo = () => {
                 Join hundreds of businesses that have achieved remarkable growth with our SEO expertise. Get your free consultation today and discover how we can help you reach your digital marketing goals.
               </p>
               <Link to={"/contact"}>
-              <button  className="bg-white text-amber-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
-                Start Your SEO Journey
-              </button>
+                <button className="bg-white text-amber-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
+                  Start Your SEO Journey
+                </button>
               </Link>
             </div>
           </div>

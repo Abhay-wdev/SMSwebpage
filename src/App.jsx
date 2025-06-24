@@ -40,7 +40,7 @@ function App() {
                 </>
               }
             />
-            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/digital-marketing-company-jaipur" element={<AboutUs />} />
             <Route path="/web-development-company-jaipur" element={<WebDevelopment />} />
             <Route path="/seo-company-jaipur" element={<Seo />} />
             <Route path="/google-ads-company-jaipur" element={<GoogleAdsServices />} />
@@ -49,11 +49,13 @@ function App() {
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/career" element={<CareerPage />} />
             <Route path="/google-business-profile-services-jaipur" element={<GoogleBusinessServices />} />
-            <Route path="/google-services-company-jaipur" element={<GoogleServices />} />
+            <Route path="/lead-generation-company-jaipur" element={<GoogleServices />} />
             <Route path="/blog" element={<BlogPageNew />} />
             <Route path="/blog/:slug" element={<BlogDetailPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} /> {/* Add this line */}
             <Route path="/video-editing-company-jaipur" element={<VideoEditing />} /> {/* Add this line */}
+            <Route path="/video-editing-company-jaipur" element={<VideoEditing />} /> {/* Add this line */}
+
 
             {/* Handle 404 */}
             <Route path="*" element={<Navigate to="/" replace />} />

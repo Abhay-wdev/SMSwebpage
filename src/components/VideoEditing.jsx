@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
   Video, 
   Edit, 
@@ -10,7 +10,12 @@ import {
   PenTool, 
   Search,
   ArrowRight,
-//   Star
+  ChevronDown,
+  ChevronUp,
+  FileText,
+  Users,
+  CheckCircle,
+  BarChart
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -60,6 +65,62 @@ const fadeInLeft = {
 };
 
 const VideoEditing = () => {
+  const [openFAQ, setOpenFAQ] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenFAQ(openFAQ === index ? null : index);
+  };
+
+  const faqData = [
+    {
+      question: "What types of video editing services do you offer in Jaipur?",
+      answer: "At SEOcial Media Solutions, we provide comprehensive video editing services including corporate videos, promotional videos, social media clips, event coverage, animation, and motion graphics. Our Jaipur-based team specializes in creating visually stunning content tailored to your brand's needs, whether it's for marketing, training, or entertainment purposes."
+    },
+    {
+      question: "How long does the video editing process typically take?",
+      answer: "The turnaround time depends on the complexity and length of your video. Simple edits (like trimming or basic transitions) can be completed within 24-48 hours, while more complex projects (with motion graphics or animations) may take 3-7 days. We always discuss timelines upfront and can accommodate rush requests when needed."
+    },
+    {
+      question: "What file formats do you work with for video editing?",
+      answer: "We work with all major video formats including MP4, MOV, AVI, WMV, and more. For professional projects, we prefer working with high-quality source files like ProRes or RAW formats when available. Final deliverables are provided in the format that best suits your needs, optimized for web, social media, or broadcast."
+    },
+    {
+      question: "Do you provide raw footage shooting services along with editing?",
+      answer: "Yes, we offer complete video production services in Jaipur, including professional shooting with high-end cameras, lighting setups, and audio equipment. Our team can handle everything from pre-production planning to shooting and post-production editing, ensuring a seamless process and consistent quality throughout."
+    },
+    {
+      question: "Can you incorporate our brand colors and logos into the videos?",
+      answer: "Absolutely! Brand consistency is crucial, and we meticulously incorporate your brand elements including colors, logos, typography, and tone into every video we create. We can even develop custom motion graphics templates that maintain your brand identity across all video content."
+    },
+    {
+      question: "What makes your video editing services different from others in Jaipur?",
+      answer: "Our combination of technical expertise, creative storytelling, and marketing-focused approach sets us apart. We don't just edit videos - we craft visual stories that engage audiences and drive results. Our team stays updated with the latest trends and technologies, and we provide strategic recommendations to maximize your video's impact."
+    }
+  ];
+
+  const stats = [
+    {
+      number: "1000+",
+      label: "Videos Edited",
+      icon: <Video className="w-6 h-6" />,
+    },
+    {
+      number: "98%",
+      label: "Client Satisfaction",
+      icon: <CheckCircle className="w-6 h-6" />,
+    },
+    {
+      number: "200+",
+      label: "Happy Clients",
+      icon: <Users className="w-6 h-6" />,
+    },
+    {
+      number: "24-48h",
+      label: "Standard Turnaround",
+      icon: <BarChart className="w-6 h-6" />,
+    }
+  ];
+
   const services = [
     { 
       name: "High-Quality Videos", 
@@ -126,27 +187,6 @@ const VideoEditing = () => {
     }
   ];
 
-//   const testimonials = [
-//     {
-//       name: "Rajesh Sharma",
-//       company: "Jaipur Digital Marketing",
-//       quote: "The team at SEOcial Media Solutions transformed our raw footage into a stunning promotional video that exceeded our expectations. Their attention to detail and creative vision are unmatched.",
-//       avatar: "/images/testimonial-1.jpg"
-//     },
-//     {
-//       name: "Priya Patel",
-//       company: "Eventful Jaipur",
-//       quote: "Working with SEOcial Media Solutions was a pleasure. They captured the essence of our event perfectly and delivered a video that we're proud to share with our clients.",
-//       avatar: "/images/testimonial-2.jpg"
-//     },
-//     {
-//       name: "Amit Agarwal",
-//       company: "Tech Innovators",
-//       quote: "Professional, creative, and efficient. SEOcial Media Solutions delivered our corporate video on time and within budget. We couldn't be happier with the results.",
-//       avatar: "/images/testimonial-3.jpg"
-//     }
-//   ];
-
   return (
     <>
       <Helmet>
@@ -194,13 +234,6 @@ const VideoEditing = () => {
                 Get Started Now
                 <ArrowRight className="w-5 h-5" />
               </Link>
-              {/* <Link
-                to="/portfolio"
-                className="flex items-center justify-center gap-2 px-8 py-4 bg-white text-indigo-600 font-medium rounded-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg w-full sm:w-auto"
-              >
-                See Our Work
-                <Play className="w-5 h-5" />
-              </Link> */}
             </div>
           </motion.div>
         </div>
@@ -209,6 +242,21 @@ const VideoEditing = () => {
       <section className="bg-gradient-to-br from-indigo-50 via-white to-purple-50">
         <div className="px-4 py-16 md:px-16 lg:px-24">
           <div className="max-w-7xl mx-auto">
+            {/* Stats Section */}
+            <div className="mt-16 grid grid-cols-2 gap-8 md:grid-cols-4">
+              {stats.map((stat) => (
+                <div key={stat.label} className="text-center">
+                  <div className="flex justify-center items-center mb-4">
+                    <div className="p-3 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full text-white">
+                      {stat.icon}
+                    </div>
+                  </div>
+                  <div className="text-3xl font-bold text-gray-900">{stat.number}</div>
+                  <div className="text-sm text-gray-600">{stat.label}</div>
+                </div>
+              ))}
+            </div>
+
             {/* Introduction Section */}
             <motion.div
               variants={containerVariants}
@@ -274,7 +322,6 @@ const VideoEditing = () => {
                     alt="Professional Video Editing Studio"
                     className="relative rounded-2xl shadow-xl object-cover w-full h-full"
                   />
-                  
                 </motion.div>
               </div>
             </motion.div>
@@ -356,65 +403,65 @@ const VideoEditing = () => {
                   </motion.div>
                 ))}
               </div>
-            
             </motion.div>
 
-            {/* Testimonials Section */}
-            {/* <motion.div
+            {/* FAQ Section */}
+            <motion.div
               variants={containerVariants}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               className="mt-24"
             >
-              <div className="text-center mb-16">
-                <span className="inline-block px-4 py-1 bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-sm rounded-full font-medium mb-4">
-                  Testimonials
-                </span>
-                <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                  What Our Clients Say
-                </h2>
-                <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-                  Don't just take our word for it. Hear what our satisfied clients have to say about our video editing services.
-                </p>
-              </div>
-              <div className="grid md:grid-cols-3 gap-8">
-                {testimonials.map((testimonial, index) => (
-                  <motion.div
-                    key={index}
-                    variants={fadeInUp}
-                    className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 relative"
-                  >
-                    <div className="absolute -top-6 left-8">
-                      <div className="bg-gradient-to-r from-indigo-500 to-purple-500 p-3 rounded-full shadow-lg">
-                        <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                        </svg>
+              <div className="bg-white rounded-3xl shadow-lg py-16">
+                <div className="max-w-4xl mx-auto px-8">
+                  <div className="text-center mb-12">
+                    <div className="flex justify-center mb-4">
+                      <div className="p-3 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full">
+                        <FileText className="w-8 h-8 text-white" />
                       </div>
                     </div>
-                    <div className="flex items-center mb-6 mt-4">
-                      <img
-                        src={testimonial.avatar}
-                        alt={testimonial.name}
-                        className="w-12 h-12 rounded-full object-cover mr-4"
-                      />
-                      <div>
-                        <h4 className="font-semibold">{testimonial.name}</h4>
-                        <p className="text-gray-500 text-sm">{testimonial.company}</p>
+                    <h2 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                    <p className="text-xl text-gray-600">Get answers to common questions about our video editing services</p>
+                  </div>
+
+                  <div className="space-y-4">
+                    {faqData.map((faq, index) => (
+                      <div
+                        key={index}
+                        className="border border-gray-200 rounded-xl overflow-hidden hover:border-indigo-300 transition-colors duration-300"
+                      >
+                        <button
+                          onClick={() => toggleFAQ(index)}
+                          className="w-full px-6 py-5 text-left flex justify-between items-center bg-gradient-to-r from-gray-50 to-indigo-50 hover:from-indigo-50 hover:to-purple-50 transition-all duration-300"
+                        >
+                          <h3 className="text-lg font-semibold text-gray-900 pr-4">
+                            {faq.question}
+                          </h3>
+                          <div className="flex-shrink-0">
+                            {openFAQ === index ? (
+                              <ChevronUp className="w-5 h-5 text-indigo-600" />
+                            ) : (
+                              <ChevronDown className="w-5 h-5 text-indigo-600" />
+                            )}
+                          </div>
+                        </button>
+                        
+                        <div className={`overflow-hidden transition-all duration-300 ${
+                          openFAQ === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                        }`}>
+                          <div className="px-6 py-5 bg-white border-t border-gray-100">
+                            <p className="text-gray-700 leading-relaxed">
+                              {faq.answer}
+                            </p>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <div className="flex text-yellow-400 mb-4">
-                      <Star className="w-4 h-4 fill-current" />
-                      <Star className="w-4 h-4 fill-current" />
-                      <Star className="w-4 h-4 fill-current" />
-                      <Star className="w-4 h-4 fill-current" />
-                      <Star className="w-4 h-4 fill-current" />
-                    </div>
-                    <p className="text-gray-600 italic">{testimonial.quote}</p>
-                  </motion.div>
-                ))}
+                    ))}
+                  </div>
+                </div>
               </div>
-            </motion.div> */}
+            </motion.div>
 
             {/* CTA Section */}
             <motion.div
@@ -422,7 +469,7 @@ const VideoEditing = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="mt-24 mb-16"
+              className="mt-16 mb-16"
             >
               <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-8 md:p-12 relative overflow-hidden">
                 <div className="absolute inset-0 bg-pattern opacity-10"></div>

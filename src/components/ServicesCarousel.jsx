@@ -33,7 +33,7 @@ const ServicesCarousel = () => {
       title: 'Google Services',
       description: 'Strategic PPC campaigns that maximize ROI.',
       image: 'images/googlead.jpg',
-      actionLink: '/google-services-company-jaipur',
+      actionLink: '/lead-generation-company-jaipur ',
     },
     {
       icon: PenTool,

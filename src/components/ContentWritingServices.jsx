@@ -9,12 +9,49 @@ import {
   Share2,
   CheckCircle,
   Users,
+  ChevronDown,
+  ChevronUp,
   BarChart
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import { useState } from 'react';
 
 const ContentWritingServices = () => {
+
+  const [openFAQ, setOpenFAQ] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenFAQ(openFAQ === index ? null : index);
+  };
+  
+const faqData = [
+  {
+    question: "What types of content writing services do you offer in Jaipur?",
+    answer: "At SEOcial Media Solutions, we specialize in high-quality, AI-powered content writing services in Jaipur, designed to elevate your brand’s digital presence. Our offerings include SEO-optimized blog posts, engaging website copy, persuasive sales content, social media captions, and long-form articles. Each piece is crafted by expert writers who blend creativity with data-driven strategies, ensuring your content ranks higher on search engines while resonating with your target audience. Whether you need local Jaipur-focused content or global-market-ready material, we tailor our services to meet your business goals."  
+  },
+  {
+    question: "How do you integrate AI into your content writing services?",
+    answer: "We use advanced AI tools to enhance efficiency and precision in content creation. Our process includes AI-assisted keyword research, competitor analysis, and SEO optimization to ensure your content outperforms competitors. While AI helps with structure and data insights, our human writers refine tone, creativity, and brand alignment, delivering a balance of technology and artistry. This hybrid approach ensures faster turnaround times, cost-effectiveness, and high-impact content tailored for conversions and engagement."  
+  },
+  {
+    question: "How do you ensure content is tailored to my audience and brand voice?",
+    answer: "Personalization is central to our process. We start with an in-depth brand voice analysis and audience persona study to understand your ideal customers’ preferences, pain points, and search intent. Through collaborative onboarding, we capture your brand’s tone—whether professional, conversational, or authoritative. Our writers craft content that speaks directly to your audience, using relatable language and strategic messaging. Plus, we offer revisions to fine-tune every piece until it aligns perfectly with your vision."  
+  },
+  {
+    question: "Can your writing help improve my website's SEO and traffic?",
+    answer: "Yes! Our SEO-optimized content writing services are designed to boost your organic rankings and drive targeted traffic. We implement on-page SEO best practices, including keyword placement (with semantic variations), meta descriptions, header tags, and internal linking. Our content also focuses on E-A-T (Expertise, Authoritativeness, Trustworthiness), ensuring Google rewards your site with higher visibility. Many of our Jaipur-based clients see increased dwell time, lower bounce rates, and improved rankings through our data-backed strategies."  
+  },
+  {
+    question: "What types of content formats do you cover?",
+    answer: "We offer diverse content formats to suit every digital marketing need: Blogs/Articles for thought leadership, Website Copy like homepages and service pages that convert, Product Descriptions for e-commerce, Social Media Content for engagement, and Email Campaigns with compelling newsletters. Every format follows SEO best practices while prioritizing readability and user intent."  
+  },
+  {
+    question: "Why choose SEOcial Media Solutions for content writing?",
+    answer: "As a leading content writing agency in Jaipur, we merge AI-powered efficiency with human creativity. Our team includes seasoned writers, SEO specialists, and data analysts who create content that ranks, engages, and converts. We focus on ROI-driven results, offering transparent reporting, competitive pricing, and a client-centric approach. Whether you’re a startup or an enterprise, our tailored solutions ensure your brand’s voice stands out in the digital landscape."  
+  }
+];
+
   const features = [
     { 
       name: "Blog Writing", 
@@ -154,7 +191,6 @@ const ContentWritingServices = () => {
          <meta name="twitter:card" content="summary_large_image" />
      </Helmet>
 
-
     <section className="bg-gradient-to-br from-emerald-50 via-white to-teal-50">
       <div className="px-4 py-16 md:px-16 lg:px-24">
         <div className="max-w-7xl mx-auto">
@@ -250,21 +286,55 @@ const ContentWritingServices = () => {
             </div>
           </div>
 
-          {/* SEO-friendly Content Section */}
-          <div className="py-16 bg-gradient-to-r from-emerald-50 to-teal-50 rounded-3xl px-8">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl font-bold mb-8">Why Choose Our Content Writing Services?</h2>
-              <div className="text-left space-y-6">
-                <p className="text-gray-700">
-                  Our expert team of content writers combines industry knowledge, SEO expertise, and compelling storytelling to create content that resonates with your target audience and drives measurable results. We understand that great content is the foundation of digital success.
-                </p>
-                <p className="text-gray-700">
-                  Every piece of content we create is thoroughly researched, optimized for search engines, and crafted to engage your specific audience. From technical documentation to creative blog posts, we deliver content that helps you achieve your business objectives.
-                </p>
-                <p className="text-gray-700">
-                  With our data-driven approach, we ensure that your content strategy aligns with current market trends and search engine requirements while maintaining your brand's unique voice and values.
-                </p>
+          {/* FAQ Section */}
+          <div className="py-16 bg-white rounded-3xl shadow-lg">
+            <div className="max-w-4xl mx-auto px-8">
+              <div className="text-center mb-12">
+                <div className="flex justify-center mb-4">
+                  <div className="p-3 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full">
+                    <FileText className="w-8 h-8 text-white" />
+                  </div>
+                </div>
+                <h2 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <p className="text-xl text-gray-600">Get answers to common questions about our content writing services</p>
               </div>
+
+              <div className="space-y-4">
+                {faqData.map((faq, index) => (
+                  <div
+                    key={index}
+                    className="border border-gray-200 rounded-xl overflow-hidden hover:border-emerald-300 transition-colors duration-300"
+                  >
+                    <button
+                      onClick={() => toggleFAQ(index)}
+                      className="w-full px-6 py-5 text-left flex justify-between items-center bg-gradient-to-r from-gray-50 to-emerald-50 hover:from-emerald-50 hover:to-teal-50 transition-all duration-300"
+                    >
+                      <h3 className="text-lg font-semibold text-gray-900 pr-4">
+                        {faq.question}
+                      </h3>
+                      <div className="flex-shrink-0">
+                        {openFAQ === index ? (
+                          <ChevronUp className="w-5 h-5 text-emerald-600" />
+                        ) : (
+                          <ChevronDown className="w-5 h-5 text-emerald-600" />
+                        )}
+                      </div>
+                    </button>
+                    
+                    <div className={`overflow-hidden transition-all duration-300 ${
+                      openFAQ === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}>
+                      <div className="px-6 py-5 bg-white border-t border-gray-100">
+                        <p className="text-gray-700 leading-relaxed">
+                          {faq.answer}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+             
             </div>
           </div>
 
@@ -286,7 +356,6 @@ const ContentWritingServices = () => {
                   >
                     Contact Us
                   </Link>
-
                 </div>
               </div>
             </div>
