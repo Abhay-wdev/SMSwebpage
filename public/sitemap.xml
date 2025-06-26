@@ -163,11 +163,6 @@
   </url>
 
   <!-- 
-  PLACEHOLDER FOR NEW BLOG POSTS - Add new blog posts here with:
-  - Priority: 0.9 for fresh content
-  - changefreq: weekly for active posts
-  - lastmod: current date when published
-  
   Example format for new blog posts:
   <url>
     <loc>https://seocialmedia.in/blog/your-new-blog-post-url</loc>
