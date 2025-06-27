@@ -1,17 +1,21 @@
-import { useState, useEffect } from 'react';
+import  React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
 const BlogPageNew = () => {
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [currentPage, setCurrentPage] = useState(1);
+  const blogsPerPage = 6;
 
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
         const response = await fetch('/blogs.json');
         const data = await response.json();
-        setBlogs(data);
+        // Sort blogs by date (newest first)
+        const sortedBlogs = data.sort((a, b) => new Date(b.date) - new Date(a.date));
+        setBlogs(sortedBlogs);
         setLoading(false);
       } catch (error) {
         console.error('Error fetching blogs:', error);
@@ -21,6 +25,76 @@ const BlogPageNew = () => {
 
     fetchBlogs();
   }, []);
+
+  // Calculate pagination
+  const totalPages = Math.ceil(blogs.length / blogsPerPage);
+  const startIndex = (currentPage - 1) * blogsPerPage;
+  const endIndex = startIndex + blogsPerPage;
+  const currentBlogs = blogs.slice(startIndex, endIndex);
+
+  // Pagination handlers
+  const goToPage = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    // Scroll to top of blog section
+    window.scrollTo({ top: document.querySelector('.blog-grid')?.offsetTop - 100 || 0, behavior: 'smooth' });
+  };
+
+  const goToPrevious = () => {
+    if (currentPage > 1) {
+      goToPage(currentPage - 1);
+    }
+  };
+
+  const goToNext = () => {
+    if (currentPage < totalPages) {
+      goToPage(currentPage + 1);
+    }
+  };
+
+  // Generate page numbers for pagination
+  const getPageNumbers = () => {
+    const pages = [];
+    const maxVisiblePages = 5;
+    
+    if (totalPages <= maxVisiblePages) {
+      // Show all pages if total pages is less than or equal to maxVisiblePages
+      for (let i = 1; i <= totalPages; i++) {
+        pages.push(i);
+      }
+    } else {
+      // Show smart pagination
+      if (currentPage <= 3) {
+        // Show first 5 pages
+        for (let i = 1; i <= 5; i++) {
+          pages.push(i);
+        }
+        if (totalPages > 5) {
+          pages.push('...');
+          pages.push(totalPages);
+        }
+      } else if (currentPage >= totalPages - 2) {
+        // Show last 5 pages
+        pages.push(1);
+        if (totalPages > 5) {
+          pages.push('...');
+        }
+        for (let i = totalPages - 4; i <= totalPages; i++) {
+          pages.push(i);
+        }
+      } else {
+        // Show pages around current page
+        pages.push(1);
+        pages.push('...');
+        for (let i = currentPage - 1; i <= currentPage + 1; i++) {
+          pages.push(i);
+        }
+        pages.push('...');
+        pages.push(totalPages);
+      }
+    }
+    
+    return pages;
+  };
 
   if (loading) {
     return (
@@ -132,10 +206,25 @@ const BlogPageNew = () => {
         <div className="absolute bottom-20 right-10 w-32 h-32 bg-purple-500 bg-opacity-20 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }}></div>
       </div>
 
+      {/* Blog Stats */}
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex flex-col sm:flex-row justify-between items-center bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white border-opacity-20">
+          <div className="mb-4 sm:mb-0">
+            <h2 className="text-lg font-semibold text-gray-800">Latest Articles</h2>
+            <p className="text-gray-600">
+              Showing {startIndex + 1}-{Math.min(endIndex, blogs.length)} of {blogs.length} articles
+            </p>
+          </div>
+          <div className="text-sm text-gray-500">
+            Page {currentPage} of {totalPages}
+          </div>
+        </div>
+      </div>
+
       {/* Blog Grid */}
-      <div className="container mx-auto px-4 py-16 relative z-10">
+      <div className="blog-grid container mx-auto px-4 pb-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogs.map((blog) => (
+          {currentBlogs.map((blog) => (
             <article 
               key={blog.id}
               className="group bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-white border-opacity-20"
@@ -209,6 +298,69 @@ const BlogPageNew = () => {
             </article>
           ))}
         </div>
+
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div className="mt-16 flex justify-center">
+            <div className="bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white border-opacity-20">
+              <nav className="flex items-center space-x-2">
+                {/* Previous Button */}
+                <button
+                  onClick={goToPrevious}
+                  disabled={currentPage === 1}
+                  className={`flex items-center px-4 py-2 rounded-xl font-medium transition-all duration-300 ${
+                    currentPage === 1
+                      ? 'text-gray-400 cursor-not-allowed'
+                      : 'text-blue-600 hover:bg-blue-50 hover:text-blue-700'
+                  }`}
+                >
+                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                  Previous
+                </button>
+
+                {/* Page Numbers */}
+                <div className="flex items-center space-x-1">
+                  {getPageNumbers().map((page, index) => (
+                    <React.Fragment key={index}>
+                      {page === '...' ? (
+                        <span className="px-3 py-2 text-gray-400">...</span>
+                      ) : (
+                        <button
+                          onClick={() => goToPage(page)}
+                          className={`w-10 h-10 rounded-xl font-medium transition-all duration-300 ${
+                            currentPage === page
+                              ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg'
+                              : 'text-gray-600 hover:bg-blue-50 hover:text-blue-600'
+                          }`}
+                        >
+                          {page}
+                        </button>
+                      )}
+                    </React.Fragment>
+                  ))}
+                </div>
+
+                {/* Next Button */}
+                <button
+                  onClick={goToNext}
+                  disabled={currentPage === totalPages}
+                  className={`flex items-center px-4 py-2 rounded-xl font-medium transition-all duration-300 ${
+                    currentPage === totalPages
+                      ? 'text-gray-400 cursor-not-allowed'
+                      : 'text-blue-600 hover:bg-blue-50 hover:text-blue-700'
+                  }`}
+                >
+                  Next
+                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </nav>
+            </div>
+          </div>
+        )}
 
         {/* Call to Action Section */}
         <div className="mt-20 text-center">
