@@ -65,7 +65,7 @@ const Header = () => {
   );
 
   const QuickContactButtons = () => (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center md:hidden gap-2">
       <a
         href="tel:+91 9461677122"
         className="flex items-center justify-center w-8 h-8 bg-gradient-to-r from-green-400 to-green-500 
@@ -118,7 +118,7 @@ const Header = () => {
               <img
                 src="/images/company-logo.jpeg"
                 alt="Company Logo"
-                className="h-12"
+                className="h-14"
               />
               </Link>
             </div>
