@@ -1,26 +1,26 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
-import { TypeAnimation } from 'react-type-animation';
-import { Sparkles } from 'lucide-react';
-import ProductServicesPage from './ProductServicesPage';
-import ServicesCarousel from './ServicesCarousel';
-import GoogleMap from './GoogleMap';
-import { Helmet } from 'react-helmet-async';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
+import { Sparkles } from "lucide-react";
+import ProductServicesPage from "./ProductServicesPage";
+import ServicesCarousel from "./ServicesCarousel";
+import GoogleMap from "./GoogleMap";
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 // Enhanced Background Component
 const HeroBackground = () => (
   <div className="absolute inset-0 -z-10 bg-slate-950 overflow-hidden">
     <div className="absolute inset-0">
-      <motion.div 
+      <motion.div
         className="absolute inset-0 bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900"
         animate={{
-          backgroundPosition: ['0% 0%', '100% 100%'],
+          backgroundPosition: ["0% 0%", "100% 100%"],
         }}
         transition={{
           duration: 20,
           repeat: Infinity,
-          repeatType: "reverse"
+          repeatType: "reverse",
         }}
       />
     </div>
@@ -33,11 +33,17 @@ const WaveBottom = () => (
     <svg className="w-full" viewBox="0 0 1440 100" preserveAspectRatio="none">
       <defs>
         <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style={{ stopColor: '#f9fafb', stopOpacity: 1 }} />
-          <stop offset="100%" style={{ stopColor: '#f3f4f6', stopOpacity: 1 }} />
+          <stop offset="0%" style={{ stopColor: "#f9fafb", stopOpacity: 1 }} />
+          <stop
+            offset="100%"
+            style={{ stopColor: "#f3f4f6", stopOpacity: 1 }}
+          />
         </linearGradient>
       </defs>
-      <path d="M0,50 C150,20 350,0 500,15 C650,30 800,70 1000,80 C1200,90 1320,70 1440,40 L1440,100 L0,100 Z" fill="url(#gradient1)" />
+      <path
+        d="M0,50 C150,20 350,0 500,15 C650,30 800,70 1000,80 C1200,90 1320,70 1440,40 L1440,100 L0,100 Z"
+        fill="url(#gradient1)"
+      />
     </svg>
   </div>
 );
@@ -58,9 +64,9 @@ const YouTubeVideo = ({ videoId }) => {
     }
 
     const loadYouTubeAPI = () => {
-      const tag = document.createElement('script');
-      tag.src = 'https://www.youtube.com/iframe_api';
-      const firstScriptTag = document.getElementsByTagName('script')[0];
+      const tag = document.createElement("script");
+      tag.src = "https://www.youtube.com/iframe_api";
+      const firstScriptTag = document.getElementsByTagName("script")[0];
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
     };
 
@@ -81,7 +87,9 @@ const YouTubeVideo = ({ videoId }) => {
   useEffect(() => {
     if (!apiLoaded || !containerRef.current) return;
 
-    const playerId = `youtube-player-${Math.random().toString(36).substr(2, 9)}`;
+    const playerId = `youtube-player-${Math.random()
+      .toString(36)
+      .substr(2, 9)}`;
     containerRef.current.id = playerId;
 
     if (playerRef.current) {
@@ -99,7 +107,7 @@ const YouTubeVideo = ({ videoId }) => {
         enablejsapi: 1,
         modestbranding: 1,
         loop: 1,
-        playlist: videoId
+        playlist: videoId,
       },
       events: {
         onReady: (event) => {
@@ -114,10 +122,10 @@ const YouTubeVideo = ({ videoId }) => {
           }
         },
         onError: (event) => {
-          console.error('YouTube Player Error:', event.data);
+          console.error("YouTube Player Error:", event.data);
           setVideoLoaded(true);
-        }
-      }
+        },
+      },
     });
 
     // Cleanup
@@ -146,15 +154,15 @@ const YouTubeVideo = ({ videoId }) => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8 }}
       className="rounded-lg overflow-hidden shadow-2xl border border-white/10 relative"
-      style={{ 
-        width: '100%', 
-        maxWidth: '560px',
-        aspectRatio: '16/9',
-        background: 'rgba(0,0,0,0.2)'
+      style={{
+        width: "100%",
+        maxWidth: "560px",
+        aspectRatio: "16/9",
+        background: "rgba(0,0,0,0.2)",
       }}
     >
       {(!videoLoaded || !apiLoaded) && (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 1 }}
           animate={{ opacity: 0 }}
           exit={{ opacity: 0 }}
@@ -164,22 +172,34 @@ const YouTubeVideo = ({ videoId }) => {
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-400"></div>
         </motion.div>
       )}
-      
+
       <div ref={containerRef} className="w-full h-full"></div>
-      
+
       {videoLoaded && (
-        <button 
+        <button
           className="absolute bottom-4 right-4 bg-white/10 p-2 rounded-full transition-all duration-300 opacity-0 hover:opacity-100"
           onClick={handlePlayPause}
           aria-label={isPlaying ? "Pause video" : "Play video"}
         >
           {isPlaying ? (
-            <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg
+              className="w-4 h-4 text-white"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
               <rect x="6" y="4" width="4" height="16" rx="1" />
               <rect x="14" y="4" width="4" height="16" rx="1" />
             </svg>
           ) : (
-            <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg
+              className="w-4 h-4 text-white"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
               <polygon points="5 3 19 12 5 21" />
             </svg>
           )}
@@ -192,20 +212,24 @@ const YouTubeVideo = ({ videoId }) => {
 // Responsive Animated Title
 const AnimatedTitle = () => (
   <div className="text-2xl sm:text-3xl md:text-4xl mb-6 lg:mb-12 font-bold leading-tight">
-    <div className="text-white whitespace-nowrap lg:text-5xl">Transform Your</div>
-    <div className="text-white whitespace-nowrap pb-2 lg:text-5xl">Digital Presence with</div>
+    <div className="text-white whitespace-nowrap lg:text-5xl">
+      Transform Your
+    </div>
+    <div className="text-white whitespace-nowrap pb-2 lg:text-5xl">
+      Digital Presence with
+    </div>
     <div className="w-full overflow-hidden">
       <TypeAnimation
         sequence={[
-          'Website Development',
+          "Website Development",
           1500,
-          'SEO Optimization',
+          "SEO Optimization",
           1500,
-          'Google Ads',
+          "Google Ads",
           1500,
-          'Social Media Marketing',
+          "Social Media Marketing",
           1500,
-          'Content Writing',
+          "Content Writing",
           1500,
         ]}
         wrapper="div"
@@ -219,7 +243,7 @@ const AnimatedTitle = () => (
 
 // Hero Section Component
 const HeroSection = () => {
-  const youtubeVideoId = 'obyYIaHxkSo';
+  const youtubeVideoId = "obyYIaHxkSo";
 
   return (
     <section className="relative min-h-screen">
@@ -265,8 +289,9 @@ const HeroSection = () => {
               transition={{ delay: 0.4 }}
               className="text-base sm:text-lg text-gray-300 max-w-xl"
             >
-              Unlock the power of AI-driven marketing solutions that deliver real results.
-              Boost your online visibility and grow your business with our cutting-edge platform.
+              Unlock the power of AI-driven marketing solutions that deliver
+              real results. Boost your online visibility and grow your business
+              with our cutting-edge platform.
             </motion.p>
 
             <motion.div
@@ -274,14 +299,20 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
             >
-             <Link to="/contact" className="inline-block">
-    <button className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 flex items-center space-x-2">
-      <span>Get Started</span>
-      <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-        <path d="M5 12h14M12 5l7 7-7 7" />
-      </svg>
-    </button>
-  </Link>
+              <Link to="/contact" className="inline-block">
+                <button className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 flex items-center space-x-2">
+                  <span>Get Started</span>
+                  <svg
+                    className="w-4 h-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </Link>
             </motion.div>
           </div>
 
@@ -298,18 +329,129 @@ const HeroSection = () => {
 
 // Main HomePage Component
 const HomePage = () => {
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "SEOcial Media Solutions",
+    url: "https://www.seocialmedia.in/",
+    logo: "https://www.seocialmedia.in/images/company-logo.jpeg",
+    description:
+      "We are a full-service digital agency offering software development, SEO, social media marketing, Google services, video & photo editing, Web Devlopment  and content writing.",
+    sameAs: [
+      "https://www.facebook.com/people/SEOcial-Media-Solutions/61564390163701/",
+      "https://www.instagram.com/seocialmediasolutions/",
+      "https://www.linkedin.com/company/seocial-media-solution/",
+      "https://www.youtube.com/channel/UCxmpNgYvJKGIYObsk_2swzw",
+    ],
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: "+91 9461677122",
+        contactType: "Customer Service",
+        areaServed: "Worldwide",
+        availableLanguage: ["English", "Hindi"],
+      },
+    ],
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "123 Digital Lane", // ← Optional, change if you have an actual street name
+      addressLocality: "Jaipur",
+      addressRegion: "RJ",
+      postalCode: "302021", // Use your actual PIN code here if known
+      addressCountry: "IN",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 26.886521,
+      longitude: 75.7533893,
+    },
+
+    makesOffer: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Software Development",
+          description:
+            "Custom web and mobile applications tailored to your business.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Search Engine Optimization (SEO)",
+          description:
+            "On-page and off-page optimization to boost your search visibility.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Social Media Marketing",
+          description:
+            "Creative strategies to grow your brand across all social platforms.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Google Services",
+          description:
+            "Google Ads, Analytics, Business Profile management and more.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Video and Photo Editing",
+          description:
+            "Professional video cuts, reels, photo enhancements and visual storytelling.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Content Writing",
+          description:
+            "High-converting content for blogs, websites, and campaigns.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Next-Gen Web App Development",
+          description:
+            "We leverage modern frameworks like React Server Components, Bun.js, Qwik, and Edge Functions to build future-ready, high-performance web apps.",
+        },
+      },
+    ],
+  };
   return (
     <>
       <Helmet>
-        <title>Best Digital Marketing Agency in Jaipur | SEOcial Media Solutions</title>
+        <title>
+          Best Digital Marketing Agency in Jaipur | SEOcial Media Solutions
+        </title>
         <meta
           name="description"
           content="Best Digital Marketing Agency in Jaipur delivering ROI-driven results. Expert services in SEO, Social Media, PPC & Content Marketing. 100+ satisfied clients. Get free consultation today!"
         />
+        <meta
+          name="keywords"
+          content="best website development company in Jaipur, full stack web development services, React and Next.js developers in Jaipur, professional web design company, custom website for business, digital marketing services for small business, top SEO company in India, affordable social media marketing, content writing services for websites, expert video editing services, professional photo editing company, mobile-friendly website agency, WordPress and Shopify developers in Jaipur"
+        />
+
+        <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
         {/* Rest of your meta tags */}
       </Helmet>
       <div className="relative">
-        <h1 className='hidden'>Best Digital Marketing Agency in Jaipur</h1>
+        <h1 className="hidden">Best Digital Marketing Agency in Jaipur</h1>
         <HeroSection />
         <ProductServicesPage />
         <ServicesCarousel />
@@ -319,4 +461,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage; 
+export default HomePage;

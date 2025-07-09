@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Play, Pause, Volume2, VolumeX, ArrowRight, Star } from 'lucide-react';
-
+import React, { useState, useEffect, useRef } from "react";
+import { Play, Pause, Volume2, VolumeX, ArrowRight, Star } from "lucide-react";
+import CountUp from "./CountUp"
 const VideoPlayer = ({ videoId, title }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
@@ -13,9 +13,9 @@ const VideoPlayer = ({ videoId, title }) => {
     containerRef.current.id = playerId;
 
     if (!window.YT) {
-      const tag = document.createElement('script');
-      tag.src = 'https://www.youtube.com/iframe_api';
-      const firstScriptTag = document.getElementsByTagName('script')[0];
+      const tag = document.createElement("script");
+      tag.src = "https://www.youtube.com/iframe_api";
+      const firstScriptTag = document.getElementsByTagName("script")[0];
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
     }
 
@@ -31,7 +31,7 @@ const VideoPlayer = ({ videoId, title }) => {
           enablejsapi: 1,
           modestbranding: 1,
           loop: 1,
-          playlist: videoId
+          playlist: videoId,
         },
         events: {
           onReady: (event) => {
@@ -45,8 +45,8 @@ const VideoPlayer = ({ videoId, title }) => {
             } else if (event.data === window.YT.PlayerState.PAUSED) {
               setIsPlaying(false);
             }
-          }
-        }
+          },
+        },
       });
     };
 
@@ -85,18 +85,18 @@ const VideoPlayer = ({ videoId, title }) => {
   return (
     <div className="w-full relative rounded-xl overflow-hidden shadow-xl transform transition-transform duration-300 hover:scale-[1.02]">
       <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl opacity-75 blur group-hover:opacity-100"></div>
-      
+
       {!isLoaded && (
         <div className="absolute inset-0 bg-gray-100 flex items-center justify-center">
           <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
         </div>
       )}
-      
+
       <div className="relative aspect-video">
         <div ref={containerRef} className="absolute inset-0" />
-        
+
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
-        
+
         <div className="absolute bottom-0 left-0 right-0 p-4 flex justify-between items-center">
           <button
             onClick={handlePlayPause}
@@ -108,13 +108,17 @@ const VideoPlayer = ({ videoId, title }) => {
               <Play className="w-5 h-5" />
             )}
           </button>
-          
+
           <div className="flex items-center gap-4">
             <button
               onClick={handleMute}
               className="bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-all duration-300 transform hover:scale-110 backdrop-blur-sm"
             >
-              {isMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
+              {isMuted ? (
+                <VolumeX className="w-5 h-5" />
+              ) : (
+                <Volume2 className="w-5 h-5" />
+              )}
             </button>
             <div className="hidden sm:block bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-medium shadow-lg">
               {title}
@@ -141,7 +145,7 @@ const DualVideoShowcase = () => {
             </span>
             <Star className="w-6 h-6 text-yellow-400 fill-current" />
           </div>
-          
+
           <h2 className="text-4xl sm:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 mb-4">
             SEOcial Media Solutions
           </h2>
@@ -153,20 +157,14 @@ const DualVideoShowcase = () => {
 
         {/* Video Grid */}
         <div className="grid md:grid-cols-2 gap-6 lg:gap-8 mb-12">
-          <VideoPlayer 
-            videoId="obyYIaHxkSo"
-            title="SEOcial Media Solutions"
-          />
-          <VideoPlayer 
-            videoId="M_EwFmLtG7g"
-            title="SEOcial Media Solutions"
-          />
+          <VideoPlayer videoId="obyYIaHxkSo" title="SEOcial Media Solutions" />
+          <VideoPlayer videoId="M_EwFmLtG7g" title="SEOcial Media Solutions" />
         </div>
 
         {/* Enhanced CTA Section */}
         <div className="text-center space-y-8">
           <div className="relative inline-block group">
-            <div 
+            <div
               className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full opacity-70 blur transition-all duration-300 group-hover:opacity-100"
               aria-hidden="true"
             ></div>
@@ -177,7 +175,11 @@ const DualVideoShowcase = () => {
               onMouseLeave={() => setIsHovered(false)}
             >
               Get Your Free Consultation
-              <ArrowRight className={`w-5 h-5 transition-transform duration-300 ${isHovered ? 'translate-x-1' : ''}`} />
+              <ArrowRight
+                className={`w-5 h-5 transition-transform duration-300 ${
+                  isHovered ? "translate-x-1" : ""
+                }`}
+              />
             </a>
           </div>
 
@@ -187,7 +189,17 @@ const DualVideoShowcase = () => {
               <span className="text-gray-700 font-medium">4.9/5 Rating</span>
             </div>
             <div className="hidden sm:block text-gray-400">|</div>
-            <div className="text-gray-700 font-medium">100+ Happy Clients</div>
+            <div className="text-gray-700 font-medium">
+              <CountUp
+                from={0}
+                to={100}
+                separator=","
+                direction="up"
+                duration={1}
+                className="count-up-text"
+              />
+              {"+ Happy clients "}
+            </div>
             <div className="hidden sm:block text-gray-400">|</div>
             <div className="text-gray-700 font-medium">5+ Years Experience</div>
           </div>
