@@ -19,6 +19,8 @@ const Footer = () => {
   }, [location]);
 
   const quickLinks = [
+    { name: 'SEOcial Media company in Ajmer', href: '/social-media-company-ajmer' },
+    { name: 'SEOcial Media company in Jaipur', href: '/' },
     { name: 'Home', href: '/' },
     { name: 'About Us', href: '/digital-marketing-company-jaipur' },
     { name: 'Blog', href: '/blog' },
@@ -36,6 +38,10 @@ const Footer = () => {
     { name: 'Content Writing', href: '/content-writing-company-jaipur' },
     { name: 'Video Editing', href: '/video-editing-company-jaipur' },
   ];
+
+
+   
+
 
   const socialLinks = [
     { name: 'Facebook', icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61564390163701' },
@@ -113,6 +119,11 @@ const Footer = () => {
               ))}
             </ul>
           </div>
+
+
+  
+
+
 
           {/* Contact Info */}
           <div>

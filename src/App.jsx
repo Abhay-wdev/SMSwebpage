@@ -7,6 +7,13 @@ import GoogleServices from './components/GoogleServices';
 import NeonCursor from './components/NeonCursor';
 import BlogPageNew from './components/BlogPageNew';
 import BlogDetailPage from './components/BlogsDetailPage';
+import SeoAjmer from './components/SeoAjmer';
+import VideoEditingAjmer from './components/VideoEditingAjmer';
+import WebDevelopmentAjmer from './components/WebDevelopmentAjmer';
+import SocialMediaServicesAjmer from './components/SocialMediaServicesAjmer';
+import ContentWritingServicesAjmer from './components/ContentWritingServicesAjmer';
+import GoogleServicesAjmer from './components/GoogleServicesAjmer';
+import SeoAjmerpage from './components/SeoAjmerpage';
 
 // Lazy load components for better performance
 const Home = lazy(() => import('./components/Home'));
@@ -54,7 +61,16 @@ function App() {
             <Route path="/blog/:slug" element={<BlogDetailPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} /> {/* Add this line */}
             <Route path="/video-editing-company-jaipur" element={<VideoEditing />} /> {/* Add this line */}
-            <Route path="/video-editing-company-jaipur" element={<VideoEditing />} /> {/* Add this line */}
+            
+            <Route path="/social-media-company-ajmer" element={<SeoAjmer/>} />
+            <Route path="/social-media-marketing-company-ajmer" element={ <SocialMediaServicesAjmer/>} />
+            <Route path="/video-editing-company-ajmer" element={<VideoEditingAjmer/>} />
+            <Route path="/web-development-company-ajmer" element={<WebDevelopmentAjmer/>} />
+            
+            <Route path="/seo-company-ajmer" element={<SeoAjmerpage/>} />
+            <Route path="/content-writing-company-ajmer" element={ <ContentWritingServicesAjmer/>} />
+            <Route path="/lead-generation-company-ajmer" element={ <GoogleServicesAjmer/>} />
+             {/* Add this line */}
 
 
             {/* Handle 404 */}
