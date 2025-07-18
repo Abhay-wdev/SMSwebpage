@@ -7,11 +7,15 @@ const FAQAccordionnew = ({ content, title = "Frequently Asked", subtitle = "Ques
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="text-center mb-12"
-      >
+     
+        
+<motion.div
+ 
+ initial={{ opacity: 0, y: 50 }}
+ whileInView={{ opacity: 1, y: 0 }}
+ viewport={{ once: true, amount: 0.2 }}
+ transition={{ duration: 0.6, ease: "easeOut", delay: 0 }}
+ >
         <h2 className="text-4xl md:text-5xl font-extrabold mb-3 tracking-tight">
           <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
             {title}
@@ -20,15 +24,22 @@ const FAQAccordionnew = ({ content, title = "Frequently Asked", subtitle = "Ques
           <span className="text-gray-800">{subtitle}</span>
         </h2>
         <div className="w-24 h-1.5 bg-gradient-to-r from-blue-600 to-blue-800 mx-auto mt-6 rounded-full"/>
-      </motion.div>
+        </motion.div>
+      
       
       <div className="space-y-4">
         {content.map((item, index) => (
 
+<motion.div
+ 
+initial={{ opacity: 0, y: 50 }}
+whileInView={{ opacity: 1, y: 0 }}
+viewport={{ once: true, amount: 0.2 }}
+transition={{ duration: 0.6, ease: "easeOut", delay: 0 }}
+>
 
 
-
-          <div key={index} className="border-b border-gray-200">
+          <div key={index} className="border-b border-gray-300 bg-pink-100 rounded-3px px-5">
             <motion.button
               className="w-full py-6 flex justify-between items-center text-left"
               onClick={() => setActiveIndex(activeIndex === index ? null : index)}
@@ -58,6 +69,9 @@ const FAQAccordionnew = ({ content, title = "Frequently Asked", subtitle = "Ques
               )}
             </AnimatePresence>
           </div>
+
+          </motion.div>
+
         ))}
       </div>
     </div>

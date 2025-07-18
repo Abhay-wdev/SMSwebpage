@@ -1,11 +1,11 @@
 import React from 'react';
 import { FaCheckCircle, FaTrophy } from 'react-icons/fa';
-
+import { motion } from 'framer-motion';
 const SocialMediaHeroAjmer = () => {
   return (
     <section className="bg-[#FFF9F5]  px-4">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center bg-[#FF4E66] rounded-3xl overflow-hidden shadow-lg p-6 lg:p-12">
-
+ 
         {/* Left Image Section */}
         <div className="relative flex justify-center w-full lg:w-1/2">
           <img
@@ -32,7 +32,7 @@ const SocialMediaHeroAjmer = () => {
             />
           </div>
         </div>
-
+        
         {/* Right Text Section */}
         <div className="w-full flex justify-center flex-col lg:w-1/2 mt-16 lg:mt-0 lg:pl-16 text-white">
           <h2 className="text-4xl font-bold leading-tight mb-4">
