@@ -78,7 +78,7 @@ const WorkingProcessimgMedia = () => {
   return (
     <>
     <center>
-    <h2 className="z-10 lg:ml-3 text-white mt-10  font-bold w-fit text-3xl py-1 px-4 rounded-t-3xl bg-blue-900">
+    <h2 className="z-10 lg:ml-3 text-white mt-10  font-bold w-fit text-3xl py-1 px-4 rounded-3xl bg-blue-900">
     Our Web Services in Ajmer
   </h2>
   </center>
