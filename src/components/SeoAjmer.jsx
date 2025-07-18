@@ -8,7 +8,7 @@ import FAQAccordion from './FAQAccordion'
 import WorkingProcess from './WorkingProcess'
 import WorkingProcessimg from './WorkingProcessimg'
 import FAQAccordionnew from './FAQAccordionnew'
- 
+import { Helmet } from 'react-helmet';
 
 function SeoAjmer() {
 
@@ -60,6 +60,60 @@ function SeoAjmer() {
 
   return (
     <div >
+   <Helmet>
+  <title>
+    Best Social Media Marketing Company in Ajmer | SEOcial Media Solutions
+  </title>
+
+  <meta
+    name="description"
+    content="Grow your business online with the best social media marketing company in Ajmer. SEOcial Media Solutions provides expert services in social media management, SEO, and website development."
+  />
+  <meta
+    name="keywords"
+    content="social media marketing Ajmer, digital marketing Ajmer, SEO company Ajmer, web development Ajmer, best marketing agency in Ajmer, Instagram marketing, Facebook ads Ajmer, Ajmer advertising company"
+  />
+  <link
+    rel="canonical"
+    href="https://seocialmedia.in/social-media-company-ajmer"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:title"
+    content="Top Social Media Marketing Company in Ajmer | SEOcial Media Solutions"
+  />
+  <meta
+    property="og:description"
+    content="Boost your online presence with expert social media marketing services in Ajmer. Custom strategies for Instagram, Facebook, and Google Ads."
+  />
+  <meta
+    property="og:image"
+    content="https://seocialmedia.in/images/og-ajmer.jpg"
+  />
+  <meta
+    property="og:url"
+    content="https://seocialmedia.in/social-media-company-ajmer"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Top Social Media Marketing Company in Ajmer | SEOcial Media"
+  />
+  <meta
+    name="twitter:description"
+    content="Ajmer's leading digital marketing agency offering social media growth, SEO, content marketing, and affordable web development services."
+  />
+  <meta
+    name="twitter:image"
+    content="https://seocialmedia.in/images/og-ajmer.jpg"
+  />
+</Helmet>
+
+       
       <center>
       <SEOLandingSection/>
   <BoostTrafficSection/>

@@ -25,7 +25,7 @@ import WebIntroSectionAjmer from "./WebIntroSectionaAjmer";
 import TrustedByCompanies from "./TrustedByCompanies";
 import WorkingProcess from "./WorkingProcess";
 import WorkingProcessimgMedia from "./WorkingProcessimgMedia";
-
+ 
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -193,55 +193,59 @@ const WebDevelopmentAjmer = () => {
 
   return (
     <>
-      <Helmet>
-        <title>
-          Best Website Development & Digital Marketing Company in Jaipur |
-          SEOcial Media Solutions
-        </title>
-        <meta
-          name="description"
-          content="Looking for the best website development company in Jaipur? SEOcial Media Solutions offers full-service digital marketing, SEO, and web design tailored to grow your business online."
-        />
-        <meta
-          name="keywords"
-          content="website development company in Jaipur, best digital marketing agency Jaipur, SEO company Jaipur, affordable web design services, social media marketing Jaipur, full-service digital agency, content marketing India, Google ads management, Jaipur IT company"
-        />
-        <link
-          rel="canonical"
-          href="https://seocialmedia.in/digital-marketing-company-jaipur"
-        />
+     <Helmet>
+  <title>
+    Best Web Development Company in Ajmer | SEOcial Media Solutions
+  </title>
 
-        {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="Top Website Development & SEO Company in Jaipur | SEOcial Media"
-        />
-        <meta
-          property="og:description"
-          content="Full-service digital marketing and website development agency in Jaipur. Custom web design, SEO, Google Ads, and more to grow your online presence."
-        />
-        <meta
-          property="og:image"
-          content="https://seocialmedia.in/images/og-home.jpg"
-        />
-        <meta property="og:url" content="https://seocialmedia.in/" />
+  <meta
+    name="description"
+    content="SEOcial Media Solutions is the leading web development company in Ajmer, offering responsive website design, e-commerce development, and full-stack web solutions to grow your business online."
+  />
+  <meta
+    name="keywords"
+    content="web development company Ajmer, website design Ajmer, e-commerce development Ajmer, Ajmer web agency, responsive website Ajmer, affordable web development, SEOcial Media Solutions Ajmer"
+  />
+  <link
+    rel="canonical"
+    href="https://seocialmedia.in/web-development-company-ajmer"
+  />
 
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Top Website Development Company in Jaipur | SEOcial Media"
-        />
-        <meta
-          name="twitter:description"
-          content="Best digital marketing agency in Jaipur offering SEO, web development, content creation, and more tailored for startups and enterprises alike."
-        />
-        <meta
-          name="twitter:image"
-          content="https://seocialmedia.in/images/og-home.jpg"
-        />
-      </Helmet>
+  {/* Open Graph / Facebook */}
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:title"
+    content="Top Web Development Company in Ajmer | SEOcial Media Solutions"
+  />
+  <meta
+    property="og:description"
+    content="Need a powerful online presence? Partner with Ajmer’s top web development company for custom websites, fast performance, and mobile-friendly designs."
+  />
+  <meta
+    property="og:image"
+    content="https://seocialmedia.in/images/og-ajmer-web.jpg"
+  />
+  <meta
+    property="og:url"
+    content="https://seocialmedia.in/web-development-company-ajmer"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Ajmer’s Best Website Development Company | SEOcial Media"
+  />
+  <meta
+    name="twitter:description"
+    content="Custom web development services in Ajmer for businesses of all sizes. Get stunning, high-performing websites designed by experts."
+  />
+  <meta
+    name="twitter:image"
+    content="https://seocialmedia.in/images/og-ajmer-web.jpg"
+  />
+</Helmet>
+
 
       <section className="bg-gradient-to-br from-indigo-50 via-white to-purple-50">
         <div className="px-4 py-16 md:px-16 lg:px-24">

@@ -176,20 +176,59 @@ const ContentWritingServicesAjmer = () => {
 
   return (
     <>
-    <Helmet>
-         <title>Best Content Writing Services in Jaipur | SEOcial Media Solutions</title>
-         <meta
-           name="description"
-           content="Create impactful and engaging content with SEOcial Media's professional content writing services. Enhance your online presence with quality content."
-         />
-         <meta name="keywords" content="IT services, content writing services, web development, SEO, digital marketing" />
-         <link rel="canonical" href="https://seocialmedia.in/content-writing-company-jaipur" />
-         <meta property="og:title" content="Best Content Writing Services in Jaipur | SEOcial Media Soltions" />
-         <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
-         <meta property="og:image" content="https://seocialmedia.in/images/og-home.jpg" />
-         <meta property="og:url" content="https://seocialmedia.in/" />
-         <meta name="twitter:card" content="summary_large_image" />
-     </Helmet>
+   <Helmet>
+  <title>
+    Best Content Writing Company in Ajmer | SEOcial Media Solutions
+  </title>
+
+  <meta
+    name="description"
+    content="SEOcial Media Solutions is the top content writing company in Ajmer, offering SEO-friendly content, blogs, website content, social media captions, and copywriting services."
+  />
+  <meta
+    name="keywords"
+    content="content writing company Ajmer, SEO content Ajmer, website content writing Ajmer, blog writing Ajmer, copywriting Ajmer, professional content Ajmer, content agency Ajmer, SEOcial Media Solutions"
+  />
+  <link
+    rel="canonical"
+    href="https://seocialmedia.in/content-writing-company-ajmer"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:title"
+    content="Top Content Writing Company in Ajmer | SEOcial Media Solutions"
+  />
+  <meta
+    property="og:description"
+    content="Get powerful, SEO-friendly content for your website, blogs, and social media from Ajmer’s leading content writing company."
+  />
+  <meta
+    property="og:image"
+    content="https://seocialmedia.in/images/og-ajmer-content.jpg"
+  />
+  <meta
+    property="og:url"
+    content="https://seocialmedia.in/content-writing-company-ajmer"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Ajmer’s Best Content Writing Company | SEOcial Media"
+  />
+  <meta
+    name="twitter:description"
+    content="Professional content writing services in Ajmer for websites, blogs, product descriptions, and more. Boost your brand with compelling content."
+  />
+  <meta
+    name="twitter:image"
+    content="https://seocialmedia.in/images/og-ajmer-content.jpg"
+  />
+</Helmet>
+
 
     <section className="bg-gradient-to-br from-emerald-50 via-white to-teal-50">
       <div className="px-4 py-16 md:px-16 lg:px-24">

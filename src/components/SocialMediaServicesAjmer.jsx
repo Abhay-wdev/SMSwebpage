@@ -21,6 +21,8 @@ import {
 } from 'lucide-react';
 import ServicesSectionAjmer from './ServicesSectionAjmer';
 import SocialMediaHeroAjmer from './SocialMediaHeroAjmer';
+import { Helmet } from 'react-helmet';
+
 
 const SocialMediaServicesAjmer = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -139,6 +141,61 @@ const SocialMediaServicesAjmer = () => {
 
   return (
     <div className="min-h-screen">
+
+<Helmet>
+  <title>
+    Best Social Media Marketing Company in Ajmer | SEOcial Media Solutions
+  </title>
+
+  <meta
+    name="description"
+    content="Looking for expert social media marketing in Ajmer? SEOcial Media Solutions is the best company for Instagram marketing, Facebook ads, and complete digital growth services."
+  />
+  <meta
+    name="keywords"
+    content="social media marketing company Ajmer, Instagram marketing Ajmer, Facebook ads Ajmer, digital marketing Ajmer, best marketing agency Ajmer, social media agency, Ajmer SEO, website promotion Ajmer"
+  />
+  <link
+    rel="canonical"
+    href="https://seocialmedia.in/social-media-marketing-company-ajmer"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:title"
+    content="Top Social Media Marketing Company in Ajmer | SEOcial Media Solutions"
+  />
+  <meta
+    property="og:description"
+    content="Boost your online presence with the best social media marketing company in Ajmer. Get tailored strategies for Instagram, Facebook, and Google Ads."
+  />
+  <meta
+    property="og:image"
+    content="https://seocialmedia.in/images/og-ajmer-social.jpg"
+  />
+  <meta
+    property="og:url"
+    content="https://seocialmedia.in/social-media-marketing-company-ajmer"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Ajmer’s Best Social Media Marketing Company | SEOcial Media"
+  />
+  <meta
+    name="twitter:description"
+    content="Reach more customers online with our social media marketing services in Ajmer. We help businesses grow through effective digital strategies."
+  />
+  <meta
+    name="twitter:image"
+    content="https://seocialmedia.in/images/og-ajmer-social.jpg"
+  />
+</Helmet>
+
+
       {/* Hero Section */}
       <section className="text-center py-20 bg-gradient-to-br from-pink-50 to-purple-50">
         <h1 className="text-sm font-medium text-white bg-gradient-to-r from-pink-500 to-purple-500 inline-block px-4 py-1 rounded-full">

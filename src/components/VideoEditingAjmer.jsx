@@ -185,17 +185,59 @@ const VideoEditingAjmer = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Best Video Editing Company in Ajmer | SEOcial Media Solutions</title>
-        <meta name="description" content="Transform your raw footage into compelling videos with the best video editing company in Ajmer. Create stunning visual content with SEOcial Media Solutions!" />
-        <meta name="keywords" content="video editing, professional videos, video production, best video editing company in Ajmer" />
-        <link rel="canonical" href="https://seocialmedia.in/video-editing-company-ajmer" />
-        <meta property="og:title" content="Best Video Editing Company in Ajmer | SEOcial Media Solutions" />
-        <meta property="og:description" content="Transform your raw footage into compelling and engaging videos with the best video editing company in Ajmer." />
-        <meta property="og:image" content="https://seocialmedia.in/images/og-video.jpg" />
-        <meta property="og:url" content="https://seocialmedia.in/video-editing-company-ajmer" />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Helmet>
+     <Helmet>
+  <title>
+    Best Video Editing Company in Ajmer | SEOcial Media Solutions
+  </title>
+
+  <meta
+    name="description"
+    content="SEOcial Media Solutions is the top video editing company in Ajmer offering professional video editing, reels creation, promotional video editing, and social media-ready content."
+  />
+  <meta
+    name="keywords"
+    content="video editing company Ajmer, reels editing Ajmer, promo video editing Ajmer, YouTube video editor Ajmer, social media video editing Ajmer, video production Ajmer, SEOcial Media Solutions"
+  />
+  <link
+    rel="canonical"
+    href="https://seocialmedia.in/video-editing-company-ajmer"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:title"
+    content="Top Video Editing Company in Ajmer | SEOcial Media Solutions"
+  />
+  <meta
+    property="og:description"
+    content="Looking for high-quality video editing services in Ajmer? Get cinematic reels, promotional videos, and more crafted by our expert editors."
+  />
+  <meta
+    property="og:image"
+    content="https://seocialmedia.in/images/og-ajmer-video.jpg"
+  />
+  <meta
+    property="og:url"
+    content="https://seocialmedia.in/video-editing-company-ajmer"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Ajmer’s Best Video Editing Company | SEOcial Media"
+  />
+  <meta
+    name="twitter:description"
+    content="Enhance your brand with expert video editing services in Ajmer. We edit reels, promos, and business videos for Instagram, YouTube, and more."
+  />
+  <meta
+    name="twitter:image"
+    content="https://seocialmedia.in/images/og-ajmer-video.jpg"
+  />
+</Helmet>
+
       <center>
 <HeroSectionVideo/></center>
         {/* Hero Section */}
