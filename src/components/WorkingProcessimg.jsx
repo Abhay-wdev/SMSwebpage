@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
- 
 import { FaCheck, FaArrowRight } from 'react-icons/fa';
 import { IoTrendingUp } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
@@ -108,8 +107,6 @@ const services = [
     note: 'Of customers prefer companies with quality, consistent content',
     path: '/content-writing-company-ajmer',
   },
-  
-  
   {
     title: 'Google Services & PPC',
     description:
@@ -137,42 +134,42 @@ const WorkingProcessimg = () => {
 
   return (
     <>
-      <h2 className="z-10 text-white font-bold w-fit text-3xl py-1 px-4 rounded-t-3xl bg-blue-900">
-        Our Services in Ajmer
-      </h2>
+     {/* Background heading */}
+     <h2 className="  w-fit     z-0 text-white font-bold text-3xl py-3 px-6 rounded-3xl bg-blue-900 text-center">
+          Our Services in Ajmer
+        </h2>
+      <section className="  max-w-7xl mx-auto mb-10 rounded-[60px] z-10 overflow-hidden flex flex-col lg:flex-row shadow-md">
+       
 
-      <section className="max-w-7xl mx-auto mb-10 rounded-[60px] overflow-hidden flex flex-col lg:flex-row shadow-md">
         {/* Left menu */}
-        <div className="bg-[#0A0D2B] text-white w-full lg:w-1/3 p-6 flex flex-col gap-4">
+        <div className="bg-[#0A0D2B]  z-0 text-white w-full lg:w-1/3 p-6  flex flex-col gap-4">
           {services.map((service, index) => (
-
-<motion.div
- 
-initial={{ opacity: 0, x: -50 }}
-whileInView={{ opacity: 1, x: 0 }}
-viewport={{ once: true, amount: 0.2 }}
-transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.2 }}
->
-            <div
+            <motion.div
               key={index}
-              className={`flex items-center justify-between px-4 py-3 rounded-full cursor-pointer transition ${
-                activeIndex === index ? 'bg-purple-600' : ''
-              }`}
-              onClick={() => setActiveIndex(index)}
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.2 }}
             >
-              <span className="text-left text-sm md:text-base">{service.title}</span>
-              {activeIndex === index && (
-                <div className="bg-black rounded-full p-2">
-                  <FaArrowRight className="text-white" />
-                </div>
-              )}
-            </div>
+              <div
+                className={`flex items-center justify-between px-4 py-3 rounded-full cursor-pointer transition ${
+                  activeIndex === index ? 'bg-purple-600' : ''
+                }`}
+                onClick={() => setActiveIndex(index)}
+              >
+                <span className="text-left text-sm md:text-base">{service.title}</span>
+                {activeIndex === index && (
+                  <div className="bg-black rounded-full p-2">
+                    <FaArrowRight className="text-white" />
+                  </div>
+                )}
+              </div>
             </motion.div>
           ))}
         </div>
 
         {/* Right content */}
-        <div className="bg-gradient-to-r from-blue-500 to-transparent bg-gray-50 w-full lg:w-2/3 p-6 md:p-10 flex flex-col lg:flex-row gap-8 rounded-br-[60px]">
+        <div className="bg-gradient-to-r   from-blue-500 to-transparent bg-gray-50 w-full lg:w-2/3 p-6 md:p-10 flex flex-col lg:flex-row gap-8 rounded-br-[60px]">
           <div className="flex-1">
             <h3 className="text-lg md:text-xl font-semibold mb-4">
               {services[activeIndex].description}
@@ -186,9 +183,8 @@ transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.2 }}
               ))}
             </ul>
 
-            {/* Link for Learn More */}
             <Link
-              to={ services[activeIndex].path}
+              to={services[activeIndex].path}
               className="inline-block mt-6 text-sm font-semibold border-b-2 border-purple-600"
             >
               LEARN MORE
