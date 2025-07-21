@@ -1,15 +1,15 @@
 import React from "react";
 import Masonry from "./Masonry";
 
-const SEOLandingSection = () => {
+const SEOLandingSectionJaipur = () => {
   // Generate 10 image URLs: /images/more/best-seo-ajmer-001.jpg to 010
-  const totalImages = 10;
+  const totalImages = 11;
 
   const items = Array.from({ length: totalImages }, (_, i) => {
     const index = (i + 1).toString().padStart(3, "0"); // "001", "002", ...
     return {
       id: (i + 1).toString(),
-      img: `/images/more/best-seo-ajmer-${index}.jpg`,
+      img: `/images/more/best-seo-jaipur-${index}.webp`,
       url: `https://example.com/${i + 1}`,
       height: 300 + Math.floor(Math.random() * 250), // 300–550
     };
@@ -48,7 +48,7 @@ const SEOLandingSection = () => {
         {/* Right Illustration */}
         <div className="md:w-1/2 flex justify-center relative">
           <img
-            src="/images/other/banner.png"
+            src="/images/other/bannerjaipur.webp"
             alt="SEO Illustration"
             className="w-full max-w-md"
           />
@@ -73,4 +73,4 @@ const SEOLandingSection = () => {
   );
 };
 
-export default SEOLandingSection;
+export default SEOLandingSectionJaipur;

@@ -136,7 +136,7 @@ const WorkingProcessimg = () => {
     <>
      {/* Background heading */}
      <h2 className="  w-fit     z-0 text-white font-bold text-3xl py-3 px-6 rounded-3xl bg-blue-900 text-center">
-          Our Services in Ajmer
+          Our Services in Jaipur
         </h2>
       <section className="  max-w-7xl mx-auto mb-10 rounded-[60px] z-10 overflow-hidden flex flex-col lg:flex-row shadow-md">
        

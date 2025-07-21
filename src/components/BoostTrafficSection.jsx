@@ -24,7 +24,7 @@ const BoostTrafficSection = () => {
         {/* Right Mobile Mockup with floating animation */}
         <div className="md:w-1/2 flex justify-center">
           <img
-            src="/images/other/boostsmockup.png"
+            src="/images/other/seo-jaipur.png"
             alt="Credit Mobile UI"
             className="w-full max-w-sm rounded-3xl shadow-xl animate-float"
           />
