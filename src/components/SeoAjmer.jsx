@@ -76,7 +76,7 @@ function SeoAjmer() {
   />
   <link
     rel="canonical"
-    href="https://sm-swebpage.vercel.app/social-media-company-ajmer"
+    href="https://seocialmedia.in/social-media-company-ajmer"
   />
 
   {/* Open Graph / Facebook */}
@@ -91,11 +91,11 @@ function SeoAjmer() {
   />
   <meta
     property="og:image"
-    content="https://sm-swebpage.vercel.app/images/social-media-ajmer-og.jpg"
+    content="https://seocialmedia.in/images/social-media-ajmer-og.jpg"
   />
   <meta
     property="og:url"
-    content="https://sm-swebpage.vercel.app/social-media-company-ajmer"
+    content="https://seocialmedia.in/social-media-company-ajmer"
   />
 
   {/* Twitter */}
@@ -110,7 +110,7 @@ function SeoAjmer() {
   />
   <meta
     name="twitter:image"
-    content="https://sm-swebpage.vercel.app/images/social-media-ajmer-og.jpg"
+    content="https://seocialmedia.in/images/social-media-ajmer-og.jpg"
   />
 </Helmet>
 

@@ -79,7 +79,7 @@ function SocialMediaCompnayJaipur() {
   />
   <link
     rel="canonical"
-    href="https://sm-swebpage.vercel.app/social-media-solution-company-jaipur"
+    href="https://seocialmedia.in/social-media-solution-company-jaipur"
   />
 
   {/* Open Graph / Facebook */}
@@ -94,11 +94,11 @@ function SocialMediaCompnayJaipur() {
   />
   <meta
     property="og:image"
-    content="https://sm-swebpage.vercel.app/images/social-media-jaipur-og.jpg"
+    content="https://seocialmedia.in/images/social-media-jaipur-og.jpg"
   />
   <meta
     property="og:url"
-    content="https://sm-swebpage.vercel.app/social-media-solution-company-jaipur"
+    content="https://seocialmedia.in/social-media-solution-company-jaipur"
   />
 
   {/* Twitter */}
@@ -113,7 +113,7 @@ function SocialMediaCompnayJaipur() {
   />
   <meta
     name="twitter:image"
-    content="https://sm-swebpage.vercel.app/images/social-media-jaipur-og.jpg"
+    content="https://seocialmedia.in/images/social-media-jaipur-og.jpg"
   />
 </Helmet>
 
