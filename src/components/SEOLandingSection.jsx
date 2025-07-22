@@ -37,7 +37,7 @@ const SEOLandingSection = () => {
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
             Rank Your Local
             <br /> Business With SEO
-            <br /> in Jaipur
+            <br /> in Ajmer
           </h1>
           <p className="text-base text-blue-100">
             Our approach to SEO is uniquely built around what we know works and

@@ -16,15 +16,15 @@ import {
 } from "react-icons/si";
 
 const companies = [
-  { name: "upwork", icon: SiUpwork },
-  { name: "zoom", icon: SiZoom },
+   
+   
   { name: "shopify", icon: SiShopify },
-  { name: "webflow", icon: SiWebflow },
+ 
   { name: "youtube", icon: SiYoutube },
-  { name: "netflix", icon: SiNetflix },
+   
    
   { name: "facebook", icon: SiFacebook },
-  { name: "instagram", icon: SiInstagram },
+   
   { name: "wordpress", icon: SiWordpress },
  
   { name: "google ads", icon: SiGoogleads },
@@ -41,7 +41,7 @@ const TrustedByCompanies = () => {
     >
       <h3 className="text-lg sm:text-xl font-medium mb-10">
         SMS is used by over{" "}
-        <span className="text-orange-500 font-semibold">1000+</span> companies
+        <span className="text-orange-500 font-semibold">100+</span> companies
         across the world
       </h3>
 

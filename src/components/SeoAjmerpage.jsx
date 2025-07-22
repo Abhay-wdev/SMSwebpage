@@ -300,7 +300,7 @@ const SeoAjmerpage = () => {
           {/* Hero Section */}
           <div className="text-center relative mb-16">
             <span className="inline-block px-6 py-2 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-sm rounded-full font-medium shadow-lg">
-              <h1>Best SEO Company in Jaipur</h1>
+              <h1>Best SEO Company in Ajmer</h1>
             </span>
             <h2 className="mt-6 pb-3 text-5xl font-bold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent md:text-7xl">
               Turbocharge Your Web Traffic

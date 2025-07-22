@@ -22,11 +22,13 @@ const cards = [
     image: "/images/other/media.jpg",
   },
   {
-    title: "Investing Strategic",
-    description: "Maximize ROI with smart investment and business strategies.",
+    title: "Content Writing",
+    description: "Engage your audience with impactful, SEO-friendly content tailored to your brand voice.",
     image: "/images/other/strategy.jpg",
-  },
+  }
+  ,
   {
+    
     title: "PPC Advertising",
     description: "Drive instant traffic with data-driven PPC ad campaigns.",
     image: "/images/other/ppc.jpg",

@@ -4,9 +4,10 @@ import { FaClipboardCheck, FaLightbulb, FaAtom, FaChartLine } from 'react-icons/
 import HoverSlideCards from './HoverRevealCards';
 import { motion } from 'framer-motion';
 import { Clock, Shield, HeartHandshake } from 'lucide-react';
+import HoverSlideCardsJaipur from './HoverSlideCardsJaipur';
 
 
-const WorkingProcess = () => {
+const WorkingProcessJaipur = () => {
   const steps = [
     {
       icon: <FaClipboardCheck className="text-teal-400 size-12" />,
@@ -119,9 +120,10 @@ transition={{ duration: 0.6, ease: "easeOut", delay:  0 }}
               </div>
             </div>
           
-      <HoverSlideCards/></center>
+      
+      <HoverSlideCardsJaipur/></center>
     </section>
   );
 };
 
-export default WorkingProcess;
+export default WorkingProcessJaipur;

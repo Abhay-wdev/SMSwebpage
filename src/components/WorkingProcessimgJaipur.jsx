@@ -25,7 +25,7 @@ const services = [
     ],
     percentage: '86%',
     note: 'Of marketers report increased exposure through social media marketing',
-    path: '/social-media-marketing-company-ajmer',
+    path: '/social-media-marketing-company-jaipur',
   },
   {
     title: 'Full-Stack Web Development',
@@ -45,7 +45,7 @@ const services = [
     ],
     percentage: '91%',
     note: 'Of users judge a company’s credibility based on website experience',
-    path: '/web-development-company-ajmer',
+    path: '/web-development-company-jaipur',
   },
   {
     title: 'SEO & Analytics',
@@ -65,7 +65,7 @@ const services = [
     ],
     percentage: '93%',
     note: 'Of online experiences begin with search, making SEO crucial',
-    path: '/seo-company-ajmer',
+    path: '/seo-company-jaipur',
   },
   {
     title: 'Video Editing',
@@ -85,7 +85,7 @@ const services = [
     ],
     percentage: '89%',
     note: 'Of marketers say video provides a good ROI for their brand strategy',
-    path: '/video-editing-company-ajmer',
+    path: '/top-video-editing-company-jaipur',
   },
   {
     title: 'Content Writing',
@@ -105,7 +105,7 @@ const services = [
     ],
     percentage: '78%',
     note: 'Of customers prefer companies with quality, consistent content',
-    path: '/content-writing-company-ajmer',
+    path: '/content-writing-company-jaipur',
   },
   {
     title: 'Google Services & PPC',
@@ -125,18 +125,18 @@ const services = [
     ],
     percentage: '82%',
     note: 'Of clicks on search ads lead to conversions, making PPC essential',
-    path: '/lead-generation-company-ajmer',
+    path: '/lead-generation-company-jaipur',
   },
 ];
 
-const WorkingProcessimg = () => {
+const WorkingProcessimgJaipur = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <>
      {/* Background heading */}
-     <h2 className="  w-fit  mb-2   z-0 text-white font-bold text-3xl py-3 px-6 rounded-3xl bg-blue-900 text-center">
-          Our Services in Ajmer
+     <h2 className="  w-fit  mb-2  z-0 text-white font-bold text-3xl py-3 px-6 rounded-3xl bg-blue-900 text-center">
+          Our Services in Jaipur
         </h2>
       <section className="  max-w-7xl mx-auto mb-10 rounded-[60px] z-10 overflow-hidden flex flex-col lg:flex-row shadow-md">
        
@@ -205,4 +205,4 @@ const WorkingProcessimg = () => {
   );
 };
 
-export default WorkingProcessimg;
+export default WorkingProcessimgJaipur;

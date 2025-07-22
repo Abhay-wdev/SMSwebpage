@@ -15,6 +15,8 @@ import ContentWritingServicesAjmer from './components/ContentWritingServicesAjme
 import GoogleServicesAjmer from './components/GoogleServicesAjmer';
 import SeoAjmerpage from './components/SeoAjmerpage';
 import SocialMediaCompnayJaipur from './components/SocialMediaCompnayJaipur';
+import SocialMediaServicesJaipur from './components/SocialMediaServicesJaipur';
+import VideoEditingJaipur from './components/VideoEditingJaipur';
 // Lazy load components for better performance
 const Home = lazy(() => import('./components/Home'));
 const AboutUs = lazy(() => import('./components/AboutUs'));
@@ -73,7 +75,12 @@ function App() {
             <Route path="/lead-generation-company-ajmer" element={ <GoogleServicesAjmer/>} />
              {/* This is for Jaipur */}
 <Route path='/social-media-solution-company-jaipur' element={<SocialMediaCompnayJaipur/>} />
+<Route path="/social-media-marketing-company-jaipur" element={ <SocialMediaServicesJaipur/>} />
+<Route path="/web-development-company-jaipur" element={<WebDevelopmentAjmer/>} />
+<Route path="/top-video-editing-company-jaipur" element={ <VideoEditingJaipur/>} />
 
+
+ 
             {/* Handle 404 */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>

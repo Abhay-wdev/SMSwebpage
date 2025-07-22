@@ -4,32 +4,33 @@ const cards = [
   {
     title: "SEO & Marketing",
     description: "Boost your brand’s visibility with expert SEO strategies.",
-    image: "/images/other/seo.jpg",
+    image: "/images/other/seo.webp",
   },
   {
     title: "Digital Marketing",
     description: "Reach your audience across all platforms with digital campaigns.",
-    image: "/images/other/digital.jpg",
+    image: "/images/other/digital.webp",
   },
   {
     title: "Web Development",
     description: "Custom web development for your business needs and strategy.",
-    image: "/images/other/dev.jpg",
+    image: "/images/other/dev.webp",
   },
   {
     title: "Media Marketing",
     description: "Grow engagement through creative media planning and execution.",
-    image: "/images/other/media.jpg",
+    image: "/images/other/media.webp",
   },
   {
-    title: "Investing Strategic",
-    description: "Maximize ROI with smart investment and business strategies.",
-    image: "/images/other/strategy.jpg",
-  },
+    title: "Content Writing",
+    description: "Engage your audience with impactful, SEO-friendly content tailored to your brand voice.",
+    image: "/images/other/content-writing.webp",
+  }
+  ,
   {
     title: "PPC Advertising",
     description: "Drive instant traffic with data-driven PPC ad campaigns.",
-    image: "/images/other/ppc.jpg",
+    image: "/images/other/ppc.webp",
   },
 ];
 

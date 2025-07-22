@@ -12,7 +12,8 @@ import { Helmet } from 'react-helmet';
 import Reviews from './Reviews'
  
 import SEOLandingSectionJaipur from './SEOLandingSectionJaipur'
-
+import WorkingProcessimgJaipur from './WorkingProcessimgJaipur'
+import WorkingProcessJaipur from './WorkingProcessJaipur'
 function SocialMediaCompnayJaipur() {
 
 
@@ -120,14 +121,15 @@ function SocialMediaCompnayJaipur() {
       <center>
  <SEOLandingSectionJaipur/>
   <BoostTrafficSection/>
-  <WorkingProcessimg/>
-  <WorkingProcess/>
+   
+  <WorkingProcessimgJaipur/>
+  <WorkingProcessJaipur/>
     
   
   <FAQAccordionnew content={faqItemsJaipur} title="Ajmer Digital Marketing" subtitle="FAQs" />
 
  
- <TrustedByCompanies/>
+ 
   </center> 
   </div>
    

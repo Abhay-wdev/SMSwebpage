@@ -10,15 +10,16 @@ const HeroSectionVideo = () => {
 
       {/* YouTube iframe (non-interactive, no controls) */}
       <iframe
-        className="absolute top-0 left-0 w-full h-full pointer-events-none z-10"
-        src="https://www.youtube.com/embed/9s3lOz8DKlg?autoplay=1&mute=1&controls=0&disablekb=1&modestbranding=1&rel=0&loop=1&playlist=9s3lOz8DKlg"
-        title="YouTube video background"
-        frameBorder="0"
-        allow="autoplay; fullscreen"
-        allowFullScreen
-      ></iframe>
+  className="absolute top-0 left-0 w-full h-full pointer-events-none z-10"
+  src="https://www.youtube.com/embed/tj_pskNDVo0?autoplay=1&mute=1&controls=0&disablekb=1&modestbranding=1&rel=0&loop=1&playlist=tj_pskNDVo0"
+  title="YouTube video background"
+  frameBorder="0"
+  allow="autoplay; fullscreen"
+  allowFullScreen
+></iframe>
+
     </div>
   );
 };
-
+ 
 export default HeroSectionVideo;
