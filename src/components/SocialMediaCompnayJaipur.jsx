@@ -64,58 +64,59 @@ function SocialMediaCompnayJaipur() {
 
   return (
     <div >
-   <Helmet>
+  <Helmet>
   <title>
-    Best Social Media Marketing Company in Ajmer | SEOcial Media Solutions
+    Top Social Media Marketing Company in Jaipur | SEOcial Media Solutions
   </title>
 
   <meta
     name="description"
-    content="Grow your business online with the best social media marketing company in Ajmer. SEOcial Media Solutions provides expert services in social media management, SEO, and website development."
+    content="Looking for the best social media marketing company in Jaipur? SEOcial Media Solutions provides expert social media management, Instagram marketing, Facebook ads, and strategic content creation to grow your business online."
   />
   <meta
     name="keywords"
-    content="social media marketing Ajmer, digital marketing Ajmer, SEO company Ajmer, web development Ajmer, best marketing agency in Ajmer, Instagram marketing, Facebook ads Ajmer, Ajmer advertising company"
+    content="social media marketing Jaipur, social media company Jaipur, digital marketing Jaipur, Instagram marketing Jaipur, Facebook ads Jaipur, best marketing agency Jaipur, social media management Jaipur, online marketing Jaipur"
   />
   <link
     rel="canonical"
-    href="https://seocialmedia.in/social-media-company-ajmer"
+    href="https://sm-swebpage.vercel.app/social-media-solution-company-jaipur"
   />
 
   {/* Open Graph / Facebook */}
   <meta property="og:type" content="website" />
   <meta
     property="og:title"
-    content="Top Social Media Marketing Company in Ajmer | SEOcial Media Solutions"
+    content="Best Social Media Marketing Company in Jaipur | SEOcial Media Solutions"
   />
   <meta
     property="og:description"
-    content="Boost your online presence with expert social media marketing services in Ajmer. Custom strategies for Instagram, Facebook, and Google Ads."
+    content="Grow your brand with Jaipur's top social media marketing company. Expert social media management, Facebook & Instagram ads, and strategic content creation to drive results."
   />
   <meta
     property="og:image"
-    content="https://seocialmedia.in/images/og-ajmer.jpg"
+    content="https://sm-swebpage.vercel.app/images/social-media-jaipur-og.jpg"
   />
   <meta
     property="og:url"
-    content="https://seocialmedia.in/social-media-company-ajmer"
+    content="https://sm-swebpage.vercel.app/social-media-solution-company-jaipur"
   />
 
   {/* Twitter */}
   <meta name="twitter:card" content="summary_large_image" />
   <meta
     name="twitter:title"
-    content="Top Social Media Marketing Company in Ajmer | SEOcial Media"
+    content="Top Social Media Marketing Company in Jaipur | SEOcial Media Solutions"
   />
   <meta
     name="twitter:description"
-    content="Ajmer's leading digital marketing agency offering social media growth, SEO, content marketing, and affordable web development services."
+    content="Jaipur's leading social media marketing agency. We offer social media management, targeted ads, and content strategies to grow your business online."
   />
   <meta
     name="twitter:image"
-    content="https://seocialmedia.in/images/og-ajmer.jpg"
+    content="https://sm-swebpage.vercel.app/images/social-media-jaipur-og.jpg"
   />
 </Helmet>
+
 
        
       <center>
@@ -126,7 +127,7 @@ function SocialMediaCompnayJaipur() {
   <WorkingProcessJaipur/>
     
   
-  <FAQAccordionnew content={faqItemsJaipur} title="Ajmer Digital Marketing" subtitle="FAQs" />
+  <FAQAccordionnew content={faqItemsJaipur} title="Jaipur Digital Marketing" subtitle="FAQs" />
 
  
  

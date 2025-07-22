@@ -59,7 +59,7 @@ const WorkingProcess = () => {
                     Expert Digital Solutions at Your Fingertips
                   </h2>
                   <p className="text-lg text-gray-200 leading-relaxed">
-                    Connect with Jaipur's best digital marketing agency for tailored web solutions, 
+                    Connect with Ajmer's best digital marketing agency for tailored web solutions, 
                     SEO strategies, and social media expertise. Our dedicated team ensures your business 
                     achieves maximum online visibility and engagement through data-driven approaches 
                     and innovative digital marketing solutions.
@@ -110,7 +110,7 @@ transition={{ duration: 0.6, ease: "easeOut", delay:  0 }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
                     <div className="p-6 text-white">
-                      <p className="text-xl font-semibold">Leading Digital Marketing Agency in Jaipur</p>
+                      <p className="text-xl font-semibold">Leading Digital Marketing Agency in Ajmer</p>
                       <p className="mt-2 text-sm opacity-90">Transforming businesses through digital excellence</p>
                     </div>
                   </div>
