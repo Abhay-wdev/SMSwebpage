@@ -73,6 +73,7 @@ function App() {
             <Route path="/seo-company-ajmer" element={<SeoAjmerpage/>} />
             <Route path="/content-writing-company-ajmer" element={ <ContentWritingServicesAjmer/>} />
             <Route path="/lead-generation-company-ajmer" element={ <GoogleServicesAjmer/>} />
+            
              {/* This is for Jaipur */}
 <Route path='/social-media-solution-company-jaipur' element={<SocialMediaCompnayJaipur/>} />
 <Route path="/social-media-marketing-company-jaipur" element={ <SocialMediaServicesJaipur/>} />

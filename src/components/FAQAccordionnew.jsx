@@ -23,7 +23,7 @@ const FAQAccordionnew = ({ content, title = "Frequently Asked", subtitle = "Ques
           <br />
           <span className="text-gray-800">{subtitle}</span>
         </h2>
-        <div className="w-24 h-1.5 bg-gradient-to-r from-blue-600 to-blue-800 mx-auto mt-6 rounded-full"/>
+        <div className="w-24 h-1.5 mb-4 bg-gradient-to-r from-blue-600 to-blue-800 mx-auto mt-6 rounded-full"/>
         </motion.div>
       
       

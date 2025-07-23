@@ -495,7 +495,8 @@ const VideoEditingAjmer = () => {
 
       
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600">
+      <center>
+      <section className=" mb-10 max-w-5xl rounded-lg py-10 bg-gradient-to-r from-indigo-600 to-purple-600">
         <div className="max-w-7xl mx-auto px-4 md:px-16 text-white text-center">
           <motion.div
             variants={containerVariants}
@@ -517,6 +518,7 @@ const VideoEditingAjmer = () => {
           </motion.div>
         </div>
       </section>
+      </center>
     </>
   );
 };

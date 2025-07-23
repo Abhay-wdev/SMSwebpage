@@ -8,7 +8,7 @@ import FAQAccordion from './FAQAccordion'
 import WorkingProcess from './WorkingProcess'
 import WorkingProcessimg from './WorkingProcessimg'
 import FAQAccordionnew from './FAQAccordionnew'
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Reviews from './Reviews'
  
 import SEOLandingSectionJaipur from './SEOLandingSectionJaipur'
@@ -66,7 +66,7 @@ function SocialMediaCompnayJaipur() {
     <div >
   <Helmet>
   <title>
-    Top Social Media Marketing Company in Jaipur | SEOcial Media Solutions
+    Top Social Media Marketing Company in Jaipur  
   </title>
 
   <meta

@@ -4,12 +4,7 @@ import React, { useState } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 
 const services = [
-  {
-    title: "Graphic Design Services",
-    description:
-      "Our graphic design services in Ajmer are crafted to visually represent your business identity with impact and clarity. From unique color schemes to personalized branding elements, we ensure that your brand connects with the local audience while maintaining global appeal. Our team blends tradition with modern aesthetics to design creatives that reflect Ajmer's cultural richness and your business vision.",
-    image: "/images/graphic-design.webp",
-  },
+  
   {
     title: "Dynamic Website Design",
     description:
@@ -52,18 +47,8 @@ const services = [
       "Whether you're selling local Rajasthani handicrafts or running a wholesale business in Ajmer, our eCommerce website designs are built to convert. We focus on intuitive navigation, minimalistic UI, secure payment gateways, and mobile optimization to ensure your online store provides a smooth and trustworthy shopping experience for your customers.",
     image: "/images/ecommerce.webp",
   },
-  {
-    title: "Creative Logo Design",
-    description:
-      "In Ajmer, a strong logo speaks volumes about your business values. Our team crafts logos that merge creativity with brand essence. Whether you're a spiritual brand near Pushkar or a modern-day startup, we create logos that are memorable, scalable, and reflective of your business identity across all platforms—digital and print.",
-    image: "/images/logo-design.webp",
-  },
-  {
-    title: "Template Design",
-    description:
-      "Our template design services help Ajmer-based entrepreneurs, educators, and content creators maintain brand consistency across presentations, brochures, emails, and websites. With ready-to-edit formats tailored to your industry, we provide visually rich, versatile templates that save time while enhancing professionalism.",
-    image: "/images/template-design.webp",
-  },
+   
+  
   {
     title: "Web Portal Design",
     description:
@@ -118,7 +103,7 @@ const WorkingProcessimgMedia = () => {
         </div>
 
         {/* Image */}
-        <div className="flex order-1 max-w-[500px] items-center justify-center bg-white rounded-3xl p-0 md:p-8 shadow w-full h-[31%]">
+        <div className="flex order-1 max-w-[500px] items-center justify-center bg-white rounded-3xl p-0 md:p-8 shadow w-full h-[43%]">
           <img
             src={services[activeIndex].image}
             alt={services[activeIndex].title}

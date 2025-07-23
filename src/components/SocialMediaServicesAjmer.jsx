@@ -7,10 +7,6 @@ import {
   MessageCircle, 
   TrendingUp,
   Target,
-  Instagram,
-  Facebook,
-  Twitter,
-  Linkedin,
   CheckCircle,
   Award,
   Zap,
@@ -21,7 +17,7 @@ import {
 } from 'lucide-react';
 import ServicesSectionAjmer from './ServicesSectionAjmer';
 import SocialMediaHeroAjmer from './SocialMediaHeroAjmer';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 
 const SocialMediaServicesAjmer = () => {
@@ -144,7 +140,7 @@ const SocialMediaServicesAjmer = () => {
 
 <Helmet>
   <title>
-    Best Social Media Marketing Company in Ajmer | SEOcial Media Solutions
+    Best Social Media Marketing Company in Ajmer 
   </title>
 
   <meta
@@ -198,9 +194,9 @@ const SocialMediaServicesAjmer = () => {
 
       {/* Hero Section */}
       <section className="text-center py-20 bg-gradient-to-br from-pink-50 to-purple-50">
-        <h1 className="text-sm font-medium text-white bg-gradient-to-r from-pink-500 to-purple-500 inline-block px-4 py-1 rounded-full">
+        <h2 className="text-sm font-medium text-white bg-gradient-to-r from-pink-500 to-purple-500 inline-block px-4 py-1 rounded-full">
           Best Social Media Marketing Company in Ajmer
-        </h1>
+        </h2>
         <h2 className="mt-6 text-4xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent md:text-6xl">
           Transform Your Social Media Presence
         </h2>
@@ -232,9 +228,11 @@ const SocialMediaServicesAjmer = () => {
       </section>
 
 
-
+      <h2 className="text-3xl font-bold text-center mt-8">
+  Key Features
+</h2>
   {/* Features Grid */}<center>
-  <div className="mt-24 max-w-6xl grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+  <div className="my-24 max-w-6xl grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {features.map((feature) => (
                 <div
                   key={feature.name}
@@ -319,7 +317,7 @@ const SocialMediaServicesAjmer = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="mt-16 text-center">
+      <section className="my-16 text-center">
         <div className="relative max-w-3xl mx-auto p-8 rounded-2xl overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 opacity-10" />
           <div className="relative">

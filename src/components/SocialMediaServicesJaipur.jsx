@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import ServicesSectionAjmer from './ServicesSectionAjmer';
 import SocialMediaHeroAjmer from './SocialMediaHeroAjmer';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 
 const SocialMediaServicesJaipur = () => {
@@ -142,58 +142,61 @@ const SocialMediaServicesJaipur = () => {
   return (
     <div className="min-h-screen">
 
+ 
 <Helmet>
   <title>
-    Best Social Media Marketing Company in Ajmer | SEOcial Media Solutions
+    Top Social Media Marketing Company in Jaipur  
   </title>
-
   <meta
     name="description"
-    content="Looking for expert social media marketing in Ajmer? SEOcial Media Solutions is the best company for Instagram marketing, Facebook ads, and complete digital growth services."
+    content="Looking for top-notch social media marketing in Jaipur? SEOcial Media Solutions delivers results-driven campaigns for real brand growth."
   />
   <meta
     name="keywords"
-    content="social media marketing company Ajmer, Instagram marketing Ajmer, Facebook ads Ajmer, digital marketing Ajmer, best marketing agency Ajmer, social media agency, Ajmer SEO, website promotion Ajmer"
+    content="Social Media Marketing Jaipur, social media agency Jaipur, SEOcial Media Jaipur, Instagram marketing Jaipur, Facebook ads Jaipur, digital marketing Jaipur"
   />
   <link
     rel="canonical"
-    href="https://seocialmedia.in/social-media-marketing-company-ajmer"
+    href="https://sm-swebpage.vercel.app/social-media-marketing-company-jaipur"
   />
 
-  {/* Open Graph / Facebook */}
-  <meta property="og:type" content="website" />
+  {/* Open Graph Meta */}
   <meta
     property="og:title"
-    content="Top Social Media Marketing Company in Ajmer | SEOcial Media Solutions"
+    content="Top Social Media Marketing Company in Jaipur | SEOcial Media Solutions"
   />
   <meta
     property="og:description"
-    content="Boost your online presence with the best social media marketing company in Ajmer. Get tailored strategies for Instagram, Facebook, and Google Ads."
+    content="Boost your brand visibility with Jaipur's most trusted social media marketing company. Customized campaigns for real engagement."
   />
   <meta
     property="og:image"
-    content="https://seocialmedia.in/images/og-ajmer-social.jpg"
+    content="https://sm-swebpage.vercel.app/images/social-bg.jpg"
   />
   <meta
     property="og:url"
-    content="https://seocialmedia.in/social-media-marketing-company-ajmer"
+    content="https://sm-swebpage.vercel.app/social-media-marketing-company-jaipur"
   />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Top SEOcial Media Solutions in Jaipur" />
 
-  {/* Twitter */}
+  {/* Twitter Meta */}
   <meta name="twitter:card" content="summary_large_image" />
   <meta
     name="twitter:title"
-    content="Ajmer’s Best Social Media Marketing Company | SEOcial Media"
+    content="Top Social Media Marketing Company in Jaipur | SEOcial Media Solutions"
   />
   <meta
     name="twitter:description"
-    content="Reach more customers online with our social media marketing services in Ajmer. We help businesses grow through effective digital strategies."
+    content="Get impactful social media marketing services in Jaipur with SEOcial Media Solutions."
   />
   <meta
     name="twitter:image"
-    content="https://seocialmedia.in/images/og-ajmer-social.jpg"
+    content="https://sm-swebpage.vercel.app/images/social-bg.jpg"
   />
 </Helmet>
+
+
 
 
       {/* Hero Section */}
@@ -232,9 +235,12 @@ const SocialMediaServicesJaipur = () => {
       </section>
 
 
+      <h2 className="text-3xl font-bold text-center my-8">
+  Key Features
+</h2>
 
   {/* Features Grid */}<center>
-  <div className="mt-24 max-w-6xl grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+  <div className="my-24 max-w-6xl grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {features.map((feature) => (
                 <div
                   key={feature.name}
@@ -319,7 +325,7 @@ const SocialMediaServicesJaipur = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="mt-16 text-center">
+      <section className="my-16 text-center">
         <div className="relative max-w-3xl mx-auto p-8 rounded-2xl overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 opacity-10" />
           <div className="relative">

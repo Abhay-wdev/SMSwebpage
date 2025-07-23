@@ -266,12 +266,7 @@ const WebDevelopmentAjmer = () => {
   <p className="mt-6 text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
     We offer cutting-edge web design & development services in Ajmer—crafting responsive, modern, and SEO-friendly websites tailored to your business needs.
   </p>
-  <Link
-    to="/contact"
-    className="inline-block mt-8 px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium rounded-lg hover:opacity-90 transition-opacity duration-300 shadow-lg"
-  >
-    Contact Us Now
-  </Link>
+  
 </motion.div>
 
 
