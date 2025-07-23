@@ -46,13 +46,13 @@ const SEOLandingSectionJaipur = () => {
         </div>
 
         {/* Right Illustration */}
-        <div className="md:w-1/2 flex justify-center relative">
+        {/* <div className="md:w-1/2 flex justify-center relative">
           <img
             src="/images/other/bannerjaipur.webp"
             alt="SEO Illustration"
             className="w-full max-w-md"
           />
-        </div>
+        </div> */}
       </div>
 
       {/* Wavy Bottom */}

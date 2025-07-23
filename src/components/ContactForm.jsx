@@ -112,7 +112,7 @@ const ContactForm = () => {
             onChange={handleChange}
             placeholder="Your Name"
             required
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all"
+            className="w-full px-4 py-3 rounded-lg border border-gray-500 focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all"
           />
           <input
             type="email"
@@ -121,7 +121,7 @@ const ContactForm = () => {
             onChange={handleChange}
             placeholder="Your Email"
             required
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all"
+            className="w-full px-4 py-3 rounded-lg border border-gray-500 focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all"
           />
         </div>
 
@@ -132,9 +132,9 @@ const ContactForm = () => {
             value={formData.phone}
             onChange={handleChange}
             placeholder="Your Phone Number"
-            className="w-full px-4 py-3 pl-11 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all"
+            className="w-full px-4 py-3 pl-11 rounded-lg border border-gray-500 focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all"
           />
-          <Smartphone className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+          <Smartphone className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500" />
         </div>
 
         <input
@@ -144,7 +144,7 @@ const ContactForm = () => {
           onChange={handleChange}
           placeholder="Subject"
           required
-          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all"
+          className="w-full px-4 py-3 rounded-lg border border-gray-500 focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all"
         />
 
         <textarea
@@ -154,7 +154,7 @@ const ContactForm = () => {
           placeholder="Your Message"
           required
           rows={6}
-          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all resize-none"
+          className="w-full px-4 py-3 rounded-lg border border-gray-500 focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all resize-none"
         />
 
         <button
