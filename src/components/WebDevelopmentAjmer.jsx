@@ -363,7 +363,7 @@ const WebDevelopmentAjmer = () => {
                     variants={fadeInUp}
                     className="bg-white p-8 rounded-xl shadow-lg text-center group hover:scale-105 transition-transform duration-200"
                   >
-                    <div className="mb-4 transform group-hover:scale-110 transition-transform duration-200">
+                    <div className="mb-4 transform flex justify-center  group-hover:scale-110 transition-transform duration-200">
                       {benefit.icon}
                     </div>
                     <h3 className="text-xl font-semibold mb-3">
@@ -505,7 +505,7 @@ const WebDevelopmentAjmer = () => {
 
       </section>
       
-      <TrustedByCompanies/>
+       
     </>
   );
 };

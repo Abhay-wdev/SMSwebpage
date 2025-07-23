@@ -6,7 +6,7 @@ const WebIntroSectionAjmer = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="relative mt-12 mb-24 mx-auto max-w-7xl px-4"
+      className="relative mt-12 mb-24 mx-auto max-w-7xl  "
     >
       <div className="rounded-2xl overflow-hidden">
         <div className="relative p-8 md:p-12">

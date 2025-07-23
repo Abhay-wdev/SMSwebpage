@@ -317,7 +317,7 @@ const GoogleServicesAjmer = () => {
                     <div
                       className={`bg-gradient-to-r ${tech.gradient} p-3 rounded-xl`}
                     >
-                      <tech.icon className="text-white w-6 h-6" />
+                      <tech.icon className="text-white w-6 h-6 " />
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold text-gray-800">
@@ -431,7 +431,7 @@ const GoogleServicesAjmer = () => {
                     variants={fadeInUp}
                     className="bg-white p-2 rounded-lg shadow-md text-center group hover:scale-105 transition-transform duration-200"
                   >
-                    <div className="mb-4 transform group-hover:scale-105 transition-transform duration-200">
+                    <div className="mb-4 flex justify-center transform group-hover:scale-105 transition-transform duration-200">
                       {benefit.icon}
                     </div>
                     <h3 className="text-lg font-medium mb-2">

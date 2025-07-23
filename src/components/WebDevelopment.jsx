@@ -21,6 +21,7 @@ import { Helmet } from "react-helmet-async";
 import WebServicesSection from "./WebServicesSection";
 import WebIntroSection from "./WebIntroSection";
 import WebIndustriesSection from "./WebIndustriesSection";
+import WorkingProcessimgMediajaipur from "./WorkingProcessimgMediajaipur";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -302,6 +303,10 @@ const WebDevelopment = () => {
               ))}
             </div>
 
+
+        
+            <WorkingProcessimgMediajaipur/>
+
             <WebIntroSection />
 
             <WebServicesSection />
@@ -362,7 +367,7 @@ const WebDevelopment = () => {
                     variants={fadeInUp}
                     className="bg-white p-8 rounded-xl shadow-lg text-center group hover:scale-105 transition-transform duration-200"
                   >
-                    <div className="mb-4 transform group-hover:scale-110 transition-transform duration-200">
+                    <div className="mb-4 flex justify-center transform group-hover:scale-110 transition-transform duration-200">
                       {benefit.icon}
                     </div>
                     <h3 className="text-xl font-semibold mb-3">

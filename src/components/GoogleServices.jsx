@@ -382,7 +382,7 @@ const GoogleServices = () => {
                     variants={fadeInUp}
                     className="bg-white p-2 rounded-lg shadow-md text-center group hover:scale-105 transition-transform duration-200"
                   >
-                    <div className="mb-4 transform group-hover:scale-105 transition-transform duration-200">
+                    <div className="mb-4 flex justify-center transform group-hover:scale-105 transition-transform duration-200">
                       {benefit.icon}
                     </div>
                     <h3 className="text-lg font-medium mb-2">

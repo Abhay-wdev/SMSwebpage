@@ -68,7 +68,7 @@ function App() {
             <Route path="/social-media-company-ajmer" element={<SeoAjmer/>} />
             <Route path="/social-media-marketing-company-ajmer" element={ <SocialMediaServicesAjmer/>} />
             <Route path="/video-editing-company-ajmer" element={<VideoEditingAjmer/>} />
-            <Route path="/web-development-company-ajmer" element={<WebDevelopmentAjmer/>} />
+            <Route path="/web-development-company-ajmer" element={<WebDevelopmentAjmer/>}/>
             
             <Route path="/seo-company-ajmer" element={<SeoAjmerpage/>} />
             <Route path="/content-writing-company-ajmer" element={ <ContentWritingServicesAjmer/>} />
@@ -76,7 +76,7 @@ function App() {
              {/* This is for Jaipur */}
 <Route path='/social-media-solution-company-jaipur' element={<SocialMediaCompnayJaipur/>} />
 <Route path="/social-media-marketing-company-jaipur" element={ <SocialMediaServicesJaipur/>} />
-<Route path="/web-development-company-jaipur" element={<WebDevelopmentAjmer/>} />
+ 
 <Route path="/top-video-editing-company-jaipur" element={ <VideoEditingJaipur/>} />
 
 

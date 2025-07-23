@@ -46,7 +46,7 @@ const SocialMediaHeroAjmer = () => {
           </p>
 
           {/* Features */}
-          <div className="grid grid-cols-2 gap-3 text-sm mb-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 grid-rows-4 lg:grid-rows-2 gap-3 text-sm mb-6">
             <p className="flex items-center gap-2"><FaCheckCircle className="text-green-400" /> Impedit rerum, montes atque.</p>
             <p className="flex items-center gap-2"><FaCheckCircle className="text-green-400" /> Provident rerum, curae.</p>
             <p className="flex items-center gap-2"><FaCheckCircle className="text-green-400" /> Unde fames mollis rutrum.</p>
