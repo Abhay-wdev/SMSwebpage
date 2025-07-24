@@ -75,56 +75,58 @@ const VideoEditingJaipur = () => {
   const faqData = [
     {
       question: "What types of video editing services do you offer in Jaipur?",
-      answer: "At SEOcial Media Solutions, we provide comprehensive video editing services including corporate videos, promotional videos, social media clips, event coverage, animation, and motion graphics. Our Jaipur-based team specializes in creating visually stunning content tailored to your brand's needs, whether it's for marketing, training, or entertainment purposes."
+      answer: "At SEOcial Media Solutions, we provide a full range of professional video editing services in Jaipur. These include corporate and promotional videos, social media reels, event coverage, YouTube editing, explainer videos, animation, and motion graphics. Our team tailors each video to reflect your brand identity and marketing goals, ensuring your content stands out and drives engagement."
     },
     {
-      question: "How long does the video editing process typically take?",
-      answer: "The turnaround time depends on the complexity and length of your video. Simple edits (like trimming or basic transitions) can be completed within 24-48 hours, while more complex projects (with motion graphics or animations) may take 3-7 days. We always discuss timelines upfront and can accommodate rush requests when needed."
+      question: "How long does the video editing process usually take?",
+      answer: "Turnaround time depends on the project's complexity. Simple edits—such as trimming, color correction, or basic transitions—are typically completed within 24 to 48 hours. More complex edits involving animation, motion graphics, or storytelling can take between 3 to 7 business days. We always share a clear timeline during onboarding and offer expedited services if required."
     },
     {
-      question: "What file formats do you work with for video editing?",
-      answer: "We work with all major video formats including MP4, MOV, AVI, WMV, and more. For professional projects, we prefer working with high-quality source files like ProRes or RAW formats when available. Final deliverables are provided in the format that best suits your needs, optimized for web, social media, or broadcast."
+      question: "What file formats do you support for video editing?",
+      answer: "We support all major video formats, including MP4, MOV, AVI, WMV, and more. For professional-grade edits, we prefer high-quality source files like ProRes, MXF, or RAW formats. Final outputs are delivered in formats optimized for your intended platform—be it social media, YouTube, your website, or broadcast use."
     },
     {
-      question: "Do you provide raw footage shooting services along with editing?",
-      answer: "Yes, we offer complete video production services in Jaipur, including professional shooting with high-end cameras, lighting setups, and audio equipment. Our team can handle everything from pre-production planning to shooting and post-production editing, ensuring a seamless process and consistent quality throughout."
+      question: "Do you also provide video shooting services in Jaipur?",
+      answer: "Yes, we offer full-service video production in Jaipur—from scripting and storyboarding to professional on-location shooting. Our team uses high-end cameras, lighting, and audio equipment to capture footage, which is then edited in-house for a seamless and consistent production experience."
     },
     {
-      question: "Can you incorporate our brand colors and logos into the videos?",
-      answer: "Absolutely! Brand consistency is crucial, and we meticulously incorporate your brand elements including colors, logos, typography, and tone into every video we create. We can even develop custom motion graphics templates that maintain your brand identity across all video content."
+      question: "Can you integrate our brand colors, logos, and guidelines into videos?",
+      answer: "Absolutely. Maintaining brand consistency is a top priority. We incorporate your brand’s colors, logo, typography, and design elements into each video. We can also create custom motion graphic templates that align with your visual identity, ensuring a polished and cohesive look across all video assets."
     },
     {
-      question: "What makes your video editing services different from others in Jaipur?",
-      answer: "Our combination of technical expertise, creative storytelling, and marketing-focused approach sets us apart. We don't just edit videos - we craft visual stories that engage audiences and drive results. Our team stays updated with the latest trends and technologies, and we provide strategic recommendations to maximize your video's impact."
+      question: "What sets your video editing services apart from others in Jaipur?",
+      answer: "Our edge lies in the blend of creativity, marketing strategy, and technical excellence. We don’t just cut and edit—we craft compelling video narratives that align with your business objectives. Our team stays ahead of trends, leverages advanced tools, and provides data-driven recommendations to ensure your videos perform exceptionally across platforms."
     }
   ];
+  
 
   const process = [
     {
       number: "01",
       title: "Submit Your Footage",
-      description: "Upload your raw footage, along with your instructions, or schedule a call to discuss your vision.",
+      description: "Easily upload your raw footage along with detailed instructions, or schedule a call so we can fully understand your creative vision.",
       image: "/images/process/submit.jpg"
     },
     {
       number: "02",
-      title: "Editing",
-      description: "Our expert editors get to work, applying the edits, effects, and enhancements you've requested.",
+      title: "Expert Editing",
+      description: "Our skilled editors work meticulously, applying precise cuts, dynamic effects, and tailored enhancements to bring your vision to life.",
       image: "/images/process/editing.jpg"
     },
     {
       number: "03",
       title: "Review & Feedback",
-      description: "You'll receive a draft of your video for review. We'll make any necessary revisions based on your feedback.",
+      description: "Review a draft of your video and share your feedback. We collaborate closely with you to make all the necessary revisions until it’s perfect.",
       image: "/images/process/review.webp"
     },
     {
       number: "04",
       title: "Final Delivery",
-      description: "Once approved, your video will be delivered in the format and resolution of your choice, ready to be shared with the world.",
+      description: "Once approved, your video is polished and delivered in your desired format and resolution—ready to captivate your audience.",
       image: "/images/process/delivery.jpg"
     }
   ];
+  
   
   const stats = [
     {
@@ -152,32 +154,32 @@ const VideoEditingJaipur = () => {
   const services = [
     { 
       name: "High-Quality Videos", 
-      description: "We deliver polished, visually stunning videos that captivate your audience and leave a lasting impression.",
+      description: "Delivering cinematic-quality visuals that captivate your audience and elevate your brand with every frame.",
       image: "/images/services/high-quality.webp"
     },
     { 
       name: "Corporate Videos", 
-      description: "Create professional corporate videos that effectively communicate your brand's message and values.",
+      description: "Professionally crafted corporate videos that communicate your brand’s mission, values, and professionalism with clarity.",
       image: "/images/services/corporate.webp"
     },
     { 
       name: "Social Media Clips", 
-      description: "Engage your audience with eye-catching social media clips tailored for platforms like Instagram, Facebook, and YouTube.",
+      description: "Scroll-stopping short-form videos optimized for platforms like Instagram, Facebook, and YouTube—designed to engage and convert.",
       image: "/images/services/social.webp"
     },
     { 
       name: "Promotional Videos", 
-      description: "Boost your marketing campaigns with high-impact promotional videos that drive conversions and sales.",
+      description: "Strategic promotional videos that highlight your products or services, increase brand awareness, and drive sales.",
       image: "/images/services/promotional.jpeg"
     },
     { 
       name: "Event Coverage", 
-      description: "Relive your special moments with beautifully edited event coverage videos that capture every detail.",
+      description: "Immersive event coverage that preserves every meaningful moment with crisp visuals and seamless storytelling.",
       image: "/images/services/event.jpg"
     },
     { 
       name: "Animation & Motion Graphics", 
-      description: "Add a dynamic edge to your videos with custom animations and motion graphics that tell your story creatively.",
+      description: "Bring your ideas to life with engaging animations and motion graphics that visually communicate complex messages with flair.",
       image: "/images/services/animation.webp"
     }
   ];
@@ -296,10 +298,11 @@ const VideoEditingJaipur = () => {
     <section className="bg-white py-16 px-4 md:px-16 lg:px-24">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <motion.div variants={fadeInRight} initial="hidden" whileInView="visible" viewport={{ once: true }} className="space-y-6">
-            <h3 className="text-2xl font-semibold text-gray-800">Why Choose Us?</h3>
-            <p className="text-gray-600 text-lg">
-              SEOcial Media Solutions is recognized as the best video editing company in Jaipur, offering a wide range of services tailored to meet your needs. Our team of skilled editors and creative professionals ensures that every video we produce is of the highest quality, helping you stand out in a competitive market.
-            </p>
+          <h3 className="text-2xl font-semibold text-gray-800">Why Choose Us?</h3>
+<p className="text-gray-600 text-lg">
+  At SEOcial Media Solutions, we’re proud to be recognized as Jaipur’s leading video editing company. We offer a diverse range of high-quality, customized video editing services designed to elevate your brand. Our experienced editors and creative team are committed to delivering visually captivating and professionally crafted videos that help you stand out, engage your audience, and achieve your goals in today’s competitive digital landscape.
+</p>
+
             <ul className="space-y-3">
               <li className="flex items-start">
                 <div className="flex-shrink-0 mt-1">

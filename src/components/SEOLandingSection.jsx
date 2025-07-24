@@ -31,19 +31,20 @@ const SEOLandingSection = () => {
       <div className="container mx-auto px-6 py-24 flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
         {/* Left Content */}
         <div className="md:w-1/2 space-y-6">
-          <p className="text-sm tracking-wide text-blue-300 uppercase">
+          <p className="text-lg font-bold tracking-wide text-white uppercase" style={{ textShadow: '1px 1px 1px blue' }}>
             Change Your View of SEO
           </p>
-          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+          <h1 className="text-4xl   md:text-5xl font-extrabold leading-tight" style={{ textShadow: '1px 1px 2px white' }}>
             Rank Your Local
             <br /> Business With SEO
             <br /> in Ajmer
           </h1>
-          <p className="text-base text-blue-100">
+          <p className="text-lg font-bold text-blue-100" style={{ textShadow: '0.2px 0.2px 0.2px white' }}>
             Our approach to SEO is uniquely built around what we know works and
             what we know doesn’t work.
           </p>
         </div>
+
 
         {/* Right Illustration */}
         {/* <div className="md:w-1/2 flex justify-center relative">
