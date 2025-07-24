@@ -69,7 +69,7 @@ function App() {
             <Route path="/video-editing-company-jaipur" element={<VideoEditing />} /> {/* Add this line */}
             
             {/* This is for Ajmer*/}
-            <Route path="/digital-markting-services-company-ajmer" element={<SeoAjmer/>} />
+            <Route path="/digital-markting-services-ajmer" element={<SeoAjmer/>} />
             <Route path="/social-media-marketing-company-ajmer" element={ <SocialMediaServicesAjmer/>} />
             <Route path="/video-editing-company-ajmer" element={<VideoEditingAjmer/>} />
             <Route path="/web-development-company-ajmer" element={<WebDevelopmentAjmer/>}/>
@@ -79,7 +79,7 @@ function App() {
             <Route path="/lead-generation-company-ajmer" element={ <GoogleServicesAjmer/>} />
             
              {/* This is for Jaipur */}
-<Route path='/digital-markting-services-company-jaipur' element={<SocialMediaCompnayJaipur/>} />
+<Route path='/digital-markting-services-jaipur' element={<SocialMediaCompnayJaipur/>} />
 <Route path="/social-media-marketing-company-jaipur" element={ <SocialMediaServicesJaipur/>} />
  <Route path='/top-social-media-solution-company-jaipur' element={<SocialMediaServicesjaipurr/>}/>
 <Route path="/top-video-editing-company-jaipur" element={ <VideoEditingJaipur/>} />
