@@ -99,26 +99,26 @@ const SeoAjmerpage = () => {
   const services = [
     {
       title: "SEO Audit",
-      description: "Comprehensive analysis of your website's technical SEO elements to ensure a solid foundation for growth.",
+      description: "We check your website to find and fix issues that affect your Google ranking and performance.",
       image: "/images/onpage-seo.jpg"
     },
     {
       title: "Content Creation",
-      description: "Strategic content development that informs, educates, and helps users while targeting relevant keywords.",
+      description: "We create helpful and keyword-rich content that educates users and improves your search visibility.",
       image: "/images/content-strategy.jpg"
     },
     {
       title: "Technical SEO",
-      description: "Expert optimization of your website's technical aspects including speed, structure, and accessibility.",
+      description: "We improve your website’s speed, structure, and user experience so search engines can find it easily.",
       image: "/images/technical-seo.jpg"
     },
     {
       title: "Local SEO",
-      description: "Targeted optimization to reach your local audience and convert qualified leads into customers.",
+      description: "We help your business show up in local searches and attract nearby customers.",
       image: "/images/seo.jpg"
     }
   ];
- 
+  
   const process = [
     {
       number: "01",
@@ -149,23 +149,23 @@ const SeoAjmerpage = () => {
 
   const testimonials = [
     {
-      quote: "SEOcial Media Solutions has helped us achieve exceptional results within just three months! We cannot wait to achieve more milestones with their strategic SEO services.",
+      quote: "In just three months, SEOcial Media Solutions helped us get great results! Their SEO strategy really works, and we’re excited to keep growing with them.",
       author: "E-commerce Store"
     },
     {
-      quote: "With SEOcial Media Solutions, we have seen incredible traffic growth. Our revenues have also increased, and we cannot be more grateful to their team.",
+      quote: "Thanks to SEOcial Media Solutions, we’ve seen a big jump in traffic — and our revenue has gone up too! We’re really thankful for their support.",
       author: "Consultancy Service"
     },
     {
-      quote: "The SEO consultant helping us is amazing. They work on our SEO requirements as though this business is their own. It is the best experience we have ever had with an SEO agency.",
+      quote: "Our SEO expert from their team treats our business like it’s their own. It’s been the best SEO experience we’ve ever had.",
       author: "Art and Craft Suppliers"
     }
   ];
-
+  
   const detailedServices = [
     {
       title: "Expertise Across Multiple Business Domains",
-      description: `At SEOcial Media Solutions, we help different types of businesses grow online. Whether you're in textiles, diamonds, real estate, healthcare, e-commerce, education, or local services, we create marketing plans that work. Our team knows what each industry needs and helps you reach more people, get more customers, and grow your business:`,
+      description: `At SEOcial Media Solutions, we help all kinds of businesses grow online. Whether you're in healthcare, real estate, e-commerce, or education, we create custom marketing plans that match your industry needs. Our team understands your business and helps you reach the right people, get more customers, and grow faster:`,
       points: [
         "Healthcare & Clinics",
         "Real Estate",
@@ -177,44 +177,45 @@ const SeoAjmerpage = () => {
     },
     {
       title: "SEO Audit Services",
-      description: `Our comprehensive SEO audit delves deep into your website's current status. We analyze how well your site meets SEO requirements, checking whether it can be crawled and indexed by search engines correctly. Our expert team assesses your site architecture to uncover opportunities for improvement, examining crucial elements including:`,
+      description: `Our SEO audit gives you a clear picture of how your website is performing. We check if search engines can find and understand your site easily. We also look at how your site is built and find ways to make it better, including:`,
       points: [
-        "Complete sitemap analysis and optimization",
-        "In-depth page speed assessment",
-        "Comprehensive website analytics review",
-        "Detailed backlink profile evaluation",
-        "Content quality and relevance assessment",
-        "Mobile responsiveness testing",
-        "URL structure optimization"
+        "Sitemap check and improvements",
+        "Website speed testing",
+        "Analytics and traffic review",
+        "Backlink quality check",
+        "Content quality and usefulness",
+        "Mobile-friendly testing",
+        "Better URL structure"
       ]
     },
     {
       title: "Keyword Research Excellence",
-      description: `Keyword research is the foundation of successful SEO strategy. We identify the exact words and phrases your potential customers use in their searches. Our advanced keyword research process includes:`,
+      description: `Good SEO starts with the right keywords. We find the exact words your customers are typing into search engines. Our process helps you show up when people search for what you offer. Here's what we do:`,
       points: [
-        "Short and long-tail keyword identification",
-        "Competitor keyword analysis",
-        "Search intent mapping",
-        "Keyword difficulty assessment",
-        "Search volume analysis",
-        "Semantic keyword clustering",
-        "Opportunity gap analysis"
+        "Find short and long keywords",
+        "Check what keywords your competitors use",
+        "Understand the purpose behind searches",
+        "Measure how hard it is to rank for each keyword",
+        "Check keyword popularity (search volume)",
+        "Group related keywords together",
+        "Find keyword gaps your competitors missed"
       ]
     },
     {
       title: "Enterprise SEO Solutions",
-      description: `We specialize in enterprise SEO, crafting targeted strategies to improve SEO performance for large organizations. Our enterprise solutions cover:`,
+      description: `We help big businesses improve their search rankings with smart, large-scale SEO strategies. Our enterprise SEO services include:`,
       points: [
-        "Multi-location SEO management",
-        "Large-scale content optimization",
-        "Complex site architecture planning",
-        "International SEO coordination",
-        "Enterprise-level reporting",
-        "Competitive market analysis",
-        "Brand consistency management"
+        "Managing SEO for multiple business locations",
+        "Optimizing lots of content across your site",
+        "Planning complex website structures",
+        "Running SEO for international markets",
+        "Detailed performance tracking and reports",
+        "Analyzing competitors in big markets",
+        "Keeping your brand consistent everywhere"
       ]
     }
   ];
+  
 
   const growthBenefits = [
     {
@@ -334,22 +335,23 @@ const SeoAjmerpage = () => {
 
           {/* Introduction Section */}
           <div className="mb-24 mt-10">
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
-                From Invisible to Invincible: SEO Services That Fuel Growth
-              </h2>
-              <div className="prose prose-lg max-w-none text-gray-600">
-                <p className="mb-4">
-                  SEO in digital marketing is the cornerstone of online growth, helping countless companies boost visibility and draw traffic with proven SEO tools. SEO strategies align websites with search engine algorithms so they can appear in relevant search results. When potential customers search for related solutions, SEO helps a business show up on the results page and capture their attention.
-                </p>
-                <p className="mb-4">
-                  A tailored SEO plan from SEOcial Media Solutions can help you dominate search results on major engines like Google. Our SEO services offer 360-degree solutions, helping you ace on-page, off-page, and technical SEO with efficiency and ease!
-                </p>
-                <p>
-                  As one of the top SEO agencies in the business, we prioritize quick organic results to maximize your ROI. We leverage data-driven insights to generate fast SEO results to steer your firm's success. With us, you can boost your web traffic and convert qualified leads to paying customers. The result? Unprecedented revenue growth within a short period!
-                </p>
-              </div>
-            </div>
+          <div className="bg-white rounded-2xl p-8 shadow-lg">
+  <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
+    From Invisible to Invincible: SEO Services That Drive Real Growth
+  </h2>
+  <div className="prose prose-lg max-w-none text-gray-600">
+    <p className="mb-4">
+      SEO (Search Engine Optimization) is one of the most powerful tools in digital marketing. It helps your business show up when people search for products or services like yours. With the right SEO strategy, your website becomes more visible on Google and other search engines, attracting more visitors who are actually looking for what you offer.
+    </p>
+    <p className="mb-4">
+      At SEOcial Media Solutions, we create custom SEO plans to help you stand out online. From improving your website’s content (on-page SEO), building strong backlinks (off-page SEO), to fixing technical issues — we handle it all to give your site the best chance to rank higher.
+    </p>
+    <p>
+      As one of the top SEO companies, we focus on delivering fast, effective, and long-lasting results. Our data-driven approach helps you grow website traffic, attract quality leads, and turn them into loyal customers — leading to faster business growth and better returns.
+    </p>
+  </div>
+</div>
+
           </div>
 
           {/* Detailed Services Section */}
@@ -393,26 +395,27 @@ const SeoAjmerpage = () => {
 
           {/* Why Choose Us Section */}
           <div className="">
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
-                Why Choose SEOcial Media Solutions?
-              </h2>
-              <div className="prose prose-lg max-w-none text-gray-600">
-                <p className="mb-4">
-                  At SEOcial Media Solutions, we understand that choosing the right SEO partner is crucial for your business success. We stand out through our commitment to delivering exceptional results through data-driven strategies and transparent communication.
-                </p>
-                <p className="mb-4">
-                  Our approach combines cutting-edge SEO techniques with deep industry expertise. We don't believe in a one-size-fits-all approach - instead, we craft customized solutions that align with your specific business goals and target audience.
-                </p>
-                <p className="mb-4">
-                  We pride ourselves on staying ahead of algorithm updates and industry trends, ensuring your website maintains its competitive edge in the ever-evolving digital landscape. Our team of SEO experts works tirelessly to implement strategies that drive sustainable growth and deliver measurable results.
-                </p>
-                <p>
-                  With SEOcial Media Solutions, you're not just getting an SEO service provider - you're partnering with a team that's invested in your success. We maintain complete transparency throughout our process, providing regular updates and detailed reports so you can track your ROI and understand the impact of our work.
-                </p>
-              </div>
-            </div>
-          </div>
+  <div className="bg-white rounded-2xl p-8 shadow-lg">
+    <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
+      Why Choose SEOcial Media Solutions?
+    </h2>
+    <div className="prose prose-lg max-w-none text-gray-600">
+      <p className="mb-4">
+        At SEOcial Media Solutions, we know how important it is to choose the right SEO partner. That’s why we focus on real results, smart strategies, and clear communication every step of the way.
+      </p>
+      <p className="mb-4">
+        Our team uses the latest SEO methods and combines them with years of experience in different industries. We don’t offer one-size-fits-all packages — we create SEO plans that match your business goals and target the right audience.
+      </p>
+      <p className="mb-4">
+        We always stay updated with Google algorithm changes and new trends so your website keeps performing well online. Our goal is to help you grow steadily by using strategies that actually work.
+      </p>
+      <p>
+        When you work with SEOcial Media Solutions, you get more than just a service — you get a team that cares about your success. We’re fully transparent, sharing regular updates and easy-to-understand reports so you always know how your SEO is doing and what returns you’re getting.
+      </p>
+    </div>
+  </div>
+</div>
+
 
           {/* Process Section */}
           <div className="py-24">

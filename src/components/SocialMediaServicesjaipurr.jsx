@@ -19,7 +19,7 @@ import {
   ChevronUp,
   HelpCircle
 } from 'lucide-react';
-
+import { Helmet } from 'react-helmet-async';
 const SocialMediaServicesjaipurr = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
@@ -191,8 +191,54 @@ const SocialMediaServicesjaipurr = () => {
 
   return (
 
+<>
+<Helmet>
+  <title>Top Social Media Solution Company in Jaipur  </title>
 
-    
+  <meta
+    name="description"
+    content="STS Digital Solutions is a top social media marketing agency in Jaipur offering creative, data-driven campaigns on Facebook, Instagram, LinkedIn & more to grow your brand."
+  />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charSet="UTF-8" />
+
+  <meta
+    name="keywords"
+    content="social media agency Jaipur, social media marketing Jaipur, SMO Jaipur, SMM agency India, Jaipur digital marketing, STS Digital Solutions"
+  />
+
+  {/* Open Graph Tags */}
+  <meta property="og:title" content="Top Social Media Solution Company in Jaipur | STS Digital Solutions" />
+  <meta
+    property="og:description"
+    content="Grow your online presence and conversions with STS Digital Solutions—Jaipur’s expert in Facebook, Instagram, LinkedIn & Twitter campaigns."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sm-swebpage.vercel.app/top-social-media-solution-company-jaipur" />
+  <meta property="og:image" content="https://sm-swebpage.vercel.app/static/images/og-social-media-jaipur.jpg" />
+  <meta property="og:locale" content="en_IN" />
+
+  {/* Twitter Card Tags */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jaipur’s Best Social Media Marketing Agency | STS Digital Solutions" />
+  <meta
+    name="twitter:description"
+    content="Data‑driven campaigns across Facebook, Instagram, LinkedIn & more—partner with STS Digital Solutions to elevate your brand."
+  />
+  <meta name="twitter:image" content="https://sm-swebpage.vercel.app/static/images/og-social-media-jaipur.jpg" />
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://sm-swebpage.vercel.app/top-social-media-solution-company-jaipur" />
+
+  {/* Author & Geo Tags */}
+  <meta name="author" content="STS Digital Solutions" />
+  <meta name="geo.region" content="IN-RJ" />
+  <meta name="geo.placename" content="Jaipur" />
+  <meta name="geo.position" content="26.9124;75.7873" />
+  <meta name="ICBM" content="26.9124, 75.7873" />
+</Helmet>
+
     <div className="min-h-screen">
       <section className="bg-gradient-to-br from-pink-50 via-white to-purple-50">
         <div className="px-4 py-16 md:px-16 lg:px-24">
@@ -407,6 +453,7 @@ const SocialMediaServicesjaipurr = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

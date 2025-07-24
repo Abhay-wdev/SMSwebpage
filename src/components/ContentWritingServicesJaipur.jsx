@@ -188,7 +188,7 @@ const ContentWritingServicesJaipur = () => {
            content="Create impactful and engaging content with SEOcial Media's professional content writing services. Enhance your online presence with quality content."
          />
          <meta name="keywords" content="IT services, content writing services, web development, SEO, digital marketing" />
-         <link rel="canonical" href="https://seocialmedia.in/content-writing-company-jaipur" />
+         <link rel="canonical" href="https://seocialmedia.in/top-content-writing-company-jaipur" />
          <meta property="og:title" content="Best Content Writing Services in Jaipur | SEOcial Media Soltions" />
          <meta property="og:description" content="Discover professional IT solutions tailored to your business needs." />
          <meta property="og:image" content="https://seocialmedia.in/images/og-home.jpg" />

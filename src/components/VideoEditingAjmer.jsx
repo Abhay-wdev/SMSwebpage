@@ -295,38 +295,37 @@ const VideoEditingAjmer = () => {
     {/* Introduction Section */}
     <section className="bg-white py-16 px-4 md:px-16 lg:px-24">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <motion.div variants={fadeInRight} initial="hidden" whileInView="visible" viewport={{ once: true }} className="space-y-6">
-            <h3 className="text-2xl font-semibold text-gray-800">Why Choose Us?</h3>
-            <p className="text-gray-600 text-lg">
-              SEOcial Media Solutions is recognized as the best video editing company in Ajmer, offering a wide range of services tailored to meet your needs. Our team of skilled editors and creative professionals ensures that every video we produce is of the highest quality, helping you stand out in a competitive market.
-            </p>
-            <ul className="space-y-3">
-              <li className="flex items-start">
-                <div className="flex-shrink-0 mt-1">
-                  <svg className="w-5 h-5 text-indigo-500" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
-                  </svg>
-                </div>
-                <p className="ml-3 text-gray-600">Experienced team of professional video editors</p>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0 mt-1">
-                  <svg className="w-5 h-5 text-indigo-500" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
-                  </svg>
-                </div>
-                <p className="ml-3 text-gray-600">Top-notch equipment and software</p>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0 mt-1">
-                  <svg className="w-5 h-5 text-indigo-500" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
-                  </svg>
-                </div>
-                <p className="ml-3 text-gray-600">Customized solutions for every client</p>
-              </li>
-            </ul>
-          </motion.div>
+        <motion.div
+  variants={fadeInRight}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+  className="space-y-6"
+>
+  <h3 className="text-2xl font-semibold text-gray-800">Why Choose Us?</h3>
+  <p className="text-gray-600 text-lg">
+    SEOcial Media Solutions is recognized as the best video editing company in Ajmer. Our skilled team ensures every video is top-quality, helping you stand out in the market.
+  </p>
+  {[
+    "Experienced team of professional video editors",
+    "Top-notch equipment and software",
+    "Customized solutions for every client",
+  ].map((point, index) => (
+    <div key={index} className="flex items-start">
+      <div className="flex-shrink-0 mt-1">
+        <svg className="w-5 h-5 text-indigo-500" fill="currentColor" viewBox="0 0 20 20">
+          <path
+            fillRule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+            clipRule="evenodd"
+          />
+        </svg>
+      </div>
+      <p className="ml-3 text-gray-600">{point}</p>
+    </div>
+  ))}
+</motion.div>
+
      
           <motion.div
   variants={fadeInLeft}

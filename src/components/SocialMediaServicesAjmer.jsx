@@ -194,9 +194,9 @@ const SocialMediaServicesAjmer = () => {
 
       {/* Hero Section */}
       <section className="text-center py-20 bg-gradient-to-br from-pink-50 to-purple-50">
-        <h2 className="text-sm font-medium text-white bg-gradient-to-r from-pink-500 to-purple-500 inline-block px-4 py-1 rounded-full">
+        <h1 className="text-sm font-medium text-white bg-gradient-to-r from-pink-500 to-purple-500 inline-block px-4 py-1 rounded-full">
           Best Social Media Marketing Company in Ajmer
-        </h2>
+        </h1>
         <h2 className="mt-6 text-4xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent md:text-6xl">
           Transform Your Social Media Presence
         </h2>

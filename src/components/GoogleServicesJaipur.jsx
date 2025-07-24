@@ -228,7 +228,7 @@ const GoogleServicesJaipur = () => {
         />
         <link
           rel="canonical"
-          href="https://seocialmedia.in/lead-generation-company-jaipur "
+          href="https://seocialmedia.in/top-lead-generation-company-jaipur "
         />
       </Helmet>
 

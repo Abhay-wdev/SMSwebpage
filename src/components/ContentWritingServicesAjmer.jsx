@@ -107,49 +107,54 @@ const ContentWritingServicesAjmer = () => {
   const services = [
     {
       title: "Website Content",
-      description: "Engaging and SEO-optimized content that converts visitors into customers. Our expert writers craft compelling website copy that speaks directly to your target audience in Ajmer while following SEO best practices.",
+      description:
+        "We write clear and catchy content for your website that helps turn visitors into customers. Our writers create content that connects with people in Ajmer and follows all the right SEO rules.",
       image: "/images/website-content.jpg",
       benefits: [
-        "Increased organic traffic",
-        "Higher conversion rates",
-        "Improved user engagement",
-        "Better search rankings"
+        "More visitors from search engines",
+        "More people take action (like buying or calling)",
+        "Visitors stay longer and engage more",
+        "Your site shows up higher in search results"
       ]
     },
     {
       title: "Blog Management",
-      description: "Regular, high-quality blog posts that establish your authority in your industry. Our comprehensive blog management service includes topic research, content creation, and optimization for search engines.",
+      description:
+        "We manage your blog with regular, high-quality posts that show you're an expert in your field. From choosing topics to writing and optimizing, we handle it all.",
       image: "/images/blog-management.png",
       benefits: [
-        "Consistent content schedule",
-        "Targeted keyword optimization",
-        "Industry authority building",
-        "Increased organic reach"
+        "Fresh content posted regularly",
+        "Smart use of keywords to boost SEO",
+        "You become a trusted voice in your industry",
+        "More people find your website through search"
       ]
     },
     {
       title: "Technical Content",
-      description: "Clear and accurate technical documentation, guides, and tutorials. Our technical writers break down complex subjects into easy-to-understand content while maintaining accuracy and detail.",
+      description:
+        "We turn complex ideas into simple, helpful guides, tutorials, and documents. Our writers make sure everything is clear, accurate, and easy to follow.",
       image: "/images/technical-content.jpg",
       benefits: [
-        "Simplified complex topics",
-        "Reduced support queries",
-        "Improved user adoption",
-        "Enhanced product understanding"
+        "Easy-to-understand content for tough topics",
+        "Fewer customer support questions",
+        "Users learn faster and better",
+        "Customers understand your product clearly"
       ]
     },
     {
       title: "Marketing Copy",
-      description: "Persuasive copy for advertisements, emails, and marketing materials. Our copywriters create compelling messages that drive action and generate results across all marketing channels.",
+      description:
+        "We write powerful content for ads, emails, and marketing campaigns. Our words help you get more attention, clicks, and results.",
       image: "/images/marketing.jpg",
       benefits: [
-        "Higher conversion rates",
-        "Improved brand messaging",
-        "Better campaign performance",
-        "Increased ROI"
+        "More leads and sales",
+        "Stronger brand message",
+        "Better performance from your campaigns",
+        "More return on your marketing spend"
       ]
     }
   ];
+  
   
   const stats = [
     {
