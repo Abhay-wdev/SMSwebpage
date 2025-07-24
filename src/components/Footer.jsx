@@ -19,8 +19,8 @@ const Footer = () => {
   }, [location]);
 
   const quickLinks = [
-    { name: 'SEOcial Media company in Ajmer', href: '/social-media-company-ajmer' },
-     {name:'SEOcial Media company in Jaipur', href:'/social-media-services-company-jaipur'},
+    { name: 'SEOcial Media company in Ajmer', href: '/digital-services-company-ajmer' },
+     {name:'SEOcial Media company in Jaipur', href:'/digital-services-company-jaipur'},
     { name: 'Home', href: '/' },
     { name: 'About Us', href: '/digital-marketing-company-jaipur' },
     { name: 'Blog', href: '/blog' },
