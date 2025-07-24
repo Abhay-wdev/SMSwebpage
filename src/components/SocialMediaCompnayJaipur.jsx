@@ -1,15 +1,10 @@
 import React from 'react'
-import SEOLandingSection from './SEOLandingSection'
+ 
 import BoostTrafficSection from './BoostTrafficSection'
-import HoverRevealCards from './HoverRevealCards'
-import TrustedByCompanies from './TrustedByCompanies'
-import Masonry from './Masonry'
-import FAQAccordion from './FAQAccordion'
-import WorkingProcess from './WorkingProcess'
-import WorkingProcessimg from './WorkingProcessimg'
+ 
 import FAQAccordionnew from './FAQAccordionnew'
 import { Helmet } from 'react-helmet-async';
-import Reviews from './Reviews'
+ 
  
 import SEOLandingSectionJaipur from './SEOLandingSectionJaipur'
 import WorkingProcessimgJaipur from './WorkingProcessimgJaipur'
