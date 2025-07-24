@@ -63,7 +63,7 @@ function SeoAjmer() {
   return (
     <>
 <Helmet>
-  <title>Top Digital Services Agency in Ajmer | SEOcial Media Solutions</title>
+  <title>Top Digital Markting Services Agency in Ajmer | Top Seo company</title>
 
   <meta
     name="description"
@@ -80,7 +80,7 @@ function SeoAjmer() {
 
   <link
     rel="canonical"
-    href="https://seocialmedia.in/social-media-company-ajmer"
+    href="https://seocialmedia.in/digital-markting-services-company-ajmer"
   />
 
   {/* Open Graph / Facebook */}
@@ -99,7 +99,7 @@ function SeoAjmer() {
   />
   <meta
     property="og:url"
-    content="https://seocialmedia.in/social-media-company-ajmer"
+    content="https://seocialmedia.in/digital-markting-services-company-ajmer"
   />
   <meta
     property="og:site_name"

@@ -61,7 +61,7 @@ function SocialMediaCompnayJaipur() {
     <div >
 <Helmet>
   <title>
-    Best Digital Services Company in Jaipur | SEOcial Media Solutions
+    Best Digital Markting Services Company in Jaipur | Top Seo Company
   </title>
 
   {/* Primary Meta Tags */}
@@ -80,7 +80,7 @@ function SocialMediaCompnayJaipur() {
 
   <link
     rel="canonical"
-    href="https://seocialmedia.in/digital-services-company-jaipur"
+    href="https://seocialmedia.in/digital-markting-services-company-jaipur"
   />
 
   {/* Open Graph / Facebook */}
