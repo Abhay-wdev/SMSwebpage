@@ -187,11 +187,12 @@ const VideoEditingJaipur = () => {
 
   return (
     <>
-     <Helmet>
+  <Helmet>
   <title>
     Best Video Editing Company in Jaipur | SEOcial Media Solutions
   </title>
 
+  {/* Basic SEO */}
   <meta
     name="description"
     content="SEOcial Media Solutions is the top video editing company in Jaipur offering professional video editing, reels creation, promotional video editing, and social media-ready content."
@@ -200,9 +201,12 @@ const VideoEditingJaipur = () => {
     name="keywords"
     content="video editing company Jaipur, reels editing Jaipur, promo video editing Jaipur, YouTube video editor Jaipur, social media video editing Jaipur, video production Jaipur, SEOcial Media Solutions"
   />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="SEOcial Media Solutions" />
+  <meta name="publisher" content="SEOcial Media Solutions" />
   <link
     rel="canonical"
-    href="https://seocialmedia.in/video-editing-company-Jaipur"
+    href="https://seocialmedia.in/top-video-editing-company-Jaipur"
   />
 
   {/* Open Graph / Facebook */}
@@ -223,6 +227,14 @@ const VideoEditingJaipur = () => {
     property="og:url"
     content="https://seocialmedia.in/video-editing-company-Jaipur"
   />
+  <meta
+    property="og:site_name"
+    content="SEOcial Media Solutions"
+  />
+  <meta
+    property="article:publisher"
+    content="https://www.facebook.com/SEODigitalSolutions"
+  />
 
   {/* Twitter */}
   <meta name="twitter:card" content="summary_large_image" />
@@ -239,6 +251,7 @@ const VideoEditingJaipur = () => {
     content="https://seocialmedia.in/images/og-Jaipur-video.jpg"
   />
 </Helmet>
+
 
       <center>
 <HeroSectionVideo/></center>

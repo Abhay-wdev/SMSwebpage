@@ -193,51 +193,77 @@ const SocialMediaServicesjaipurr = () => {
 
 <>
 <Helmet>
-  <title>Top Social Media Solution Company in Jaipur  </title>
+  <title>Top Social Media Services in Jaipur | SEO Digital Solutions</title>
 
+  {/* Basic Meta Tags */}
   <meta
     name="description"
-    content="STS Digital Solutions is a top social media marketing agency in Jaipur offering creative, data-driven campaigns on Facebook, Instagram, LinkedIn & more to grow your brand."
+    content="SEO Digital Solutions is the leading social media solution company in Jaipur, offering creative and data-driven campaigns on Facebook, Instagram, LinkedIn, and more to boost your brand’s online presence."
+  />
+  <meta
+    name="keywords"
+    content="social media marketing Jaipur, social media agency Jaipur, SMO company Jaipur, SMM services Jaipur, SEO Digital Solutions, Jaipur digital marketing agency"
   />
   <meta name="robots" content="index, follow" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charSet="UTF-8" />
+  <meta name="author" content="SEO Digital Solutions" />
+  <meta name="theme-color" content="#0e76a8" />
 
-  <meta
-    name="keywords"
-    content="social media agency Jaipur, social media marketing Jaipur, SMO Jaipur, SMM agency India, Jaipur digital marketing, STS Digital Solutions"
+  {/* Canonical URL */}
+  <link
+    rel="canonical"
+    href="https://seocialmedia.in/top-social-media-solution-company-jaipur"
   />
 
-  {/* Open Graph Tags */}
-  <meta property="og:title" content="Top Social Media Solution Company in Jaipur | STS Digital Solutions" />
+  {/* Open Graph / Facebook */}
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:title"
+    content="Top Social Media Solution Company in Jaipur | SEO Digital Solutions"
+  />
   <meta
     property="og:description"
-    content="Grow your online presence and conversions with STS Digital Solutions—Jaipur’s expert in Facebook, Instagram, LinkedIn & Twitter campaigns."
+    content="Looking for expert social media services in Jaipur? SEO Digital Solutions offers targeted campaigns across Facebook, Instagram, LinkedIn, and more to grow your business."
   />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://sm-swebpage.vercel.app/top-social-media-solution-company-jaipur" />
-  <meta property="og:image" content="https://sm-swebpage.vercel.app/static/images/og-social-media-jaipur.jpg" />
+  <meta
+    property="og:url"
+    content="https://seocialmedia.in/top-social-media-solution-company-jaipur"
+  />
+  <meta
+    property="og:image"
+    content="https://seocialmedia.in/static/images/og-social-media-jaipur.jpg"
+  />
   <meta property="og:locale" content="en_IN" />
+  <meta property="og:site_name" content="SEO Digital Solutions" />
+  <meta
+    property="article:publisher"
+    content="https://www.facebook.com/SEODigitalSolutions"
+  />
 
-  {/* Twitter Card Tags */}
+  {/* Twitter Card */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Jaipur’s Best Social Media Marketing Agency | STS Digital Solutions" />
+  <meta
+    name="twitter:title"
+    content="Jaipur’s Top Social Media Marketing Company | SEO Digital Solutions"
+  />
   <meta
     name="twitter:description"
-    content="Data‑driven campaigns across Facebook, Instagram, LinkedIn & more—partner with STS Digital Solutions to elevate your brand."
+    content="Boost your brand with SEO Digital Solutions—Jaipur’s expert in social media strategy, ads, and content across all major platforms."
   />
-  <meta name="twitter:image" content="https://sm-swebpage.vercel.app/static/images/og-social-media-jaipur.jpg" />
+  <meta
+    name="twitter:image"
+    content="https://seocialmedia.in/static/images/og-social-media-jaipur.jpg"
+  />
 
-  {/* Canonical */}
-  <link rel="canonical" href="https://sm-swebpage.vercel.app/top-social-media-solution-company-jaipur" />
-
-  {/* Author & Geo Tags */}
-  <meta name="author" content="STS Digital Solutions" />
+  {/* Geo Tags */}
   <meta name="geo.region" content="IN-RJ" />
   <meta name="geo.placename" content="Jaipur" />
   <meta name="geo.position" content="26.9124;75.7873" />
-  <meta name="ICBM" content="26.9124, 75.7873" />
+  <meta name="ICBM" content="26.9124,75.7873" />
 </Helmet>
+
+
 
     <div className="min-h-screen">
       <section className="bg-gradient-to-br from-pink-50 via-white to-purple-50">

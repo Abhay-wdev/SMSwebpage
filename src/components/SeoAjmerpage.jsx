@@ -242,9 +242,9 @@ const SeoAjmerpage = () => {
 
   return (
     <section className="bg-gradient-to-br from-amber-50 via-white to-orange-50">
-     <Helmet>
+   <Helmet>
   <title>
-    Best SEO Company in Ajmer | SEOcial Media Solutions
+    Best SEO Services Company in Ajmer | SEOcial Media Solutions
   </title>
 
   <meta
@@ -255,6 +255,11 @@ const SeoAjmerpage = () => {
     name="keywords"
     content="SEO company Ajmer, search engine optimization Ajmer, best SEO agency Ajmer, local SEO Ajmer, Google ranking Ajmer, digital marketing Ajmer, affordable SEO services Ajmer"
   />
+  <meta name="author" content="SEOcial Media Solutions" />
+  <meta name="publisher" content="SEOcial Media Solutions" />
+  <meta name="robots" content="index, follow" />
+  <meta httpEquiv="Content-Language" content="en" />
+
   <link
     rel="canonical"
     href="https://seocialmedia.in/seo-company-ajmer"
@@ -278,6 +283,10 @@ const SeoAjmerpage = () => {
     property="og:url"
     content="https://seocialmedia.in/seo-company-ajmer"
   />
+  <meta
+    property="og:site_name"
+    content="SEOcial Media Solutions"
+  />
 
   {/* Twitter */}
   <meta name="twitter:card" content="summary_large_image" />
@@ -294,6 +303,7 @@ const SeoAjmerpage = () => {
     content="https://seocialmedia.in/images/og-ajmer-seo.jpg"
   />
 </Helmet>
+
 
 
       <div className="px-4 py-16 md:px-16 lg:px-24">

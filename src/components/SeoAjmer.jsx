@@ -63,9 +63,7 @@ function SeoAjmer() {
   return (
     <>
 <Helmet>
-  <title>
-    Social Media Company in Ajmer | SEOcial Media Solutions
-  </title>
+  <title>Top Social Media Services Company in Ajmer | Top SEO Services</title>
 
   <meta
     name="description"
@@ -76,9 +74,13 @@ function SeoAjmer() {
     content="social media company Ajmer, Instagram marketing Ajmer, Facebook ads Ajmer, digital marketing Ajmer, best marketing agency Ajmer, SEOcial Media Solutions"
   />
   <meta name="author" content="SEOcial Media Solutions" />
+  <meta name="publisher" content="SEOcial Media Solutions" />
+  <meta name="robots" content="index, follow" />
+  <meta httpEquiv="Content-Language" content="en" />
+
   <link
     rel="canonical"
-    href="https://sm-swebpage.vercel.app/social-media-company-ajmer"
+    href="https://seocialmedia.in/social-media-company-ajmer"
   />
 
   {/* Open Graph / Facebook */}
@@ -93,11 +95,11 @@ function SeoAjmer() {
   />
   <meta
     property="og:image"
-    content="https://sm-swebpage.vercel.app/images/social-media-ajmer-og.jpg"
+    content="https://seocialmedia.in/images/social-media-ajmer-og.jpg"
   />
   <meta
     property="og:url"
-    content="https://sm-swebpage.vercel.app/social-media-company-ajmer"
+    content="https://seocialmedia.in/social-media-company-ajmer"
   />
   <meta
     property="og:site_name"
@@ -116,7 +118,7 @@ function SeoAjmer() {
   />
   <meta
     name="twitter:image"
-    content="https://sm-swebpage.vercel.app/images/social-media-ajmer-og.jpg"
+    content="https://seocialmedia.in/images/social-media-ajmer-og.jpg"
   />
 </Helmet>
 

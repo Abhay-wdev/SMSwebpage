@@ -185,7 +185,7 @@ const VideoEditingAjmer = () => {
 
   return (
     <>
-     <Helmet>
+    <Helmet>
   <title>
     Best Video Editing Company in Ajmer | SEOcial Media Solutions
   </title>
@@ -198,6 +198,11 @@ const VideoEditingAjmer = () => {
     name="keywords"
     content="video editing company Ajmer, reels editing Ajmer, promo video editing Ajmer, YouTube video editor Ajmer, social media video editing Ajmer, video production Ajmer, SEOcial Media Solutions"
   />
+  <meta name="author" content="SEOcial Media Solutions" />
+  <meta name="publisher" content="SEOcial Media Solutions" />
+  <meta name="robots" content="index, follow" />
+  <meta httpEquiv="Content-Language" content="en" />
+
   <link
     rel="canonical"
     href="https://seocialmedia.in/video-editing-company-ajmer"
@@ -221,6 +226,10 @@ const VideoEditingAjmer = () => {
     property="og:url"
     content="https://seocialmedia.in/video-editing-company-ajmer"
   />
+  <meta
+    property="og:site_name"
+    content="SEOcial Media Solutions"
+  />
 
   {/* Twitter */}
   <meta name="twitter:card" content="summary_large_image" />
@@ -237,6 +246,7 @@ const VideoEditingAjmer = () => {
     content="https://seocialmedia.in/images/og-ajmer-video.jpg"
   />
 </Helmet>
+
 
       <center>
 <HeroSectionVideo/></center>

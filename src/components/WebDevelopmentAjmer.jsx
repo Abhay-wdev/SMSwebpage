@@ -193,7 +193,7 @@ const WebDevelopmentAjmer = () => {
 
   return (
     <>
-     <Helmet>
+ <Helmet>
   <title>
     Best Web Development Company in Ajmer | SEOcial Media Solutions
   </title>
@@ -206,6 +206,11 @@ const WebDevelopmentAjmer = () => {
     name="keywords"
     content="web development company Ajmer, website design Ajmer, e-commerce development Ajmer, Ajmer web agency, responsive website Ajmer, affordable web development, SEOcial Media Solutions Ajmer"
   />
+  <meta name="author" content="SEOcial Media Solutions" />
+  <meta name="publisher" content="SEOcial Media Solutions" />
+  <meta name="robots" content="index, follow" />
+  <meta httpEquiv="Content-Language" content="en" />
+
   <link
     rel="canonical"
     href="https://seocialmedia.in/web-development-company-ajmer"
@@ -229,6 +234,10 @@ const WebDevelopmentAjmer = () => {
     property="og:url"
     content="https://seocialmedia.in/web-development-company-ajmer"
   />
+  <meta
+    property="og:site_name"
+    content="SEOcial Media Solutions"
+  />
 
   {/* Twitter */}
   <meta name="twitter:card" content="summary_large_image" />
@@ -245,6 +254,7 @@ const WebDevelopmentAjmer = () => {
     content="https://seocialmedia.in/images/og-ajmer-web.jpg"
   />
 </Helmet>
+
 
 
       <section className="bg-gradient-to-br from-indigo-50 via-white to-purple-50">

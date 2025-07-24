@@ -196,55 +196,79 @@ const WebDevelopment = () => {
 
   return (
     <>
-      <Helmet>
-        <title>
-          Best Website Development & Digital Marketing Company in Jaipur 
-         
-        </title>
-        <meta
-          name="description"
-          content="Looking for the best website development company in Jaipur? SEOcial Media Solutions offers full-service digital marketing, SEO, and web design tailored to grow your business online."
-        />
-        <meta
-          name="keywords"
-          content="website development company in Jaipur, best digital marketing agency Jaipur, SEO company Jaipur, affordable web design services, social media marketing Jaipur, full-service digital agency, content marketing India, Google ads management, Jaipur IT company"
-        />
-        <link
-          rel="canonical"
-          href="https://seocialmedia.in/digital-marketing-company-jaipur"
-        />
+ <Helmet>
+  <title>
+    Best Website Development & Digital Marketing Company in Jaipur
+  </title>
 
-        {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="Top Website Development & SEO Company in Jaipur | SEOcial Media"
-        />
-        <meta
-          property="og:description"
-          content="Full-service digital marketing and website development agency in Jaipur. Custom web design, SEO, Google Ads, and more to grow your online presence."
-        />
-        <meta
-          property="og:image"
-          content="https://seocialmedia.in/images/og-home.jpg"
-        />
-        <meta property="og:url" content="https://seocialmedia.in/" />
+  {/* Basic SEO Meta Tags */}
+  <meta
+    name="description"
+    content="Looking for the best website development company in Jaipur? SEOcial Media Solutions offers full-service digital marketing, SEO, and web design tailored to grow your business online."
+  />
+  <meta
+    name="keywords"
+    content="website development company in Jaipur, best digital marketing agency Jaipur, SEO company Jaipur, affordable web design services, social media marketing Jaipur, full-service digital agency, content marketing India, Google ads management, Jaipur IT company"
+  />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charSet="UTF-8" />
+  <meta name="author" content="SEOcial Media Solutions" />
+  <meta name="theme-color" content="#0e76a8" />
 
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Top Website Development Company in Jaipur | SEOcial Media"
-        />
-        <meta
-          name="twitter:description"
-          content="Best digital marketing agency in Jaipur offering SEO, web development, content creation, and more tailored for startups and enterprises alike."
-        />
-        <meta
-          name="twitter:image"
-          content="https://seocialmedia.in/images/og-home.jpg"
-        />
-      </Helmet>
+  {/* Canonical URL */}
+  <link
+    rel="canonical"
+    href="https://seocialmedia.in/digital-marketing-company-jaipur"
+  />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:title"
+    content="Top Website Development & SEO Company in Jaipur | SEOcial Media"
+  />
+  <meta
+    property="og:description"
+    content="Full-service digital marketing and website development agency in Jaipur. Custom web design, SEO, Google Ads, and more to grow your online presence."
+  />
+  <meta
+    property="og:image"
+    content="https://seocialmedia.in/images/og-home.jpg"
+  />
+  <meta property="og:url" content="https://seocialmedia.in/" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:site_name" content="SEOcial Media Solutions" />
+  <meta
+    property="article:publisher"
+    content="https://www.facebook.com/SEODigitalSolutions"
+  />
+
+  {/* Standard Publisher Tag */}
+  <meta name="publisher" content="SEOcial Media Solutions" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Top Website Development Company in Jaipur | SEOcial Media"
+  />
+  <meta
+    name="twitter:description"
+    content="Best digital marketing agency in Jaipur offering SEO, web development, content creation, and more tailored for startups and enterprises alike."
+  />
+  <meta
+    name="twitter:image"
+    content="https://seocialmedia.in/images/og-home.jpg"
+  />
+
+  {/* Geo Tags */}
+  <meta name="geo.region" content="IN-RJ" />
+  <meta name="geo.placename" content="Jaipur" />
+  <meta name="geo.position" content="26.9124;75.7873" />
+  <meta name="ICBM" content="26.9124,75.7873" />
+</Helmet>
+
 
       <section className="bg-gradient-to-br from-indigo-50 via-white to-purple-50">
         <div className="px-4 py-16 md:px-16 lg:px-24">

@@ -157,7 +157,7 @@ const SocialMediaServicesJaipur = () => {
   />
   <link
     rel="canonical"
-    href="https://sm-swebpage.vercel.app/social-media-marketing-company-jaipur"
+    href="https://seocialmedia.in/social-media-marketing-company-jaipur"
   />
 
   {/* Open Graph Meta */}
@@ -171,11 +171,11 @@ const SocialMediaServicesJaipur = () => {
   />
   <meta
     property="og:image"
-    content="https://sm-swebpage.vercel.app/images/social-bg.jpg"
+    content="https://seocialmedia.in/images/social-bg.jpg"
   />
   <meta
     property="og:url"
-    content="https://sm-swebpage.vercel.app/social-media-marketing-company-jaipur"
+    content="https://seocialmedia.in/social-media-marketing-company-jaipur"
   />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Top SEOcial Media Solutions in Jaipur" />
@@ -192,7 +192,7 @@ const SocialMediaServicesJaipur = () => {
   />
   <meta
     name="twitter:image"
-    content="https://sm-swebpage.vercel.app/images/social-bg.jpg"
+    content="https://seocialmedia.in/images/social-bg.jpg"
   />
 </Helmet>
 

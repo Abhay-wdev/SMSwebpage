@@ -254,11 +254,12 @@ const SeoJaipur = () => {
   return (
     <section className="bg-gradient-to-br from-amber-50 via-white to-orange-50">
       <Helmet>
-        <title>Top SEO Company in Jaipur – Get Ranks and Leads Growth</title>
+        <title>Top SEO Company in Jaipur | Best SEO Services Company in Jaipur</title>
         <meta
           name="description"
           content="SEOcial Media Solutions is one of the top SEO Company in Jaipur, which offers ROI-Driven online growth, organic ranking and leads to their client's business. Enquire Now!"
         />
+        <meta name="publisher" content="SEOcial Media Solutions" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="UTF-8" />

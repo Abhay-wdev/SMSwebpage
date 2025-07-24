@@ -139,9 +139,7 @@ const SocialMediaServicesAjmer = () => {
     <div className="min-h-screen">
 
 <Helmet>
-  <title>
-    Best Social Media Marketing Company in Ajmer 
-  </title>
+  <title>Best Social Media Marketing Services Company in Ajmer</title>
 
   <meta
     name="description"
@@ -151,6 +149,11 @@ const SocialMediaServicesAjmer = () => {
     name="keywords"
     content="social media marketing company Ajmer, Instagram marketing Ajmer, Facebook ads Ajmer, digital marketing Ajmer, best marketing agency Ajmer, social media agency, Ajmer SEO, website promotion Ajmer"
   />
+  <meta name="author" content="SEOcial Media Solutions" />
+  <meta name="publisher" content="SEOcial Media Solutions" />
+  <meta name="robots" content="index, follow" />
+  <meta httpEquiv="Content-Language" content="en" />
+
   <link
     rel="canonical"
     href="https://seocialmedia.in/social-media-marketing-company-ajmer"
@@ -173,6 +176,10 @@ const SocialMediaServicesAjmer = () => {
   <meta
     property="og:url"
     content="https://seocialmedia.in/social-media-marketing-company-ajmer"
+  />
+  <meta
+    property="og:site_name"
+    content="SEOcial Media Solutions"
   />
 
   {/* Twitter */}
