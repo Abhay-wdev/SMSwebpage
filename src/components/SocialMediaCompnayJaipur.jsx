@@ -60,18 +60,16 @@ function SocialMediaCompnayJaipur() {
   return (
     <div >
 <Helmet>
-  <title>
-    Best Digital Markting Services in Jaipur | Top Seo Company
-  </title>
+  <title>Best Digital Marketing Services in Jaipur | SEOcial Media</title>
 
   {/* Primary Meta Tags */}
   <meta
     name="description"
-    content="SEOcial Media Solutions offers full-scale digital services in Jaipur including SEO, social media marketing, web design, content creation, and performance marketing to grow your online presence."
+    content="Looking for the best digital marketing services in Jaipur? SEOcial Media Solutions offers expert SEO, social media marketing, PPC ads, website design, and content creation to grow your business online."
   />
   <meta
     name="keywords"
-    content="digital services Jaipur, digital marketing company Jaipur, SEO company Jaipur, website design Jaipur, content writing Jaipur, social media marketing Jaipur, Instagram ads Jaipur, PPC services Jaipur, online marketing solutions Jaipur"
+    content="digital marketing Jaipur, SEO company Jaipur, best marketing agency Jaipur, social media marketing Jaipur, PPC services Jaipur, website design Jaipur, content writing Jaipur, online promotion Jaipur, SEOcial Media Solutions"
   />
   <meta name="author" content="SEOcial Media Solutions" />
   <meta name="publisher" content="SEOcial Media Solutions" />
@@ -80,42 +78,45 @@ function SocialMediaCompnayJaipur() {
 
   <link
     rel="canonical"
-    href="https://seocialmedia.in/digital-markting-services-jaipur"
+    href="https://seocialmedia.in/digital-marketing-services-jaipur"
   />
 
   {/* Open Graph / Facebook */}
   <meta property="og:type" content="website" />
   <meta
     property="og:title"
-    content="Top Digital Marketing Services in Jaipur | SEOcial Media Solutions"
+    content="Best Digital Marketing Services in Jaipur | Top SEO Company"
   />
   <meta
     property="og:description"
-    content="Boost your brand visibility with Jaipur's top digital services company. From SEO and website design to social media and performance marketing, we do it all."
+    content="Grow your business online with Jaipur’s top digital marketing company. Expert SEO, social media management, PPC advertising, website design, and content marketing tailored for your brand."
   />
   <meta
     property="og:image"
-    content="https://seocialmedia.in/images/digital-services-jaipur-og.jpg"
+    content="https://seocialmedia.in/images/digital-marketing-jaipur-og.jpg"
   />
   <meta
     property="og:url"
-    content="https://seocialmedia.in/digital-services-company-jaipur"
+    content="https://seocialmedia.in/digital-marketing-services-jaipur"
   />
-  <meta property="og:site_name" content="SEOcial Media Solutions" />
+  <meta
+    property="og:site_name"
+    content="SEOcial Media Solutions - Jaipur"
+  />
 
   {/* Twitter Meta */}
   <meta name="twitter:card" content="summary_large_image" />
   <meta
     name="twitter:title"
-    content="Top Digital Marketing Company in Jaipur | SEOcial Media Solutions"
+    content="Best Digital Marketing & SEO Company in Jaipur | SEOcial Media"
   />
   <meta
     name="twitter:description"
-    content="Get expert digital services in Jaipur including SEO, social media, web development, and content creation. Grow your business with SEOcial Media."
+    content="SEOcial Media Solutions offers leading digital marketing and SEO services in Jaipur to enhance your brand visibility and drive growth with targeted strategies."
   />
   <meta
     name="twitter:image"
-    content="https://seocialmedia.in/images/digital-services-jaipur-og.jpg"
+    content="https://seocialmedia.in/images/digital-marketing-jaipur-og.jpg"
   />
 </Helmet>
 

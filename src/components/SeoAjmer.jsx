@@ -63,15 +63,15 @@ function SeoAjmer() {
   return (
     <>
 <Helmet>
-  <title>Top Digital Markting Services in Ajmer | Best Seo company</title>
+  <title>Top Digital Marketing Services in Ajmer | SEOcial Media</title>
 
   <meta
     name="description"
-    content="Looking for a top social media company in Ajmer? SEOcial Media Solutions offers expert Instagram and Facebook marketing to grow your business online."
+    content="Looking for the best digital marketing services in Ajmer? SEOcial Media Solutions offers expert SEO, social media marketing, PPC ads, and website promotion to grow your business online effectively."
   />
   <meta
     name="keywords"
-    content="social media company Ajmer, Instagram marketing Ajmer, Facebook ads Ajmer, digital marketing Ajmer, best marketing agency Ajmer, SEOcial Media Solutions"
+    content="digital marketing Ajmer, SEO company Ajmer, social media marketing Ajmer, PPC services Ajmer, best marketing agency Ajmer, online promotion Ajmer, SEOcial Media Solutions"
   />
   <meta name="author" content="SEOcial Media Solutions" />
   <meta name="publisher" content="SEOcial Media Solutions" />
@@ -80,45 +80,45 @@ function SeoAjmer() {
 
   <link
     rel="canonical"
-    href="https://seocialmedia.in/digital-markting-services-ajmer"
+    href="https://seocialmedia.in/digital-marketing-services-ajmer"
   />
 
   {/* Open Graph / Facebook */}
   <meta property="og:type" content="website" />
   <meta
     property="og:title"
-    content="Best Social Media Marketing Company in Ajmer | SEOcial Media Solutions"
+    content="Top Digital Marketing Services in Ajmer | Best SEO Company"
   />
   <meta
     property="og:description"
-    content="Grow your business with Ajmer’s top-rated social media marketing company. Specialized in Facebook and Instagram promotions tailored for your brand."
+    content="Grow your business online with Ajmer’s top digital marketing company. Expert SEO, social media promotions, PPC ads, and website marketing tailored for your brand."
   />
   <meta
     property="og:image"
-    content="https://seocialmedia.in/images/social-media-ajmer-og.jpg"
+    content="https://seocialmedia.in/images/digital-marketing-ajmer-og.jpg"
   />
   <meta
     property="og:url"
-    content="https://seocialmedia.in/digital-markting-services-ajmer"
+    content="https://seocialmedia.in/digital-marketing-services-ajmer"
   />
   <meta
     property="og:site_name"
-    content="Top SEOcial Media Solutions in Ajmer"
+    content="SEOcial Media Solutions - Ajmer"
   />
 
   {/* Twitter */}
   <meta name="twitter:card" content="summary_large_image" />
   <meta
     name="twitter:title"
-    content="Ajmer’s Top Social Media Marketing Company | SEOcial Media"
+    content="Top Digital Marketing & SEO Company in Ajmer | SEOcial Media"
   />
   <meta
     name="twitter:description"
-    content="We help brands grow with strategic social media services in Ajmer—Facebook, Instagram, and more."
+    content="SEOcial Media Solutions offers leading digital marketing and SEO services in Ajmer to enhance your brand visibility and drive business growth."
   />
   <meta
     name="twitter:image"
-    content="https://seocialmedia.in/images/social-media-ajmer-og.jpg"
+    content="https://seocialmedia.in/images/digital-marketing-ajmer-og.jpg"
   />
 </Helmet>
 

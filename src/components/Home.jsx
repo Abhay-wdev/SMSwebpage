@@ -434,22 +434,29 @@ const HomePage = () => {
   };
   return (
     <>
-      <Helmet>
-        <title>
-          Best Digital Marketing Agency in Jaipur | SEOcial Media Solutions
-        </title>
-        <meta
-          name="description"
-          content="Best Digital Marketing Agency in Jaipur delivering ROI-driven results. Expert services in SEO, Social Media, PPC & Content Marketing. 100+ satisfied clients. Get free consultation today!"
-        />
-        <meta
-          name="keywords"
-          content="best website development company in Jaipur, full stack web development services, React and Next.js developers in Jaipur, professional web design company, custom website for business, digital marketing services for small business, top SEO company in India, affordable social media marketing, content writing services for websites, expert video editing services, professional photo editing company, mobile-friendly website agency, WordPress and Shopify developers in Jaipur"
-        />
+     <Helmet>
+  <title>Best Digital Marketing Agency in Jaipur | SEOcial Media Solutions</title>
 
-        <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
-        {/* Rest of your meta tags */}
-      </Helmet>
+  <meta
+    name="description"
+    content="Best Digital Marketing Agency in Jaipur delivering ROI-driven results. Expert services in SEO, Social Media, PPC & Content Marketing. 100+ satisfied clients. Get free consultation today!"
+  />
+  <meta
+    name="keywords"
+    content="best website development company in Jaipur, full stack web development services, React and Next.js developers in Jaipur, professional web design company, custom website for business, digital marketing services for small business, top SEO company in India, affordable social media marketing, content writing services for websites, expert video editing services, professional photo editing company, mobile-friendly website agency, WordPress and Shopify developers in Jaipur"
+  />
+  
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="SEOcial Media Solutions" />
+  <meta name="publisher" content="SEOcial Media Solutions" />
+  <meta httpEquiv="Content-Language" content="en" />
+
+  <link rel="canonical" href="https://seocialmedia.in/" />
+
+  <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
+  {/* Rest of your meta tags */}
+</Helmet>
+
       <div className="relative">
         <h1 className="hidden">Best Digital Marketing Agency in Jaipur</h1>
         <HeroSection />

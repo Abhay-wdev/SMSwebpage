@@ -118,55 +118,64 @@ const AboutUs = () => {
 
   return (
     <>
-      <Helmet>
-        <title>
-          Best Website Development & Digital Marketing Company in Jaipur |
-          SEOcial Media Solutions
-        </title>
-        <meta
-          name="description"
-          content="Looking for the best website development company in Jaipur? SEOcial Media offers web design, SEO, content marketing, and full-scale digital solutions tailored to your business."
-        />
-        <meta
-          name="keywords"
-          content="best website development company in Jaipur, top digital marketing agency, SEO company Jaipur, social media marketing Jaipur, content writing services, Google Ads Jaipur, web design services, responsive websites, Jaipur web development, startup marketing solutions"
-        />
-        <link
-          rel="canonical"
-          href="https://seocialmedia.in/digital-marketing-company-jaipur"
-        />
+     <Helmet>
+  <title>
+    Best Website Development & Digital Marketing Company in Jaipur | SEOcial Media
+  </title>
 
-        {/* Open Graph Meta */}
-        <meta
-          property="og:title"
-          content="Best Website Development & Digital Marketing Company in Jaipur"
-        />
-        <meta
-          property="og:description"
-          content="Complete online marketing solutions including SEO, web development, and social media strategies."
-        />
-        <meta
-          property="og:image"
-          content="https://seocialmedia.in/images/og-home.jpg"
-        />
-        <meta property="og:url" content="https://seocialmedia.in/" />
-        <meta property="og:type" content="website" />
+  <meta
+    name="description"
+    content="Looking for the best website development company in Jaipur? SEOcial Media offers web design, SEO, content marketing, and full-scale digital solutions tailored to your business."
+  />
+  <meta
+    name="keywords"
+    content="best website development company in Jaipur, top digital marketing agency, SEO company Jaipur, social media marketing Jaipur, content writing services, Google Ads Jaipur, web design services, responsive websites, Jaipur web development, startup marketing solutions"
+  />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="SEOcial Media Solutions" />
+  <meta name="publisher" content="SEOcial Media Solutions" />
+  <meta httpEquiv="Content-Language" content="en" />
 
-        {/* Twitter Meta */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="SEOcial Media | Best Website Development in Jaipur"
-        />
-        <meta
-          name="twitter:description"
-          content="SEOcial Media Solutions builds modern websites and digital strategies that deliver real results."
-        />
-        <meta
-          name="twitter:image"
-          content="https://seocialmedia.in/images/og-home.jpg"
-        />
-      </Helmet>
+  <link
+    rel="canonical"
+    href="https://seocialmedia.in/digital-marketing-company-jaipur"
+  />
+
+  {/* Open Graph Meta */}
+  <meta
+    property="og:title"
+    content="Best Website Development & Digital Marketing Company in Jaipur"
+  />
+  <meta
+    property="og:description"
+    content="Complete online marketing solutions including SEO, web development, and social media strategies."
+  />
+  <meta
+    property="og:image"
+    content="https://seocialmedia.in/images/og-home.jpg"
+  />
+  <meta
+    property="og:url"
+    content="https://seocialmedia.in/digital-marketing-company-jaipur"
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SEOcial Media Solutions" />
+
+  {/* Twitter Meta */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="SEOcial Media | Best Website Development in Jaipur"
+  />
+  <meta
+    name="twitter:description"
+    content="SEOcial Media Solutions builds modern websites and digital strategies that deliver real results."
+  />
+  <meta
+    name="twitter:image"
+    content="https://seocialmedia.in/images/og-home.jpg"
+  />
+</Helmet>
 
       <section className="bg-gradient-to-br from-indigo-50 via-white to-purple-50">
         {/* Hero Section */}
