@@ -13,7 +13,7 @@ const HeroBackground = () => (
   <div className="absolute inset-0 -z-10 bg-slate-950 overflow-hidden">
     <div className="absolute inset-0">
       <motion.div
-        className="absolute inset-0 bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900"
+        className="absolute inset-0  bg-[#101340] from-slate-950 via-blue-950 to-slate-900"
         animate={{
           backgroundPosition: ["0% 0%", "100% 100%"],
         }}

@@ -51,7 +51,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-br from-gray-900 via-gray-900 to-indigo-900 text-gray-300">
+    <footer className="  bg-[#101340] from-gray-900 via-gray-900 to-indigo-900 text-gray-300">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
