@@ -16,10 +16,10 @@ export default function Header({ setSidebarOpen }) {
     switch (path) {
       case "/":
         return "Dashboard";
-      case "/analytics":
-        return "Analytics";
-      case "/orders":
-        return "Orders";
+      case "/services":
+        return "Services";
+      case "/category":
+        return "Category";
       case "/notifications":
         return "Notifications";
       case "/profile":

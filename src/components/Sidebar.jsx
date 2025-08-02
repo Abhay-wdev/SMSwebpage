@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { FaNetworkWired } from "react-icons/fa6";
 import
   {
     FaHome,
@@ -18,8 +19,9 @@ export default function Sidebar({
 {
   const navItems = [
     { label: "Dashboard", path: "/", icon: <FaHome /> },
-    { label: "Analytics", path: "/analytics", icon: <FaChartBar /> },
-    { label: "Orders", path: "/orders", icon: <FaShoppingCart /> },
+    { label: "Category", path: "/category", icon: <FaShoppingCart /> },
+    { label: "Services", path: "/services", icon:  <FaNetworkWired /> },
+    
   ];
 
   return (

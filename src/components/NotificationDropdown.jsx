@@ -1,14 +1,29 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Bell, CheckCircle, Package, BarChart } from "lucide-react"; // Optional: lucide-react icons
+import { Bell, CheckCircle, Package, BarChart } from "lucide-react";
 
 export default function NotificationDropdown({ onClose }) {
   const navigate = useNavigate();
 
   const notifications = [
-    { id: 1, icon: <Package size={16} />, message: "Order #123 has been shipped", time: "2 mins ago" },
-    { id: 2, icon: <BarChart size={16} />, message: "Analytics report is ready", time: "10 mins ago" },
-    { id: 3, icon: <CheckCircle size={16} />, message: "System updated successfully", time: "1 hour ago" },
+    {
+      id: 1,
+      icon: <Package size={16} />,
+      message: "Order #123 has been shipped",
+      time: "2 mins ago",
+    },
+    {
+      id: 2,
+      icon: <BarChart size={16} />,
+      message: "Analytics report is ready",
+      time: "10 mins ago",
+    },
+    {
+      id: 3,
+      icon: <CheckCircle size={16} />,
+      message: "System updated successfully",
+      time: "1 hour ago",
+    },
   ];
 
   const handleViewAllClick = () => {
@@ -17,12 +32,16 @@ export default function NotificationDropdown({ onClose }) {
   };
 
   return (
-    <div className="absolute right-0 mt-3 w-80 bg-white rounded-xl shadow-xl border border-gray-200 z-50 animate-fadeIn">
+    <div
+      className="absolute mt-3 w-80 bg-white rounded-xl shadow-xl border border-gray-200 z-50 animate-fadeIn
+                 left-[-80px] -translate-x-1/2
+                 sm:left-auto sm:right-2 sm:translate-x-5"
+    >
       <div className="px-4 py-3 border-b rounded-t-xl bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold text-sm flex items-center gap-2">
         <Bell size={18} className="text-white" />
         Notifications
       </div>
-      
+
       <ul className="max-h-64 overflow-y-auto custom-scroll divide-y">
         {notifications.length > 0 ? (
           notifications.map((note) => (
@@ -38,7 +57,9 @@ export default function NotificationDropdown({ onClose }) {
             </li>
           ))
         ) : (
-          <li className="p-4 text-gray-500 text-sm text-center">No new notifications</li>
+          <li className="p-4 text-gray-500 text-sm text-center">
+            No new notifications
+          </li>
         )}
       </ul>
 
