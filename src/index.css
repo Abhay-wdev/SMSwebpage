@@ -41,3 +41,12 @@ button{
     left: 125%;
   }
 }
+
+.hide-scrollbar {
+  overflow: auto; /* or scroll */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}

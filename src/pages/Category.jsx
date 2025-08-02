@@ -247,7 +247,7 @@ const Category = () => {
       {/* Add Category Modal */}
 {showAddModal && (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
-    <div className="bg-white/90 shadow-2xl rounded-2xl w-full max-w-2xl relative border border-gray-200 animate-fadeIn max-h-[90vh] overflow-y-auto">
+    <div className="bg-white/90 shadow-2xl rounded-2xl w-full max-w-2xl relative border border-gray-200 animate-fadeIn max-h-[90vh] hide-scrollbar overflow-y-auto">
       
       {/* Header with Sticky Close Button */}
       <div className="sticky top-0 z-10 bg-white/90 p-6 border-b rounded-t-2xl flex items-center justify-between">
@@ -265,7 +265,7 @@ const Category = () => {
       </div>
 
       {/* Scrollable Form */}
-      <div className="p-6 space-y-5">
+      <div className="p-6 space-y-5 ">
         <form onSubmit={handleAddCategory}>
 
           <div className="mb-4">
@@ -371,7 +371,7 @@ const Category = () => {
       {/* Edit Category Modal */}
      {showEditModal && (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
-    <div className="bg-white/90 border shadow-2xl rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto relative animate-fadeIn">
+    <div className="bg-white/90 border shadow-2xl rounded-2xl w-full max-w-2xl max-h-[90vh] hide-scrollbar hide-scrollbar overflow-y-auto relative animate-fadeIn">
 
       {/* Header */}
       <div className="sticky top-0 z-10 bg-white/90 p-6 border-b rounded-t-2xl flex justify-between items-center">
