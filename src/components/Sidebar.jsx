@@ -24,11 +24,8 @@ export default function Sidebar({
 
   return (
     <div
-      style={{
-        backgroundImage:
-          "linear-gradient(to bottom, #639cf0, #4aa3ef, #33a9eb, #1aa4db, #43a7c3)",
-      }}
-      className={`fixed top-0 left-0 h-full z-50 transition-all duration-300 ease-in-out
+     
+      className={`fixed bg-gradient-to-r from-blue-700 to-cyan-600 top-0 left-0 h-full z-50 transition-all duration-300 ease-in-out
         ${open ? "translate-x-0" : "-translate-x-full"}
         md:translate-x-0
         ${collapsed ? "w-[72px]" : "w-[260px]"}
