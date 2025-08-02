@@ -8,6 +8,7 @@ import NotificationsPage from "./pages/NotificationsPage";
 import { Toaster } from "react-hot-toast";
 import Category from "./pages/Category";
 import Services from "./pages/Services";
+import Template from "./pages/Template";
 export default function App() {
   return (<>
   <Toaster
@@ -43,6 +44,7 @@ export default function App() {
         <Route path="services" element={<Services/>} />
         <Route path="category" element={ <Category/>} />
         <Route path="notifications" element={<NotificationsPage />} />
+        <Route path="template" element={<Template/>} />
       </Route>
     </Routes>
   </BrowserRouter>

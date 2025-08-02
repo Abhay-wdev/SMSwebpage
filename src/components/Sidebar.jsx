@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaNetworkWired } from "react-icons/fa6";
+import { TbTemplate } from "react-icons/tb";
 import
   {
     FaHome,
@@ -21,6 +22,7 @@ export default function Sidebar({
     { label: "Dashboard", path: "/", icon: <FaHome /> },
     { label: "Category", path: "/category", icon: <FaShoppingCart /> },
     { label: "Services", path: "/services", icon:  <FaNetworkWired /> },
+     { label: "Template", path: "/template", icon:   <TbTemplate /> },
     
   ];
 

@@ -3,7 +3,7 @@ import { MdLibraryAdd } from "react-icons/md";
 import { RiEdit2Line } from "react-icons/ri";
 import { MdDelete } from "react-icons/md";
 import { toast } from 'react-hot-toast';
- import ImagePreview from "../components/ImagePreview.JSX";
+ import ImagePreview from "../components/ImagePreview.jsx";
  
 const Services = () => {
     const API_BASE = 'http://localhost:5000';
@@ -496,7 +496,7 @@ const Services = () => {
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
                     <div>
-                        <h1 className="text-2xl font-bold text-gray-900">Services Management</h1>
+                        
                         <div className="flex items-center mt-2">
                             <span className={`h-3 w-3 rounded-full mr-2 ${serverStatus === 'online' ? 'bg-green-500' : 'bg-red-500'}`}></span>
                             <span className="text-sm text-gray-600">Server {serverStatus}</span>

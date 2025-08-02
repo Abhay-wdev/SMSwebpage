@@ -5,7 +5,7 @@ import { MdDelete } from "react-icons/md";
 import { useSelector } from 'react-redux';
 import { toast } from 'react-hot-toast';
  
-import ImagePreview from "../components/ImagePreview.JSX";
+import ImagePreview from "../components/ImagePreview.jsx";
  
 const Category = () => {
   const [fullscreenImage, setFullscreenImage] = useState(null);
