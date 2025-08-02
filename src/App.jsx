@@ -2,8 +2,8 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Layout from "./layout/Layout";
 import Dashboard from "./pages/Dashboard";
-import Analytics from "./pages/Analytics";
-import Orders from "./pages/Orders";
+ 
+ 
 import NotificationsPage from "./pages/NotificationsPage";
 import { Toaster } from "react-hot-toast";
 import Category from "./pages/Category";

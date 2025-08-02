@@ -3,16 +3,13 @@ import axios from 'axios';
 import { RiEdit2Line } from "react-icons/ri";
 import { MdDelete } from "react-icons/md";
 import { useSelector } from 'react-redux';
+import { toast } from 'react-hot-toast';
  
-
-
-
-import { toast  } from 'react-hot-toast';
+import ImagePreview from "../components/ImagePreview.JSX";
  
-
 const Category = () => {
-   const [fullscreenImage, setFullscreenImage] = useState(null);
-   const [preview, setPreview] = useState(null);
+  const [fullscreenImage, setFullscreenImage] = useState(null);
+  const [preview, setPreview] = useState(null);
   const token = useSelector((state) => state.token.token);
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -93,8 +90,7 @@ const Category = () => {
       fetchCategories();
       setShowEditModal(false);
     } catch (err) {
-    toast.error('Please enter a description between 10 and 500 characters');
-
+      toast.error('Please enter a description between 10 and 500 characters');
       console.error('Error updating category:', err);
     } finally {
       setLoading(false);
@@ -147,8 +143,7 @@ const Category = () => {
       fetchCategories();
       setShowAddModal(false);
     } catch (err) {
-     toast.error('Please enter a description between 10 and 500 characters');
-
+      toast.error('Please enter a description between 10 and 500 characters');
       console.error('Error adding category:', err);
     } finally {
       setLoading(false);
@@ -156,24 +151,69 @@ const Category = () => {
   };
   
   const resetForm = () => {
-  setForm({
-    title: "",
-    description: "",
-    sortOrder: 0,
-    isActive: "true",
-  });
-  setImage(null);
-  setPreview(null);
-};
+    setForm({
+      title: "",
+      description: "",
+      sortOrder: 0,
+      isActive: "true",
+    });
+    setImage(null);
+    setPreview(null);
+  };
 
-{/* this is the full scrreen image view */}
+  // Mobile Card View Component
+  const CategoryCard = ({ category }) => (
+    <div className="bg-white rounded-lg shadow-md p-4 mb-4 border border-gray-200">
+      <div className="flex flex-col sm:flex-row gap-4">
+        <div className="flex-shrink-0">
+          <img
+            src={category.imageUrl || category.image}
+            alt={category.title}
+            onClick={() => setFullscreenImage(category.imageUrl || category.image)}
+            className="w-full sm:w-32 h-40 sm:h-20 object-cover rounded cursor-pointer transition-transform hover:scale-105"
+          />
+        </div>
+        <div className="flex-1 min-w-0">
+          <div className="flex justify-between items-start">
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900">{category.title}</h3>
+              <p className="text-gray-600 mt-1 text-sm">{category.description}</p>
+              <div className="mt-2 flex flex-wrap gap-2">
+                <span className="text-xs font-medium bg-gray-100 text-gray-800 px-2 py-1 rounded">
+                  Order: {category.sortOrder}
+                </span>
+                <span className={`text-xs font-medium px-2 py-1 rounded ${
+                  category.isActive 
+                    ? 'bg-green-100 text-green-800' 
+                    : 'bg-red-100 text-red-800'
+                }`}>
+                  {category.isActive ? 'Active' : 'Inactive'}
+                </span>
+              </div>
+            </div>
+            <div className="flex flex-col space-y-2">
+              <button
+                onClick={() => handleSelect(category)}
+                className="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center"
+              >
+                <RiEdit2Line className="mr-1" /> Edit
+              </button>
+              <button
+                onClick={() => handleDelete(category._id)}
+                className="text-red-600 hover:text-red-800 text-sm font-medium flex items-center"
+              >
+                <MdDelete className="mr-1" /> Delete
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 
   return (
     <div className="p-4">
-    
-      
       <div className='flex w-full justify-between overflow-x'>
-       
         <span className='flex w-full place-content-end my-2 mr-2'>
           <button
             onClick={() => {
@@ -191,321 +231,323 @@ const Category = () => {
         </span>
       </div>
       
-      {/* Table */}
-      <div className="relative overflow-x-auto shadow-md sm:rounded-lg mb-6">
-        <table className="w-full text-sm text-left dark:text-gray-400">
-          <thead className="text-xs text-gray-900 uppercase bg-gray-500">
-            <tr>
-              <th className="px-6 py-3">Image</th>
-              <th className="px-6 py-3">Title</th>
-              <th className="px-6 py-3">Description</th>
-              <th className="px-6 py-3">Sort Order</th>
-              <th className="px-6 py-3">Status</th>
-              <th className="px-6 py-3">Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            {categories.map((cat) => (
-              <tr key={cat._id} className="bg-white border-b border-gray-700">
-                <td className="px-6 py-2">
-                <img
-  src={cat.imageUrl || cat.image}
-  alt={cat.title}
-  onClick={() => setFullscreenImage(cat.imageUrl || cat.image)}
-  className="w-40 h-20 object-cover rounded cursor-pointer transition-transform hover:scale-105"
-/>
-
-
-                  
-                </td>
-                <td className="px-6 py-4 font-medium text-gray-900">{cat.title}</td>
-                <td className="px-6 py-4 font-medium text-gray-900">{cat.description}</td>
-                <td className="px-6 py-4 font-medium text-gray-900">{cat.sortOrder}</td>
-                <td className="px-6 py-4 font-medium text-gray-900">{cat.isActive ? 'Yes' : 'No'}</td>
-                <td className="px-6 py-4 font-medium text-gray-900">
-                  <div className="flex gap-3">
+      {/* Table for Desktop, Cards for Mobile */}
+      <div className="mt-4">
+        {/* Desktop Table View - Hidden on Mobile */}
+        <div className="hidden md:block overflow-x-auto shadow-md sm:rounded-lg">
+          <table className="min-w-full divide-y divide-gray-200">
+            <thead className="bg-gray-50">
+              <tr>
+                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  Image
+                </th>
+                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  Title
+                </th>
+                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  Description
+                </th>
+                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  Sort Order
+                </th>
+                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  Status
+                </th>
+                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  Action
+                </th>
+              </tr>
+            </thead>
+            <tbody className="bg-white divide-y divide-gray-200">
+              {categories.map((cat) => (
+                <tr key={cat._id} className="hover:bg-gray-50">
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <img
+                      src={cat.imageUrl || cat.image}
+                      alt={cat.title}
+                      onClick={() => setFullscreenImage(cat.imageUrl || cat.image)}
+                      className="w-32 h-20 object-cover rounded cursor-pointer transition-transform hover:scale-105"
+                    />
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <div className="text-sm font-medium text-gray-900">{cat.title}</div>
+                  </td>
+                  <td className="px-6 py-4">
+                    <div className="text-sm text-gray-900 max-w-xs truncate" title={cat.description}>
+                      {cat.description}
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    {cat.sortOrder}
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
+                      cat.isActive 
+                        ? 'bg-green-100 text-green-800' 
+                        : 'bg-red-100 text-red-800'
+                    }`}>
+                      {cat.isActive ? 'Active' : 'Inactive'}
+                    </span>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                     <button
                       onClick={() => handleSelect(cat)}
-                      className="text-blue-600 hover:underline"
+                      className="text-indigo-600 hover:text-indigo-900 mr-3"
                     >
-                      <RiEdit2Line className="inline w-5 h-5" /> Edit
+                      <RiEdit2Line className="inline w-4 h-4 mr-1" /> Edit
                     </button>
                     <button
                       onClick={() => handleDelete(cat._id)}
-                      className="text-red-600 hover:underline"
+                      className="text-red-600 hover:text-red-900"
                     >
-                      <MdDelete className="inline w-5 h-5" /> Delete
+                      <MdDelete className="inline w-4 h-4 mr-1" /> Delete
                     </button>
-                  </div>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        
+        {/* Mobile Card View - Hidden on Desktop */}
+        <div className="md:hidden">
+          {categories.length === 0 ? (
+            <div className="text-center py-8 text-gray-500">
+              No categories found
+            </div>
+          ) : (
+            categories.map(category => (
+              <CategoryCard key={category._id} category={category} />
+            ))
+          )}
+        </div>
       </div>
       
       {/* Add Category Modal */}
-{showAddModal && (
-  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
-    <div className="bg-white/90 shadow-2xl rounded-2xl w-full max-w-2xl relative border border-gray-200 animate-fadeIn max-h-[90vh] hide-scrollbar overflow-y-auto">
-      
-      {/* Header with Sticky Close Button */}
-      <div className="sticky top-0 z-10 bg-white/90 p-6 border-b rounded-t-2xl flex items-center justify-between">
-        <h3 className="text-2xl font-semibold text-gray-800">Add New Category</h3>
-        <button
-          onClick={() => {
-            setShowAddModal(false);
-            resetForm();
-          }}
-          className="text-gray-400 hover:text-red-500 text-2xl"
-          title="Close"
-        >
-          &times;
-        </button>
-      </div>
-
-      {/* Scrollable Form */}
-      <div className="p-6 space-y-5 ">
-        <form onSubmit={handleAddCategory}>
-
-          <div className="mb-4">
-            <label className="block mb-1 text-gray-700 font-medium">Title</label>
-            <input
-              type="text"
-              name="title"
-              value={form.title}
-              onChange={handleChange}
-              required
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
+      {showAddModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
+          <div className="bg-white/90 shadow-2xl rounded-2xl w-full max-w-2xl relative border border-gray-200 animate-fadeIn max-h-[90vh] hide-scrollbar overflow-y-auto">
+            <div className="sticky top-0 z-10 bg-white/90 p-6 border-b rounded-t-2xl flex items-center justify-between">
+              <h3 className="text-2xl font-semibold text-gray-800">Add New Category</h3>
+              <button
+                onClick={() => {
+                  setShowAddModal(false);
+                  resetForm();
+                }}
+                className="text-gray-400 hover:text-red-500 text-2xl"
+                title="Close"
+              >
+                &times;
+              </button>
+            </div>
+            <div className="p-6 space-y-5">
+              <form onSubmit={handleAddCategory}>
+                <div className="mb-4">
+                  <label className="block mb-1 text-gray-700 font-medium">Title</label>
+                  <input
+                    type="text"
+                    name="title"
+                    value={form.title}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                </div>
+                <div className="mb-4">
+                  <label className="block mb-1 text-gray-700 font-medium">Description</label>
+                  <textarea
+                    name="description"
+                    value={form.description}
+                    onChange={handleChange}
+                    required
+                    rows="3"
+                    className="w-full px-4 py-2 rounded-lg border border-gray-300 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  ></textarea>
+                </div>
+                <div className="mb-4">
+                  <label className="block mb-1 text-gray-700 font-medium">Sort Order</label>
+                  <input
+                    type="number"
+                    name="sortOrder"
+                    min={0}
+                    value={form.sortOrder}
+                    onChange={handleChange}
+                    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                </div>
+                <div className="mb-4">
+                  <label className="block mb-1 text-gray-700 font-medium">Active Status</label>
+                  <select
+                    name="isActive"
+                    value={form.isActive}
+                    onChange={handleChange}
+                    className="w-full px-4 py-2 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  >
+                    <option value="true">Active</option>
+                    <option value="false">Inactive</option>
+                  </select>
+                </div>
+                <div className="mb-4">
+                  <label className="block mb-1 text-gray-700 font-medium">Image</label>
+                  <input
+                    type="file"
+                    accept="image/*"
+                    onChange={(e) => {
+                      const file = e.target.files[0];
+                      setImage(file);
+                      if (file) setPreview(URL.createObjectURL(file));
+                    }}
+                    className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:border-0 file:rounded-md file:bg-blue-50 file:text-blue-600 hover:file:bg-blue-100"
+                  />
+                  {preview && (
+                    <img
+                      src={preview}
+                      alt="Preview"
+                      className="mt-3 h-32 rounded-lg border object-contain shadow"
+                    />
+                  )}
+                </div>
+                <div className="flex justify-end space-x-3 pt-4">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setShowAddModal(false);
+                      resetForm();
+                    }}
+                    className="px-4 py-2 rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-100 transition"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    disabled={loading}
+                    className={`px-5 py-2 rounded-lg font-semibold text-white transition ${
+                      loading ? "bg-green-400 cursor-not-allowed" : "bg-green-600 hover:bg-green-700"
+                    }`}
+                  >
+                    {loading ? "Adding..." : "Add Category"}
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
-
-          <div className="mb-4">
-            <label className="block mb-1 text-gray-700 font-medium">Description</label>
-            <textarea
-              name="description"
-              value={form.description}
-              onChange={handleChange}
-              required
-              rows="3"
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
-            ></textarea>
-          </div>
-
-          <div className="mb-4">
-            <label className="block mb-1 text-gray-700 font-medium">Sort Order</label>
-            <input
-              type="number"
-              name="sortOrder"
-              min={0}
-              value={form.sortOrder}
-              onChange={handleChange}
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-          </div>
-
-          <div className="mb-4">
-            <label className="block mb-1 text-gray-700 font-medium">Active Status</label>
-            <select
-              name="isActive"
-              value={form.isActive}
-              onChange={handleChange}
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
-              <option value="true">Active</option>
-              <option value="false">Inactive</option>
-            </select>
-          </div>
-
-          <div className="mb-4">
-            <label className="block mb-1 text-gray-700 font-medium">Image</label>
-            <input
-              type="file"
-              accept="image/*"
-              onChange={(e) => {
-                const file = e.target.files[0];
-                setImage(file);
-                if (file) setPreview(URL.createObjectURL(file));
-              }}
-              className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:border-0 file:rounded-md file:bg-blue-50 file:text-blue-600 hover:file:bg-blue-100"
-            />
-            {preview && (
-              <img
-                src={preview}
-                alt="Preview"
-                className="mt-3 h-32 rounded-lg border object-contain shadow"
-              />
-            )}
-          </div>
-
-          {/* Footer Buttons */}
-          <div className="flex justify-end space-x-3 pt-4">
-            <button
-              type="button"
-              onClick={() => {
-                setShowAddModal(false);
-                resetForm();
-              }}
-              className="px-4 py-2 rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-100 transition"
-            >
-              Cancel
-            </button>
-            <button
-              type="submit"
-              disabled={loading}
-              className={`px-5 py-2 rounded-lg font-semibold text-white transition ${
-                loading ? "bg-green-400 cursor-not-allowed" : "bg-green-600 hover:bg-green-700"
-              }`}
-            >
-              {loading ? "Adding..." : "Add Category"}
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-)}
-
-
+        </div>
+      )}
       
       {/* Edit Category Modal */}
-     {showEditModal && (
-  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
-    <div className="bg-white/90 border shadow-2xl rounded-2xl w-full max-w-2xl max-h-[90vh] hide-scrollbar hide-scrollbar overflow-y-auto relative animate-fadeIn">
-
-      {/* Header */}
-      <div className="sticky top-0 z-10 bg-white/90 p-6 border-b rounded-t-2xl flex justify-between items-center">
-        <h3 className="text-2xl font-semibold text-gray-800">Edit Category</h3>
-        <button
-          onClick={() => {
-            setShowEditModal(false);
-            resetForm();
-          }}
-          className="text-gray-400 hover:text-red-500 text-2xl"
-          title="Close"
-        >
-          &times;
-        </button>
-      </div>
-
-      {/* Form Body */}
-      <div className="p-6 space-y-5">
-        <div>
-          <label className="block mb-1 text-gray-700 font-medium">Title</label>
-          <input
-            type="text"
-            name="title"
-            value={form.title}
-            onChange={handleChange}
-            required
-            className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
+      {showEditModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
+          <div className="bg-white/90 border shadow-2xl rounded-2xl w-full max-w-2xl max-h-[90vh] hide-scrollbar hide-scrollbar overflow-y-auto relative animate-fadeIn">
+            <div className="sticky top-0 z-10 bg-white/90 p-6 border-b rounded-t-2xl flex justify-between items-center">
+              <h3 className="text-2xl font-semibold text-gray-800">Edit Category</h3>
+              <button
+                onClick={() => {
+                  setShowEditModal(false);
+                  resetForm();
+                }}
+                className="text-gray-400 hover:text-red-500 text-2xl"
+                title="Close"
+              >
+                &times;
+              </button>
+            </div>
+            <div className="p-6 space-y-5">
+              <div>
+                <label className="block mb-1 text-gray-700 font-medium">Title</label>
+                <input
+                  type="text"
+                  name="title"
+                  value={form.title}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+              <div>
+                <label className="block mb-1 text-gray-700 font-medium">Description</label>
+                <textarea
+                  name="description"
+                  value={form.description}
+                  onChange={handleChange}
+                  required
+                  rows="3"
+                  className="w-full px-4 py-2 rounded-lg border border-gray-300 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+                ></textarea>
+              </div>
+              <div>
+                <label className="block mb-1 text-gray-700 font-medium">Sort Order</label>
+                <input
+                  type="number"
+                  name="sortOrder"
+                  min={0}
+                  value={form.sortOrder}
+                  onChange={handleChange}
+                  className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+              <div>
+                <label className="block mb-1 text-gray-700 font-medium">Active Status</label>
+                <select
+                  name="isActive"
+                  value={form.isActive}
+                  onChange={handleChange}
+                  className="w-full px-4 py-2 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                  <option value="true">Active</option>
+                  <option value="false">Inactive</option>
+                </select>
+              </div>
+              <div>
+                <label className="block mb-1 text-gray-700 font-medium">New Image (optional)</label>
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => {
+                    const file = e.target.files[0];
+                    setImage(file);
+                    if (file) setPreview(URL.createObjectURL(file));
+                  }}
+                  className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:border-0 file:rounded-md file:bg-blue-50 file:text-blue-600 hover:file:bg-blue-100"
+                />
+                {preview && (
+                  <img
+                    src={preview}
+                    alt="Preview"
+                    className="mt-3 h-32 rounded-lg border object-contain shadow"
+                  />
+                )}
+              </div>
+              <div className="flex justify-end space-x-3 pt-4">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowEditModal(false);
+                    resetForm();
+                  }}
+                  className="px-4 py-2 rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-100 transition"
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={handleUpdate}
+                  disabled={loading}
+                  className={`px-5 py-2 rounded-lg font-semibold text-white transition ${
+                    loading ? "bg-green-400 cursor-not-allowed" : "bg-green-600 hover:bg-green-700"
+                  }`}
+                >
+                  {loading ? "Updating..." : "Update Category"}
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div>
-          <label className="block mb-1 text-gray-700 font-medium">Description</label>
-          <textarea
-            name="description"
-            value={form.description}
-            onChange={handleChange}
-            required
-            rows="3"
-            className="w-full px-4 py-2 rounded-lg border border-gray-300 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
-          ></textarea>
-        </div>
-
-        <div>
-          <label className="block mb-1 text-gray-700 font-medium">Sort Order</label>
-          <input
-            type="number"
-            name="sortOrder"
-            min={0}
-            value={form.sortOrder}
-            onChange={handleChange}
-            className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-        </div>
-
-        <div>
-          <label className="block mb-1 text-gray-700 font-medium">Active Status</label>
-          <select
-            name="isActive"
-            value={form.isActive}
-            onChange={handleChange}
-            className="w-full px-4 py-2 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
-            <option value="true">Active</option>
-            <option value="false">Inactive</option>
-          </select>
-        </div>
-
-        <div>
-          <label className="block mb-1 text-gray-700 font-medium">New Image (optional)</label>
-          <input
-            type="file"
-            accept="image/*"
-            onChange={(e) => {
-              const file = e.target.files[0];
-              setImage(file);
-              if (file) setPreview(URL.createObjectURL(file));
-            }}
-            className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:border-0 file:rounded-md file:bg-blue-50 file:text-blue-600 hover:file:bg-blue-100"
-          />
-          {preview && (
-            <img
-              src={preview}
-              alt="Preview"
-              className="mt-3 h-32 rounded-lg border object-contain shadow"
-            />
-          )}
-        </div>
-
-        {/* Footer Buttons */}
-        <div className="flex justify-end space-x-3 pt-4">
-          <button
-            type="button"
-            onClick={() => {
-              setShowEditModal(false);
-              resetForm();
-            }}
-            className="px-4 py-2 rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-100 transition"
-          >
-            Cancel
-          </button>
-          <button
-            onClick={handleUpdate}
-            disabled={loading}
-            className={`px-5 py-2 rounded-lg font-semibold text-white transition ${
-              loading ? "bg-green-400 cursor-not-allowed" : "bg-green-600 hover:bg-green-700"
-            }`}
-          >
-            {loading ? "Updating..." : "Update Category"}
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-)}
-
-{fullscreenImage && (
-  <div
-    className="fixed inset-0 z-[100] bg-black/80 flex items-center justify-center"
-    onClick={() => setFullscreenImage(null)}
-  >
-    <img
-      src={fullscreenImage}
-      alt="Full View"
-      className="max-w-full max-h-full object-contain rounded shadow-xl"
-    />
-    <button
-      onClick={() => setFullscreenImage(null)}
-      className="absolute top-4 right-6 text-white text-3xl font-bold hover:text-red-400"
-    >
-      &times;
-    </button>
-  </div>
-)}
-
+      )}
+      
+      {/* Using the separate ImagePreview component */}
+      <ImagePreview 
+        imageUrl={fullscreenImage} 
+        onClose={() => setFullscreenImage(null)} 
+      />
     </div>
   );
 };

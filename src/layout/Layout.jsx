@@ -23,7 +23,7 @@ export default function Layout() {
       >
         <Header setSidebarOpen={setSidebarOpen} />
 
-        <main className="flex-1 p-4 hide-scrollbar overflow-y-auto bg-gray-100">
+        <main className="flex-1 p-0 lg:p-4 hide-scrollbar overflow-y-auto bg-gray-100">
           <Outlet />
         </main>
       </div>
