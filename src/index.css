@@ -1,0 +1,52 @@
+ 
+@import "tailwindcss";
+ 
+button{
+  cursor: pointer;
+}/* Shine effect wrapper */
+.shine-auto {
+  position: relative;
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+/* Shine gradient animation */
+.shine-auto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(
+    to right,
+    rgba(4, 231, 144, 0) 0%,
+    rgba(1, 206, 90, 0.4) 50%,
+    rgba(115, 218, 5, 0) 100%
+  );
+  transform: skewX(-25deg);
+  z-index: 10;
+  animation: shine-animation 10s ease-in-out infinite;
+}
+
+/* Keyframes for the shine effect */
+@keyframes shine-animation {
+  0% {
+    left: -75%;
+  }
+  10% {
+    left: 125%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+.hide-scrollbar {
+  overflow: auto; /* or scroll */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
